@@ -27,7 +27,7 @@
 \documentclass[
 	a4paper, % Page size
 	fontsize=10pt, % Base font size
-	twoside=true, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	twoside=false, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
 	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
 	%chapterentrydots=true, % Uncomment to output dots from the chapter name to the page number in the table of contents
 	numbers=noenddot, % Comment to output dots after chapter numbers; the most common values for this option are: enddot, noenddot and auto (see the KOMAScript documentation for an in-depth explanation)
@@ -74,6 +74,10 @@
 
 %----------------------------------------------------------------------------------------
 
+\pagelayout{wide} % No margins
+\pagelayout{margin} % Restore margins
+\setlength{\marginparwidth}{0pt} % Imposta la larghezza della colonna marginale a 0
+\setlength{\marginparsep}{0pt}   % Rimuovi lo spazio tra il testo principale e la colonna marginale
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -183,11 +187,8 @@ Document]{Requirement Analysis and Specification
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\input{chapters/introduction.tex}
-
 \pagelayout{wide} % No margins
-\pagelayout{margin} % Restore margins
-
+\input{chapters/introduction.tex}
 \input{chapters/options.tex}
 \input{chapters/textnotes.tex}
 \input{chapters/figsntabs.tex}
@@ -195,7 +196,7 @@ Document]{Requirement Analysis and Specification
 
 \pagelayout{wide} % No margins
 \addpart{Design and Additional Features}
-\pagelayout{margin} % Restore margins
+
 
 \input{chapters/layout.tex}
 \input{chapters/mathematics.tex}
@@ -204,7 +205,7 @@ Document]{Requirement Analysis and Specification
 
 \pagelayout{wide} % No margins
 \addpart{Appendix}
-\pagelayout{margin} % Restore margins
+
 
 \input{chapters/appendix.tex}
 
