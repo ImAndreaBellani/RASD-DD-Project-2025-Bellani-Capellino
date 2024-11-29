@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  25 NOV 2024 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  29 NOV 2024 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3329,14 +3329,14 @@ Overfull \hbox (30.904pt too wide) in paragraph at lines 1--1
 
 chapter 3.
 
-Overfull \hbox (30.27335pt too wide) in paragraph at lines 7--7
+Overfull \hbox (30.27335pt too wide) in paragraph at lines 14--14
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 58.
+(Font)              scaled to size 7.76001pt on input line 65.
 LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 7.76001pt on input line 58.
+(Font)              scaled to size 7.76001pt on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
