@@ -15,8 +15,9 @@
 		
 		Students, on the other hand, may use the platform to look for internships and S\&D can also notify them if there are new internships that could meet their interests, but they can still independently search through all the available internships.
 		
-		[DA METTERE PARTE DELLA SELEZIONE]
-		Once a \emph{contact} is established, the student selection process begins and once completed, the system collects feedback and suggestions from both students and companies. Finally, both students and companies can monitor the progress of the internships by providing information on its development and any issues that may arise.
+		Once a \emph{contact} is established and accepted by the two parties, the student selection process begins. At this point the company defines selection steps and schedules the interviews for each student. Once the selection is over, the system collects feedback and suggestions from both students and companies.
+		
+		Finally, both students and companies can monitor the progress of the internships by providing information on its development and any issues that may arise.
 		\subsection{Phenomena}
 			\subsubsection{World Phenomena}
 			\subsubsection{Shared Phenomena}
@@ -24,19 +25,26 @@
 				\paragraph{Machine-controlled Shared Phenomena}
 	\section{Definitions, Acronyms and Abbreviations}
 		\subsection{Definitions}
+			\begin{itemize}
+				\item \textbf{internship advice} : a call for application related to an internship that will be offered by a company;
+				\item \textbf{recommendation} : the mechanism related to the fact that the system both informs students whether new internship advice that might interest them are published and notifies companies of the presence of students that might be suitable for their internships;
+				\item \textbf{project} (of an internship advice) : the definition of the application domain, the set of tasks to be performed and the set of the most relevant adopted technologies (if any) for an internship;
+				\item \textbf{terms} (of an internship advice) : the set of benefits offered by an internship (e.g. paid/not paid, training, lunch voucher... );
+				\item \textbf{selection process} : each internship advice is followed by a sequence of selection steps.
+			\end{itemize}
 		\subsection{Acronyms}
 			\begin{itemize}
 				\item S\&C: Students\&Companies, the name of the platform;
-				\item UML: Unified Modeling Language.
+				\item UML: Unified Modeling Language;
+				\item CV: Curriculum Vitae.
 			\end{itemize}
 		\subsection{Abbreviations}
 			\begin{itemize}
-				\item G\_n: Goal number n;
-				\item R\_n: Requirement number n;
-				\item D\_n: Domain assumption number n;
-				\item WP\_n: World Phenomena number n;
-				\item SP\_n: Shared Phenomena number n;
-				\item CV: Curriculum Vitae;
+				\item Gn: Goal number n;
+				\item Rn: Requirement number n;
+				\item Dn: Domain assumption number n;
+				\item WPn: World Phenomena number n;
+				\item SPn: Shared Phenomena number n;
 				\item UC: Use Case.
 			\end{itemize}
 	\section{Revision history}
@@ -48,5 +56,10 @@
 		\end{itemize}
 	\section{Document structure}
 		\begin{enumerate}
-			\item \textbf{INTRODUCTION}: in this section, we provide a brief introduction to the purpose of the platform to be developed, S\&C in this case, focusing in particular on the most important goals which we aim to achieve and on the various phenomena identified;
+			\item \textbf{Introduction}: this section provides a brief introduction to the purpose of the platform to be developed, S\&C in this case, focusing in particular on the most important goals which the system has to achieve and on the various phenomena identified;
+			\item \textbf{Overall Description} : an high-level (conceptual) description of the system functionalities explained through scenarios, high-level class diagram, product functions and domain assumption;
+			\item \textbf{Specified Requirements} : the detailed requirements analysis. In this section is detailed the entire requirement set (functional and non-functional), the most relevant use-cases (including sequence diagrams that formalize them) and the design constraints that must be stated also at the requirement level;
+			\item \textbf{Formal Analysis} : formal modeling and simulation of a simplified model of the system, in order to formally prove the correctness of the (possibly) foremost requirements (using Alloy 6);
+			\item \textbf{Effort Spent}: report of the time spent by any group member in any document section;
+			\item \textbf{References}: list of software and documents used to develop the document.
 		\end{enumerate}
