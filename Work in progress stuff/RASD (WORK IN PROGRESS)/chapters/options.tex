@@ -84,6 +84,23 @@
 			\begin{flushleft}
 				Today, Alice who is currently enrolled in the internships at the company WeWorkGreat had a problem with the task that was given to her, she asks the helpdesk of the company where she is performing the internship and they ask her to upload a video on the company file sharing platform to show the situation. Alice notices that she can’t upload the video because the maximum uploading size for students is to 10 MB, then she opens Students\&Companies and writes a compliant that states that the file sharing system of WeWorkGreat is only of 10 MB.
 			\end{flushleft}
+		\subsection{High-level class diagram}
+			\includegraphics{class_diagram.jpg}
+			
+			This is the entire high-level class diagram. Due to the fact that it is quite large, perhaps it is convenient to divide it into four parts:
+			\begin{itemize}
+				\item \emph{application part}: \textsc{User} is specialized into \textsc{Company} (which publishes \textsc{InternshipAdvice}) and \textsc{Student} (which applies for \textsc{InternshipAdvice});
+				\item \emph{selection part}: each \textsc{InternshipAdvice} is related to \textsc{SelectionProcess}, which is made up of a number of \textsc{SelectionStep}s that actualize in \textsc{Interviews}s for the students currently enrolled in the selection process;
+				\item \emph{notification part}: both user categorizes may receive notifications, in particular:
+					\begin{itemize}
+						\item \textsc{SelectionResultNotification}: notifies to a \textsc{Student} the result of a \textsc{SelectionProcess} it attended;
+						\item \textsc{AdviceNotification}: notifies to a \textsc{Student} that an \textsc{InternshipAdvice} that might interests it has just been published;
+						\item \textsc{InviteNotification}: notifies to a \textsc{Student} that a \textsc{Company} invited it to apply for one of its \textsc{InternshipAdvice};
+						\item \textsc{InterestedStudentsNotification}: notifies to a \textsc{Company} a list of \textsc{Student}s that might be interested in applying to their \textsc{InternshipAdvice};
+						\item \textsc{StudentAppNotification}: notifies to a \textsc{Company} that a \textsc{Student} applied for one of its \textsc{InternshipAdvice};
+					\end{itemize}
+				\item \emph{feedback\&complaints part}: \textsc{User}s can upload \textsc{Feedback}s and \textsc{Complaint}s.
+			\end{itemize}
 	\section{Product functions}
 		\textbf{Sign-up and login}
 			\begin{flushleft}
@@ -111,3 +128,4 @@
 			\end{flushleft}
 	\section{User characteristics}
 	\section{Assumptions, dependencies and constraints}
+		
