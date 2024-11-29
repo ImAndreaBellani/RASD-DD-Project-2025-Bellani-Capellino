@@ -1,21 +1,31 @@
-\babel@toc {english}{}\relax
+\xpginauxfiletrue 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Requirements mapping for goal G1}}{8}{table.caption.12}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Requirements mapping for goal G2}}{9}{table.caption.13}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Requirements mapping for goal G3}}{9}{table.caption.14}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Requirements mapping for goal G1}}{10}{table.caption.12}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Requirements mapping for goal G2}}{11}{table.caption.13}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Requirements mapping for goal G3}}{11}{table.caption.14}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces A useless table}}{12}{table.caption.16}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Another useless table}}{14}{table.caption.17}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces A wide table with invented data about three people living in the UK. Note that wide figures and tables are centered and their caption also extends into the margin.}}{15}{table.caption.20}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Caption of the longtable.}}{15}{table.4.4}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {4.1}{\ignorespaces A useless table}}{14}{table.caption.16}%
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Another useless table}}{16}{table.caption.17}%
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {4.3}{\ignorespaces A wide table with invented data about three people living in the UK. Note that wide figures and tables are centered and their caption also extends into the margin.}}{17}{table.caption.20}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Caption of the longtable.}}{17}{table.4.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Commands to add a particular entry to the table of contents.}}{23}{table.caption.23}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Some non-standard paper sizes supported by kaobook.}}{24}{table.caption.24}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Commands to add a particular entry to the table of contents.}}{25}{table.caption.23}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Some non-standard paper sizes supported by kaobook.}}{26}{table.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file
+\xpginauxfilefalse 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

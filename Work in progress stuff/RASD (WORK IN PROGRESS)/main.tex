@@ -32,8 +32,8 @@
 	%chapterentrydots=true, % Uncomment to output dots from the chapter name to the page number in the table of contents
 	numbers=noenddot, % Comment to output dots after chapter numbers; the most common values for this option are: enddot, noenddot and auto (see the KOMAScript documentation for an in-depth explanation)
 ]{kaobook}
-\usepackage[utf8]{inputenc}
 \usepackage{array}
+
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 % Choose the language
@@ -73,12 +73,22 @@
 %\counterwithin*{sidenote}{chapter}
 
 %----------------------------------------------------------------------------------------
-
+\usepackage{svg}
 \pagelayout{wide} % No margins
 \pagelayout{margin} % Restore margins
 \setlength{\marginparwidth}{0pt} % Imposta la larghezza della colonna marginale a 0
 \setlength{\marginparsep}{0pt}   % Rimuovi lo spazio tra il testo principale e la colonna marginale
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage{fontspec}                                                                                                                       
+\addtokomafont{title}{\sffamily}
+\addtokomafont{chapter}{\sffamily}
+\addtokomafont{section}{\sffamily}
+\addtokomafont{subsection}{\sffamily}
+\addtokomafont{subsubsection}{\sffamily}
 \begin{document}
+\setmainfont{EB Garamond}
 
 %----------------------------------------------------------------------------------------
 %	BOOK INFORMATION
