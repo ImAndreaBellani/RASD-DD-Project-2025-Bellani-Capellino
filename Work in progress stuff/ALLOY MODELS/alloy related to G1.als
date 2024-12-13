@@ -2,12 +2,12 @@
 	modeling related to G1
 	-> there can't be students with the same address
 	-> there can't be companies with the same address
-	-> students can be apply for an internship advice (until the closing deadline)
+	-> students can apply for an internship advice (until the closing deadline)
 	-> students can withdraw their application to an internship advice (until the closing deadline)
 */
 //date modeling
 	sig Date {}
-	one sig FirstDay extends Date {}
+	one sig FirstDay extends Date {} //for uniformity of the concept of "yesterday", the calendar begins with the "MidDay" that has as yesterday the "FirstDay"
 	sig MidDay extends Date
 		{
 			yesterday: one Date
@@ -19,15 +19,15 @@
 		}
 	fact calendar //facts to design the "date chain"
 		{
-			all d,d1:MidDay | (d!=d1) implies d.yesterday != d1.yesterday
-			all d:Date | d in MidDay or d in FirstDay
-			all d:LastDay | no d1:MidDay |  d1.yesterday = d
-			all d:MidDay | d not in d.^(yesterday)
+			all d,d1:MidDay | (d!=d1) implies d.yesterday != d1.yesterday  //a day can't be "the yesterday" of more than one day
+			all d:Date | d in MidDay or d in FirstDay //a date or is "MidDay" or is a "FirstDay"
+			all d:LastDay | no d1:MidDay |  d1.yesterday = d  //the last day has no tomorrows
+			all d:MidDay | d not in d.^(yesterday)  //no "loops" ("a day can't stay before itself in the calendar")
 		}
 	fact todayFacts //facts to set up "Today"
 		{
-			all t:Today|t.date in FirstDay
-			always (all t:Today|t.date' not in FirstDay implies t.date in t.date'.yesterday)	
+			all t:Today|t.date in MidDay and t.date.yesterday in FirstDay //the first "Today" is the "MidDay" that has as yesterday the "FirstDay"
+		 	always (all t: Today | t.date not in LastDay implies t.date'.yesterday = t.date) //"today" must move in steps "one day after the other"
 		}
 //profiles modeling
 	sig Mail  {}
@@ -59,24 +59,21 @@
 		}
 	fact applicationFacts
 		{
-			always (all a:Application| (a.date not in FirstDay) implies (a.date' not in a.date.tomorrows)) 
-			always (all a:Application| (a.date=a.advice.deadline or a.date not in a.advice.deadline.tomorrows))
 			always (all a:Application| ((a.advice!=a.advice' or a.student!=a.student') ) implies (some t:Today|a.date'=t.date'))
-		}
-	fun tomorrows [d:MidDay] : set Date
-		{
-			d.^(yesterday)
+				//if an application "changes", its date must set to "Today"
+			always (all a:Application| ((a.advice=a.advice' and a.student=a.student') ) implies (a.date' = a.date))
+				//if an application "does not change", its date must not change
+			always (all a:Application| a.date = a.advice.deadline or a.date in a.advice.deadline.^(yesterday))
+				//any application must be sent within the advices deadlines
 		}
 pred show
 	{
-		all a:Application | (a.date in FirstDay)
-		no i1,i2: InternshipAdvice | i1!=i2 and i1.deadline = i2.deadline
-		some a:Application | a.student != a.student'
-		always(some i:InternshipAdvice|some t:Today|t.date=i.deadline)
-		always (all t:Today|
-				t.date' != t.date and
-				t.date'' != t.date and t.date'' !=t.date and
-				t.date''' != t.date'' and t.date''' != t.date' and t.date''' != t.date and
-				t.date'''' != t.date''' and t.date'''' != t.date'' and t.date'''' != t.date' and t.date'''' != t.date)
+		all a:Application| some t:Today | a.date = t.date //all pre-simulation applications are submitted in first simulation day
+		some a:InternshipAdvice|  a.deadline not in FirstDay //some pre-simulation advices can't have a deadline in "FirstDay"
+		always (some a:Application| a.date != a.date') //in this way, at least one application has to "change" each day
+		
+		#(Application) = 2
+		#(InternshipAdvice) = 2
+		#(Date) = 5
 	}
 run show for 5

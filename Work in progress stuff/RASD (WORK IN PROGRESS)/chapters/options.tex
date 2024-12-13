@@ -4,11 +4,11 @@
 		\subsection{Scenarios}
 			\textbf{Student signs up to S\&C}
 			\begin{flushleft}
-				Student Bob enters in the system for the first time. On the homepage, he first clicks the \emph{Registration button} and then the \emph{Student Registration button}. To register, Bob fills out a form providing its institutional e-mail (bob.johnson@mail.polimi.it) and password (which will be used for future logins), a brief description of his academic background and specifies whether he would like to receive notifications from the system about future published internships. Finally, Bob uploads his CV by clicking the \emph{Upload CV button}. Now Bob is registered and can search for internships that interest him.
+				Student Bob enters in the system for the first time. On the homepage, he first clicks the \emph{Registration button} and then the \emph{Student Registration button}. To register, Bob fills out a form providing its institutional e-mail (bob.johnson@mail.polimi.it) and password (which will be used for future logins), a brief description of his academic background and specifies whether he would like to take part to the recommendation analysis. Finally, Bob uploads his CV by clicking the \emph{Upload CV button}. Now Bob is registered and can search for internships that interest him.
 			\end{flushleft}
 			\textbf{Company signs up to S\&C}
 			\begin{flushleft}
-				The company FinestraMI enters the system for the first time. On the homepage, it first clicks the \emph{Registration button} and then the \emph{Company Registration button}. To register, the company fills out a form providing its name, a brief description of its area of expertise and its business area (the market where it operates) and finally its corporate e-mail (info@finestrami.it) and password (which will be used for future logins). FinestraMI also specifies, by selecting the appropriate option, whether it wants to be notified about the availability of students who may be of its interest. Now, FinestraMI is registered and can publish its internships advice.
+				The company FinestraMI enters the system for the first time. On the homepage, it first clicks the \emph{Registration button} and then the \emph{Company Registration button}. To register, the company fills out a form providing its name, a brief description of its area of expertise and its business area (the market where it operates) and finally its corporate e-mail (info@finestrami.it) and password (which will be used for future logins). FinestraMI also specifies, by selecting the appropriate option, whether it wants take part into the recommendation analysis. Now, FinestraMI is registered and can publish its internships advice.
 			\end{flushleft}
 			\textbf{Company publishes an internship offer}
 			\begin{flushleft}
@@ -20,7 +20,7 @@
 					\item "not suffering from dizziness" (desired skills);
 					\item "1. coordination of glass disposal; 2. ..." (main activities the internship involves);
 					\item "no paid, canteen tickets available" (terms of the internship);
-					\item "\date{22/11/2024}" (advice deadline).
+					\item "22/11/2024" (advice deadline).
 				\end{itemize}
 				
 				Now the internship advice is visible to students registered on the platform (and also to FinestraMI).
@@ -78,20 +78,24 @@
 			\end{flushleft}
 			\textbf{User provides a feedback at the end of the selection process}
 			\begin{flushleft}
-				contenuto...
+				Micheal has just received the selection results for his application for the "Window restore" internship of FinestraMI. Attached to it, the system provides him an optional questionnaire where it asks to Micheal to evaluate his experience of the selection (questions are quite standard, such as "was the company on time with the interview appointments?", "did the questions related to the required skills" e.c.c.). Since it is not compulsory, Micheal does not compile it. On the other side, once the entire selection process of FinestraMI is closed, FinestraMI receives from the system a questionnaire to evaluate its experience (questions mainly concern the preparation level of the candidates, such as "was the number of students with the required skills below average?"). Then the company compiles it from the system.
 			\end{flushleft}
 			\textbf{User reports a complaint on one of the internship is currently doing}
 			\begin{flushleft}
 				Today, Alice who is currently enrolled in the internships at the company WeWorkGreat had a problem with the task that was given to her, she asks the helpdesk of the company where she is performing the internship and they ask her to upload a video on the company file sharing platform to show the situation. Alice notices that she can’t upload the video because the maximum uploading size for students is to 10 MB, then she opens Students\&Companies and writes a compliant that states that the file sharing system of WeWorkGreat is only of 10 MB.
 			\end{flushleft}
+			\textbf{User provides a feedback at the conclusion of an internship}
+			\begin{flushleft}
+				Alice has just finished the internship at WeWorkGreat, an non-compulsory questionnaire is given to her with some general questions related to her experience at the company (e.g. "did the company respect the terms listed in the advice?" e.c.c.). Since it is not compulsory, Alice decides to not compile it.
+			\end{flushleft}
 		\subsection{High-level class diagram}
-			\includegraphics{class_diagram.jpg}
+			\includegraphics{class_diagram(NO NOT).jpg}
 			
 			This is the entire high-level class diagram. Due to the fact that it is quite large, perhaps it is convenient to divide it into four parts:
 			\begin{itemize}
 				\item \emph{application part}: \textsc{User} is specialized into \textsc{Company} (which publishes \textsc{InternshipAdvice}) and \textsc{Student} (which applies for \textsc{InternshipAdvice});
 				\item \emph{selection part}: each \textsc{InternshipAdvice} is related to \textsc{SelectionProcess}, which is made up of a number of \textsc{SelectionStep}s that actualize in \textsc{Interviews}s for the students currently enrolled in the selection process;
-				\item \emph{notification part}: both user categorizes may receive notifications, in particular:
+				\item \emph{notification part}: both user categories may receive notifications, in particular (for simplicity they are not detailed into the diagram):
 					\begin{itemize}
 						\item \textsc{SelectionResultNotification}: notifies to a \textsc{Student} the result of a \textsc{SelectionProcess} it attended;
 						\item \textsc{AdviceNotification}: notifies to a \textsc{Student} that an \textsc{InternshipAdvice} that might interests it has just been published;
@@ -128,4 +132,3 @@
 			\end{flushleft}
 	\section{User characteristics}
 	\section{Assumptions, dependencies and constraints}
-		

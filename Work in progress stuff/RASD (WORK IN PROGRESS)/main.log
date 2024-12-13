@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.9)  29 NOV 2024 23:00
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.9)  13 DEC 2024 15:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -4094,14 +4094,15 @@ luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
 uage eng
-<images/class_diagram.jpg, id=337, 2089.8075pt x 1719.42375pt>
-File: images/class_diagram.jpg Graphic file (type jpg)
-<use images/class_diagram.jpg>
-Package luatex.def Info: images/class_diagram.jpg  used on input line 88.
-(luatex.def)             Requested size: 456.37897pt x 375.49335pt.
+<images/class_diagram(NO NOT).jpg, id=338, 500.8311pt x 416.5161pt>
+File: images/class_diagram(NO NOT).jpg Graphic file (type jpg)
+<use images/class_diagram(NO NOT).jpg>
+Package luatex.def Info: images/class_diagram(NO NOT).jpg  used on input line 9
+2.
+(luatex.def)             Requested size: 456.39131pt x 379.55774pt.
 
-Overfull \hbox (18.4793pt too wide) in paragraph at lines 88--91
-[] \TU/EBGaramond(2)/m/n/10 This
+Overfull \hbox (10.00832pt too wide) in paragraph at lines 92--93
+[] 
  []
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4177,19 +4178,19 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [7<./images/class_diagram.jpg>]
+guage eng [7<./images/class_diagram(NO NOT).jpg>]
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
-guage eng
+guage eng)
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
-guage eng) (./chapters/textnotes.tex
+guage eng (./chapters/textnotes.tex
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4223,7 +4224,8 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [8]
+guage eng
+[8]
 chapter 3.
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -4323,6 +4325,9 @@ luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
+
+LaTeX Warning: Float too large for page by 384.04115pt on input line 92.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4533,18 +4538,6 @@ luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
-uage eng)
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
-uage eng (./chapters/figsntabs.tex
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4579,8 +4572,54 @@ luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
 guage eng [12
 
 ]
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
+uage eng) (./chapters/figsntabs.tex
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng [13]
 chapter 4.
-<images/seaside.jpeg, id=369, 1283.79625pt x 553.06625pt>
+<images/seaside.jpeg, id=373, 1283.79625pt x 553.06625pt>
 File: images/seaside.jpeg Graphic file (type jpg)
 <use images/seaside.jpeg>
 Package luatex.def Info: images/seaside.jpeg  used on input line 3.
@@ -4603,7 +4642,7 @@ uage eng
 luaotfload | aux : font no 130 (nil) defines no feature for script latn with lan
 guage eng
 
-LaTeX Warning: Hyper reference `bhfn:0' on page 13 undefined on input line 6.
+LaTeX Warning: Hyper reference `bhfn:0' on page 14 undefined on input line 6.
 
 
 Package hyperref Warning: Ignoring empty anchor on input line 6.
@@ -4620,7 +4659,7 @@ luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
 guage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
-<images/monalisa.jpg, id=373, 403.5075pt x 601.24625pt>
+<images/monalisa.jpg, id=377, 403.5075pt x 601.24625pt>
 File: images/monalisa.jpg Graphic file (type jpg)
 <use images/monalisa.jpg>
 Package luatex.def Info: images/monalisa.jpg  used on input line 26.
@@ -4693,7 +4732,7 @@ Overfull \hbox (10.16992pt too wide) in paragraph at lines 39--39
 \TU/EBGaramond(2)/m/n/8 ing. 
  []
 
-Package marginnote Info: Margin note 17.1 is on absolute page 17 on input line 
+Package marginnote Info: Margin note 18.1 is on absolute page 18 on input line 
 39.
 Package marginnote Info: right page because not two side mode on input line 39.
 
@@ -4781,7 +4820,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [13
+guage eng [14
 
 
 <./images/seaside.jpeg>]
@@ -4818,7 +4857,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [14]
+guage eng [15]
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4852,7 +4891,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [15<./images/monalisa.jpg>]
+guage eng [16<./images/monalisa.jpg>]
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
@@ -4860,13 +4899,13 @@ uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
 guage eng
 
-LaTeX Warning: Hyper reference `fig:marginmonalisa' on page 16 undefined on inp
+LaTeX Warning: Hyper reference `fig:marginmonalisa' on page 17 undefined on inp
 ut line 82.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Reference `fig:marginmonalisa' on page 16 undefined on input lin
+LaTeX Warning: Reference `fig:marginmonalisa' on page 17 undefined on input lin
 e 82.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4909,7 +4948,7 @@ Overfull \hbox (13.10208pt too wide) in paragraph at lines 85--85
 \TU/EBGaramond(2)/m/n/8 tion. 
  []
 
-Package marginnote Info: Margin note 20.1 is on absolute page 20 on input line 
+Package marginnote Info: Margin note 21.1 is on absolute page 21 on input line 
 85.
 Package marginnote Info: right page because not two side mode on input line 85.
 
@@ -5168,7 +5207,7 @@ Overfull \hbox (8.8544pt too wide) in paragraph at lines 158--158
 \TU/EBGaramond(2)/m/n/8 ble 
  []
 
-Package marginnote Info: Margin note 20.2 is on absolute page 20 on input line 
+Package marginnote Info: Margin note 21.2 is on absolute page 21 on input line 
 158.
 Package marginnote Info: right page because not two side mode on input line 158
 .
@@ -5212,7 +5251,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [16
+guage eng [17
 
 ]
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
@@ -5420,7 +5459,7 @@ Overfull \hbox (27.75664pt too wide) in paragraph at lines 192--192
 \TU/EBGaramond(2)/m/n/8 longtable 
  []
 
-Package marginnote Info: Margin note 21.1 is on absolute page 21 on input line 
+Package marginnote Info: Margin note 22.1 is on absolute page 22 on input line 
 192.
 Package marginnote Info: right page because not two side mode on input line 192
 .
@@ -5533,7 +5572,7 @@ Overfull \hbox (38.9312pt too wide) in paragraph at lines 219--219
 \TU/lmtt/m/n/8 longtable\TU/EBGaramond(2)/m/n/8 . 
  []
 
-Package marginnote Info: Margin note 21.2 is on absolute page 22 on input line 
+Package marginnote Info: Margin note 22.2 is on absolute page 23 on input line 
 219.
 Package marginnote Info: right page because not two side mode on input line 219
 .
@@ -5575,7 +5614,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [17]
+guage eng [18]
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
 guage eng
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
@@ -5617,7 +5656,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [18]
+guage eng [19]
 chapter 5.
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -5638,12 +5677,12 @@ uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
 guage eng
 
-LaTeX Warning: Citation 'Visscher2008' on page 19 undefined on input line 9.
+LaTeX Warning: Citation 'Visscher2008' on page 20 undefined on input line 9.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Citation 'James2013' on page 19 undefined on input line 9.
+LaTeX Warning: Citation 'James2013' on page 20 undefined on input line 9.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -5652,12 +5691,12 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Citation 'Visscher2008' on page 19 undefined on input line 9.
+LaTeX Warning: Citation 'Visscher2008' on page 20 undefined on input line 9.
 
 luaotfload | aux : font no 122 (nil) defines no feature for script latn with lan
 guage eng
 
-LaTeX Warning: Citation 'James2013' on page 19 undefined on input line 9.
+LaTeX Warning: Citation 'James2013' on page 20 undefined on input line 9.
 
 luaotfload | aux : font no 122 (nil) defines no feature for script latn with lan
 guage eng
@@ -5672,7 +5711,7 @@ Overfull \hbox (35.78398pt too wide) in paragraph at lines 9--9
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 15.
 
-LaTeX Warning: Citation 'James2013' on page 19 undefined on input line 15.
+LaTeX Warning: Citation 'James2013' on page 20 undefined on input line 15.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -5681,7 +5720,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Citation 'James2013' on page 19 undefined on input line 15.
+LaTeX Warning: Citation 'James2013' on page 20 undefined on input line 15.
 
 luaotfload | aux : font no 122 (nil) defines no feature for script latn with lan
 guage eng
@@ -5691,7 +5730,7 @@ Overfull \hbox (35.78398pt too wide) in paragraph at lines 15--15
 
 luaotfload | aux : font no 132 (nil) defines no feature for script latn with lan
 guage eng
-Package marginnote Info: Margin note 23.1 is on absolute page 23 on input line 
+Package marginnote Info: Margin note 24.1 is on absolute page 24 on input line 
 26.
 Package marginnote Info: right page because not two side mode on input line 26.
 
@@ -6168,7 +6207,7 @@ Overfull \hbox (15.01807pt too wide) in paragraph at lines 43--43
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 62.
 
-LaTeX Warning: Citation 'Battle2014' on page 19 undefined on input line 62.
+LaTeX Warning: Citation 'Battle2014' on page 20 undefined on input line 62.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -6177,7 +6216,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Citation 'Battle2014' on page 19 undefined on input line 62.
+LaTeX Warning: Citation 'Battle2014' on page 20 undefined on input line 62.
 
 luaotfload | aux : font no 122 (nil) defines no feature for script latn with lan
 guage eng
@@ -6187,7 +6226,7 @@ Overfull \hbox (36.71997pt too wide) in paragraph at lines 62--62
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 77.
 
-LaTeX Warning: Citation 'Zou2005' on page 19 undefined on input line 77.
+LaTeX Warning: Citation 'Zou2005' on page 20 undefined on input line 77.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -6196,7 +6235,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 
-LaTeX Warning: Citation 'Zou2005' on page 19 undefined on input line 77.
+LaTeX Warning: Citation 'Zou2005' on page 20 undefined on input line 77.
 
 luaotfload | aux : font no 122 (nil) defines no feature for script latn with lan
 guage eng
@@ -6237,7 +6276,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [19
+guage eng [20
 
 
 ]
@@ -6452,7 +6491,7 @@ Overfull \hbox (16.32736pt too wide) in paragraph at lines 127--127
 \TU/EBGaramond(2)/m/n/8 dows. 
  []
 
-Package marginnote Info: Margin note 24.1 is on absolute page 24 on input line 
+Package marginnote Info: Margin note 25.1 is on absolute page 25 on input line 
 147.
 Package marginnote Info: right page because not two side mode on input line 147
 .
@@ -6663,7 +6702,7 @@ Overfull \hbox (13.52173pt too wide) in paragraph at lines 147--147
 \TU/EBGaramond(2)/m/n/8 cally. 
  []
 
-Package marginnote Info: Margin note 24.2 is on absolute page 24 on input line 
+Package marginnote Info: Margin note 25.2 is on absolute page 25 on input line 
 178.
 Package marginnote Info: right page because not two side mode on input line 178
 .
@@ -6943,7 +6982,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [20]
+guage eng [21]
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
@@ -7017,7 +7056,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [21]
+guage eng [22]
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
 guage eng
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
@@ -7331,7 +7370,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [22]
+guage eng [23]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: custom
@@ -7405,7 +7444,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [23
+guage eng [24
 
 
 
@@ -8038,7 +8077,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [24
+guage eng [25
 
 
 ]
@@ -8328,7 +8367,7 @@ luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 132 (nil) defines no feature for script latn with lan
 guage eng
-Package marginnote Info: Margin note 29.1 is on absolute page 29 on input line 
+Package marginnote Info: Margin note 30.1 is on absolute page 30 on input line 
 136.
 Package marginnote Info: right page because not two side mode on input line 136
 .
@@ -8452,7 +8491,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [25]
+guage eng [26]
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
@@ -8538,7 +8577,7 @@ Overfull \hbox (156.25005pt too wide) in paragraph at lines 154--171
 [][] 
  []
 
-Package marginnote Info: Margin note 30.1 is on absolute page 30 on input line 
+Package marginnote Info: Margin note 31.1 is on absolute page 31 on input line 
 171.
 Package marginnote Info: right page because not two side mode on input line 171
 .
@@ -8886,7 +8925,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [26]
+guage eng [27]
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
 guage eng
 luaotfload | aux : font no 108 (nil) defines no feature for script latn with lan
@@ -9209,7 +9248,7 @@ Overfull \hbox (22.02704pt too wide) in paragraph at lines 295--295
  []
 
 
-LaTeX Warning: Citation 'James2013' on page 27 undefined on input line 296.
+LaTeX Warning: Citation 'James2013' on page 28 undefined on input line 296.
 
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -9250,7 +9289,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [27]
+guage eng [28]
 chapter 7.
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -9742,7 +9781,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [28
+guage eng [29
 
 
 ]
@@ -9915,7 +9954,7 @@ luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
 guage eng
 luaotfload | aux : font no 102 (nil) defines no feature for script latn with lan
 guage eng
-Package marginnote Info: Margin note 33.1 is on absolute page 33 on input line 
+Package marginnote Info: Margin note 34.1 is on absolute page 34 on input line 
 133.
 Package marginnote Info: right page because not two side mode on input line 133
 .
@@ -10166,7 +10205,7 @@ luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
 guage eng
-Package marginnote Info: Margin note 33.2 is on absolute page 34 on input line 
+Package marginnote Info: Margin note 34.2 is on absolute page 35 on input line 
 162.
 Package marginnote Info: right page because not two side mode on input line 162
 .
@@ -10322,7 +10361,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [29])
+guage eng [30])
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -10356,7 +10395,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [30]
+guage eng [31]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: custom
@@ -10428,7 +10467,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [31
+guage eng [32
 
 
 
@@ -10509,7 +10548,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [32
+guage eng [33
 
 
 ]
@@ -10596,55 +10635,55 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [33]
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
 guage eng [34]
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng [35]
 chapter B.
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
@@ -10746,7 +10785,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [35
+guage eng [36
 
 
 ]
@@ -10787,7 +10826,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [36]
+guage eng [37]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: custom
@@ -10870,7 +10909,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [37
+guage eng [38
 
 
 
@@ -11000,7 +11039,7 @@ uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [38
+guage eng [39
 
 
 
@@ -11031,17 +11070,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 63943 strings out of 477259
- 596255,2848258 words of node,token memory allocated
+ 63944 strings out of 477259
+ 596364,2848258 words of node,token memory allocated
  40984 words of node memory still in use:
    680 hlist, 59 vlist, 34 rule, 144 disc, 28 local_par, 4 math, 1266 glue, 214 
 kern, 203 penalty, 359 margin_kern, 2487 glyph, 355 attribute, 179 glue_spec, 35
 5 attribute_list, 12 write, 2 save_pos, 67 pdf_literal, 6 pdf_start_link, 6 pdf_
 end_link, 1 pdf_dest, 10 pdf_action, 24 pdf_colorstack nodes
-   avail lists: 1:16,2:5517,3:1104,4:8415,5:9375,6:187,7:13927,8:59,9:22760,10:5
+   avail lists: 1:16,2:5517,3:1104,4:8416,5:9375,6:184,7:13927,8:56,9:22760,10:5
 8,11:1061,12:1
  83298 multiletter control sequences out of 65536+600000
- 157 fonts using 58552871 bytes
+ 157 fonts using 58552783 bytes
  128i,20n,154p,10917b,2587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:tocLabel'
@@ -11066,10 +11105,10 @@ texlive/2023/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Italic.otf><
 c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSans
 -Bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramon
 d-Regular.otf>
-Output written on main.pdf (42 pages, 766870 bytes).
+Output written on main.pdf (43 pages, 710274 bytes).
 
-PDF statistics: 1290 PDF objects out of 1440 (max. 8388607)
- 1183 compressed objects within 12 object streams
- 382 named destinations out of 1000 (max. 131072)
+PDF statistics: 1294 PDF objects out of 1440 (max. 8388607)
+ 1186 compressed objects within 12 object streams
+ 383 named destinations out of 1000 (max. 131072)
  928 words of extra memory for PDF output out of 10000 (max. 100000000)
 
