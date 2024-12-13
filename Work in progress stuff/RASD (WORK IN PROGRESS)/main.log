@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.9)  13 DEC 2024 15:15
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.9)  13 DEC 2024 17:10
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -3840,22 +3840,6 @@ luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -3898,6 +3882,16 @@ luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
 luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -3908,6 +3902,46 @@ luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
+guage eng [2]
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
+uage eng
+luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
+uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
@@ -3923,41 +3957,7 @@ uage eng
 luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 107 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
-uage eng
-luaotfload | aux : font no 103 (nil) defines no feature for script latn with lan
-guage eng [2]) (./chapters/options.tex
+guage eng) (./chapters/options.tex
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 90 (nil) defines no feature for script latn with lang
@@ -4094,7 +4094,7 @@ luaotfload | aux : font no 91 (nil) defines no feature for script latn with lang
 uage eng
 luaotfload | aux : font no 94 (nil) defines no feature for script latn with lang
 uage eng
-<images/class_diagram(NO NOT).jpg, id=338, 500.8311pt x 416.5161pt>
+<images/class_diagram(NO NOT).jpg, id=337, 500.8311pt x 416.5161pt>
 File: images/class_diagram(NO NOT).jpg Graphic file (type jpg)
 <use images/class_diagram(NO NOT).jpg>
 Package luatex.def Info: images/class_diagram(NO NOT).jpg  used on input line 9
@@ -11071,16 +11071,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  63944 strings out of 477259
- 596364,2848258 words of node,token memory allocated
+ 596345,2848258 words of node,token memory allocated
  40984 words of node memory still in use:
    680 hlist, 59 vlist, 34 rule, 144 disc, 28 local_par, 4 math, 1266 glue, 214 
 kern, 203 penalty, 359 margin_kern, 2487 glyph, 355 attribute, 179 glue_spec, 35
 5 attribute_list, 12 write, 2 save_pos, 67 pdf_literal, 6 pdf_start_link, 6 pdf_
 end_link, 1 pdf_dest, 10 pdf_action, 24 pdf_colorstack nodes
-   avail lists: 1:16,2:5517,3:1104,4:8416,5:9375,6:184,7:13927,8:56,9:22760,10:5
+   avail lists: 1:16,2:5517,3:1104,4:8415,5:9375,6:185,7:13927,8:56,9:22760,10:5
 8,11:1061,12:1
  83298 multiletter control sequences out of 65536+600000
- 157 fonts using 58552783 bytes
+ 157 fonts using 58553047 bytes
  128i,20n,154p,10917b,2587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:tocLabel'
@@ -11105,7 +11105,7 @@ texlive/2023/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Italic.otf><
 c:/texlive/2023/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSans
 -Bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramon
 d-Regular.otf>
-Output written on main.pdf (43 pages, 710274 bytes).
+Output written on main.pdf (43 pages, 713743 bytes).
 
 PDF statistics: 1294 PDF objects out of 1440 (max. 8388607)
  1186 compressed objects within 12 object streams

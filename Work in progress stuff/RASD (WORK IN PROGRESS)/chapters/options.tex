@@ -52,11 +52,11 @@
 			\end{flushleft}
 			\textbf{The company proposes to a student to apply for one of its internships}
 			\begin{flushleft}
-				contenuto...
+				The company FinestraMI consults its list of recommended students for Window Restore and send a proposal to Bob Jones (by clicking on the dedicated button). Soon after the system sends a notification of the proposal to Bob. 
 			\end{flushleft}
 			\textbf{Student accepts an internship proposal}
 			\begin{flushleft}
-				contenuto...
+				Bob receives an email regarding Window Restore proposal (of the company FinestraMI), then Bob logs into the platform, navigates to the notification section, open the notification regarding the proposal and clicks on the accept button.
 			\end{flushleft}
 			\textbf{The application deadline expires and the selection process is configured}
 			\begin{flushleft}
@@ -95,40 +95,33 @@
 			\begin{itemize}
 				\item \emph{application part}: \textsc{User} is specialized into \textsc{Company} (which publishes \textsc{InternshipAdvice}) and \textsc{Student} (which applies for \textsc{InternshipAdvice});
 				\item \emph{selection part}: each \textsc{InternshipAdvice} is related to \textsc{SelectionProcess}, which is made up of a number of \textsc{SelectionStep}s that actualize in \textsc{Interviews}s for the students currently enrolled in the selection process;
-				\item \emph{notification part}: both user categories may receive notifications, in particular (for simplicity they are not detailed into the diagram):
-					\begin{itemize}
-						\item \textsc{SelectionResultNotification}: notifies to a \textsc{Student} the result of a \textsc{SelectionProcess} it attended;
-						\item \textsc{AdviceNotification}: notifies to a \textsc{Student} that an \textsc{InternshipAdvice} that might interests it has just been published;
-						\item \textsc{InviteNotification}: notifies to a \textsc{Student} that a \textsc{Company} invited it to apply for one of its \textsc{InternshipAdvice};
-						\item \textsc{InterestedStudentsNotification}: notifies to a \textsc{Company} a list of \textsc{Student}s that might be interested in applying to their \textsc{InternshipAdvice};
-						\item \textsc{StudentAppNotification}: notifies to a \textsc{Company} that a \textsc{Student} applied for one of its \textsc{InternshipAdvice};
-					\end{itemize}
+				\item \emph{notification part}: both user categories may receive notifications, in particular (for simplicity they are not detailed into the diagram);
 				\item \emph{feedback\&complaints part}: \textsc{User}s can upload \textsc{Feedback}s and \textsc{Complaint}s.
 			\end{itemize}
 	\section{Product functions}
 		\textbf{Sign-up and login}
 			\begin{flushleft}
-				contenuto...
+				This functionality permits to both students and companies to set up their personal profile on the platform and accessing to the latter via their personal information (e-mail and password). Students profiles specify basic information regarding students interests and include their CV while companies profile include all the information that may help student in understanding companies vision and business area.
 			\end{flushleft}
-		\textbf{Internship advice publication}
+		\textbf{Internship proposal management}
 			\begin{flushleft}
-				contenuto...
+				Companies can post advice for internship they are going to offer and students can proactively search for them. In this case, a student that wants to apply for an internship sends a request to the company and it decides or not to enroll the student into the selection process. Moreover, thanks to the recommendation feature, companies receives profiles of possibly interested students and students receive profiles of companies that offer internship possibly related to their interests. Therefore, a companies can also suggest to a student to apply for an internship selection and students can accept or decline this proposal.
 			\end{flushleft}
-		\textbf{Internship application}
+		\textbf{Recommendation mechanism}
 			\begin{flushleft}
-				contenuto...
+				This functionality aims to facilitate the establishment of a contact between students and companies. By means of recommendation analysis, the system is able to propose to students internships advice that may interest them and to companies students that may be interested to their internships. This analysis are supported by companies and students profiles (CVs in particular, for students) and not compulsory feedback collected at the end of selections processes or internships.
 			\end{flushleft}
-		\textbf{Internship candidates selection}
+		\textbf{Selection process management}
 			\begin{flushleft}
-				contenuto...
+				A selection process can be supported by the system from the advice deadline to its finalization. In particular, companies can use the system to define process steps, schedule interviews, correct closed questions and compare students results each other (by defining their metrics).
 			\end{flushleft}
-		\textbf{Candidates interview schedule}
+		\textbf{Internship monitoring}
 			\begin{flushleft}
-				contenuto...
+				Students that are currently involved in active internships can use the system to post complains and monitor the current status of them. On the other side, also companies can also post complains on internships they are currently providing (and of course they can also monitor their status).
 			\end{flushleft}
-		\textbf{Internship complaints}
+		\textbf{Notifications management}
 			\begin{flushleft}
-				contenuto...
+				Each message that is sent to companies or students (e.g. selection results, internship proposal, interview dates) are also sent to profile e-mail addresses (a short version of them). From the system, each message can be read entirely.
 			\end{flushleft}
 	\section{User characteristics}
 	\section{Assumptions, dependencies and constraints}
