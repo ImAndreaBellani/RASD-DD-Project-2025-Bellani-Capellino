@@ -1,31 +1,20 @@
 /*
 	modeling related to G2
-	-> companies can set up a selection process
-	-> only students who enrolled the selection process can be selected or rejected by the company
 */
 //date modeling
 	sig Date {}
-	one sig FirstDay extends Date {}
+	one sig FirstDay extends Date {} //for uniformity of the concept of "yesterday", the calendar begins with the "MidDay" that has as yesterday the "FirstDay"
 	sig MidDay extends Date
 		{
 			yesterday: one Date
 		}
 	one sig LastDay extends MidDay {}
-	one sig Today
-		{
-			var date: one Date
-		}
 	fact calendar //facts to design the "date chain"
 		{
-			all d,d1:MidDay | (d!=d1) implies d.yesterday != d1.yesterday
-			all d:Date | d in MidDay or d in FirstDay
-			all d:LastDay | no d1:MidDay |  d1.yesterday = d
-			all d:MidDay | d not in d.^(yesterday)
-		}
-	fact todayFacts //facts to set up "Today"
-		{
-			all t:Today|t.date in FirstDay
-			always (all t:Today|t.date' not in FirstDay implies t.date in t.date'.yesterday)	
+			all d,d1:MidDay | (d!=d1) implies d.yesterday != d1.yesterday  //a day can't be "the yesterday" of more than one day
+			all d:Date | d in MidDay or d in FirstDay //a date or is "MidDay" or is a "FirstDay"
+			all d:LastDay | no d1:MidDay |  d1.yesterday = d  //the last day has no tomorrows
+			all d:MidDay | d not in d.^(yesterday)  //no "loops" ("a day can't stay before itself in the calendar")
 		}
 //profiles modeling
 	sig Mail  {}
@@ -55,8 +44,12 @@
 			advice: one InternshipAdvice,
 			student: one Student
 		}
+	fact applicationFacts
+		{
+			all a:Application| a.date = a.advice.deadline or a.date in a.advice.deadline.^(yesterday)
+				//any application must be sent within the advices deadlines
+		}
 //selection processes modeling
-	sig Score {}
 	sig SelectionProcess
 		{
 			advice: one InternshipAdvice
@@ -73,6 +66,7 @@
 	one sig LastStep extends MidStep {}
 	fact selectionCalendar //facts to design the "selection process"
 		{
+			all f1,f2:FirstStep|(f1.process = f2.process) implies (f1 = f2)
 			all d,d1:MidStep | (d!=d1) implies d.previousStep != d1.previousStep
 			all d:SelectionStep | d in MidStep or d in FirstStep
 			all d:LastStep | no d1:MidStep |  d1.previousStep = d
@@ -83,33 +77,29 @@
 			date: one Date,
 			step: one SelectionStep,
 			student: one Student,
-			score: one Score //(simplified)
 		}
 	fact selectionFacts
 		{
-			always (all s:Student |(all iv:Interview | (s in iv.student) iff (some a:Application|s in a.student and iv.step.process.advice=a.advice)))
-			always (all i:Interview|(i.date= i.step.process.advice.deadline or i.date in i.step.process.advice.deadline.tomorrows))
-					always (all s:Student| (all i,i1:Interview | (i.student=s and i1.student=s and i!=i1 and i.date in i1.date.tomorrows) implies (i1.step not in i.step.nextSteps)))
-			always (no s1,s2:FirstStep|s1!=s2 and s1.process.advice = s2.process.advice)
-			always (no s1,s2:SelectionProcess|s1!=s2 and s1.advice = s2.advice)
-		}
-	fun tomorrows [d:MidDay] : set Date
-		{
-			d.^(yesterday)
-		}
-	fun nextSteps [d:MidStep] : set SelectionStep
-		{
-			d.^(previousStep)
+			all s:Student |(all iv:Interview | (s = iv.student) iff (some a:Application|s in a.student and iv.step.process.advice=a.advice))
+				//only student applied for an advice can take part into the selection process related to that advice
+			all i:Interview| i.date  in i.step.process.advice.deadline.^yesterday
+				//an interview can't be put in a date before the deadline advice
+			all i,i1:Interview | (i.step.process = i1.step.process and i!=i1 and i.step in i1.step.^previousStep) implies (i.date in i1.date.^yesterday)
+				//two interviews (of the same process) must have dates that "respect" the order of the selection process
+			no s1,s2:SelectionProcess|s1!=s2 and s1.advice = s2.advice
+				//like one selection process is related to an advice, an advice can't have more than one selection process related
+			all s1:SelectionStep| s1 not in FirstStep implies s1.process = s1.previousStep.process
+				//a selection steps "chain" must belong to one selectionStep
+			all i,i1:Interview| (i!=i1 and i.student = i1.student) implies (i.step != i1.step)
+				//a step has only one interview for each student that take part into the process
+			all s:Student| (some i:Interview|i.student = s) implies (some a:Application|a.student = s)
+				//a student enrolled in a selection process must have an application for the related advice
 		}
 pred show
 	{
-		all a:Application | (a.date in FirstDay)
-		always (all t:Today|
-				t.date' != t.date and
-				t.date'' != t.date and t.date'' !=t.date)// and
-			//	t.date''' != t.date'' and t.date''' != t.date' and t.date''' != t.date)// and
-			//	t.date'''' != t.date''' and t.date'''' != t.date'' and t.date'''' != t.date' and t.date'''' != t.date)
-
+		#(Application) = 2
+		#(InternshipAdvice) = 2
+		#(Date) = 3
 	}
-run show for 3
+run show for 5
 
