@@ -19,8 +19,944 @@
 		\subsection{Communication Interfaces}
 	\section{Functional Requirements}
 		\subsection{Use-case diagrams}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries UC DIAGRAM}
+				\includegraphics[scale=1.0]{UC.jpg}
+				
+			\end{figure}
+			
+			The Use Case (UC) diagram shows, for each defined UC, which actors are involved and, in general, which actor initiates the UC. For UCs that can be performed by both actors (students and companies), the common name \textit{User} is used.
+			
+			
+			
 		\subsection{Use-cases}
+			
+			\begin{table} [H]
+				\centering
+				\begin{itemize}
+					\item [UC1] - Student Registration
+				\end{itemize}
+				\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+					\hline
+					Name & Student Registration \\
+					\hline
+					Actors & \parbox{5cm}{\begin{itemize}
+							\item Student
+							\end{itemize}
+						} \\
+					\hline
+					Entry condition & The student has opened the S\&C platform for the first time \\
+					\hline
+					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						\item The student press the button \textit{Registration}
+						\item The student press the button \textit{Student Registration}
+						\item The system shows a form to compile
+						\item The Student compile the form providing his institutional e-mail and password and a brief description on his academic 
+						background
+						\item The Student flags the \textit{receive 
+						notification} box (part of the form) 
+						if he wants to receive notification 
+						from the system about future 
+						published internship 
+						\item The student press the button 
+						\textit{Upload CV} to upload the 
+						curriculum (the button is part of 
+						the form)
+						\item The student press the button 
+						\textit{Register} to complete the 
+						registration
+						\end{enumerate}} \\
+					\hline 
+					Exit condition & The student has successfully registered 
+					to the platform and the system shows the 
+					homepage \\
+					\hline
+					Exception & There arleady exist a student with 
+					those e-mail; the system return to 
+					the entry condition showing an 
+					error message \textit{Student arleady 
+					registered} \\
+					\hline
+				\end{tabular}
+			\end{table}
+			
+			
+		
+			
+			\begin{table} [H]
+				\centering
+					\begin{itemize}
+					\item [UC2] - Company Registration
+				\end{itemize}
+				\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+					\hline
+					Name & Company Registration \\
+					\hline
+					Actors & \parbox{5cm}{\begin{itemize}
+							\item Company
+						\end{itemize}
+					} \\
+					\hline
+					Entry condition & The company has opened the S\&C platform for the first time \\
+					\hline
+					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+							\item The company press the button \textit{Registration}
+							\item The company press the button \textit{Company Registration}
+							\item The system shows a form to compile
+							\item The Company compile the form 
+							providing its name, a brief description 
+							of its area of expertise and business 
+							area, its e-mail and password
+							\item The Company flags the “receive 
+							notification” box (part of the form) if it 
+							wants to receive notification from the 
+							system about the availability of 
+							students who may be of its interest
+							\item The company press the button 
+							\textit{Register} to complete the 
+							registration
+					\end{enumerate}} \\
+					\hline 
+					Exit condition & The company has successfully registered 
+					to the platform and the system shows the 
+					homepage \\
+					\hline
+					Exception & There arleady exist a company with 
+					those e-mail; the system return to 
+					the entry condition showing an 
+					error message \textit{Company arleady 
+						registered} \\
+					\hline
+				\end{tabular}
+			\end{table}
+			
+		
+			
+			\begin{table} [H]
+				\centering
+					\begin{itemize}
+					\item [UC3] - User Login
+				\end{itemize}
+				\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+					\hline
+					Name & User Login \\
+					\hline
+					Actors & \parbox{5cm}{\begin{itemize}
+							\item User
+						\end{itemize}
+					} \\
+					\hline
+					Entry condition & The User has opened the S\&C platform \\
+					\hline
+					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+							\item The user press the button \textit{Login}
+							\item The system shows the Login page
+							\item The user logged to the platform 
+							inserting e-mail and password 
+							\item The user press the button \textit{Log}
+					\end{enumerate}} \\
+					\hline 
+					Exit condition & the user has successfully logged to the 
+					platform and the homepage is shown \\
+					\hline
+					Exception & The user has not yet registered to the 
+					platform; the system will return to the 
+					registration page \\
+					\hline
+				\end{tabular}
+			\end{table}
+			
+		
+			
+			\begin{table} [H]
+				\centering
+					\begin{itemize}
+					\item [UC4] - Publish Internship Advice
+				\end{itemize}
+				\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+					\hline
+					Name & Publish Internship Advice \\
+					\hline
+					Actors & \parbox{5cm}{\begin{itemize}
+							\item Company
+						\end{itemize}
+					} \\
+					\hline
+					Entry condition & The company is logged to S\&C platform \\
+					\hline
+					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+							\item The company goes to the \textit{Publish 
+							New Internship} section
+							\item The company press the button \textit{Add 
+							New Internship Advice} 
+							\item The system shows a form to compile
+							\item The company compile the form by 
+							providing: the title, the subject, a 
+							brief description of the internship, 
+							experience required and desired 
+							skills, the main activities the 
+							internship involved, the terms of the 
+							offer, the advice deadline and the 
+							max number of applications
+							\item The company press the button 
+							\textit{Publish}
+					\end{enumerate}} \\
+					\hline 
+					Exit condition & The company has successfully published a 
+					new internship advice and the system 
+					return to the homepage  \\
+					\hline
+					Exception & The company doesn’t fill all the 
+					fields of the form; the system will 
+					warn the company \\
+					\hline
+				\end{tabular}
+				\end{table}
+				
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC5] - Search of all Internships
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Search of All Internships \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The student is logged to S\&C platform  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student goes to the \textit{View 
+									Internships} section
+								\item The system shows the page with a 
+								list of all the published internships advice, 
+								listed from the most recent to the 
+								last recent  
+								\item The student select an internship advice who interested them
+						\end{enumerate}} \\
+						\hline 
+						Exit condition &  the system shows the 
+						page with all the details about the 
+						internship \\
+						\hline
+						Exception & The student doesn’t find an interesting 
+						internship; in this case he returns to the 
+						home page clicking on the button \textit{Home}
+						the system returns to the homepage 
+						 \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC6] - Search of all Companies
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Search of all Companies \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The student is logged to S\&C platform  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student goes to the \textit{View 
+									Companies} section
+								\item The system shows the page with a 
+								list of all the company registered to 
+								the sytem, listed in alphabetical 
+								order   
+								\item The student clicks on the name of 
+								the company who interested him
+								\item The system shows the list of all 
+								internships advices published by 
+								the company 
+								\item The student select an internship advice who 
+								interested them
+						\end{enumerate}} \\
+						\hline 
+						Exit condition &  the system shows the 
+						page with all the details about the 
+						internship \\
+						\hline
+						Exception & The student doesn’t find an interesting 
+						internship; in this case he returns to the 
+						home page clicking on the button \textit{Home}
+						the system returns to the homepage 
+						\\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC7] - Search an internship by name
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & -Search an internship by name \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The student is logged to S\&C platform  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student search the internship 
+								by digiting its subject on the search 
+								bar 
+								\item The student flags the appropriate 
+								options they want the internship to 
+								meet  
+								\item The systems shows a page with all 
+								the internships advices matching 
+								the subject and the options chosen 
+								\item The student select an internship who 
+								interested them
+						\end{enumerate}} \\
+						\hline 
+						Exit condition &  the system shows the 
+						page with all the details about the 
+						internship \\
+						\hline
+						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student digits a subject and no 
+								internships match it. The system 
+								will warn the student that no 
+								internships are found 
+								\item The student doesn’t find an 
+								interesting internship; in this case 
+								he returns to the home page 
+								clicking on the button \textit{Home}; the 
+								system returns to the homepage
+								\end{enumerate}} \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+					
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC8] - Internship Recommendation
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Internship Reccomendation \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the student, at registration, flags the 
+						option to receive notifications and he received an email informing him that a new internship advice has been published \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student logs to the platform  
+								\item the student goes to the \textit{Notification} 
+								section
+								\item  the student clicks on the notification 
+								related to the new internship 
+								published
+								\item the system shows the page with the 
+								details about the internship  
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & The student view the internship more in 
+						detail \\
+						\hline
+						Exception & The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the student's notification section, and the student cannot view it. \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC9] - Students Recommendation
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Students Recommendation \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the company, at registration, flags the 
+						option to receive notifications and it received an email with a list of new interesting students for one of its internships\\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The comapny logs to the platform  
+								\item the company goes to the \textit{Personal Internships} 
+								section
+								\item  the company clicks on the internship related to the notification
+								\item the company goes on the \textit{Notification} section 
+								\item the system shows the page with all the notification related to the internship
+								\item the company select the notification it has to consider
+								\item the system shows the notification with the list of the name of the students
+								\item the company clicks on one of the name
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & The company view the profile of the student more in 
+						detail \\
+						\hline
+						Exception & The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the company's notification section, and the student cannot view it. \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+			
+				
+				\begin{table} [H]
+					\centering
+						\begin{itemize}
+						\item [UC10] - Students Application Process
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Students Application process \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the student is logged to S\&C platform \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student access the page of the 
+								internship he wants to apply (in any way) 
+								\item The system shows the page of the 
+								internship 
+								\item The student click on \textit{Apply} button
+								\item  The system sends an e-mail to the 
+								company providing the internship
+								\item The company logs to the system with 
+								its credentials
+								\item The company goes to \textit{Personal 
+								Internships} section
+								\item The company select the 
+								corresponding internship
+								\item The company goes to \textit{Notification} 
+								section 
+								\item The system shows all the notification 
+								of the corresponding internship
+								\item The company select the notification 
+								of the student 
+								\item The company click on \textit{Accept 
+								Application} or\textit{Reject Application}
+								button to approve or reject the 
+								application
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & the system automatically sends an e-mail to 
+						the student to to inform whether the 
+						application has been accepted or rejected  \\
+						\hline
+						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The deadline has already passed; the 
+								system notifies the student that they 
+								cannot apply for that internship
+								\item The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the company notification section, and the company cannot view it. \\
+								\end{enumerate}} \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+			
+				
+				\begin{table} [H]
+					\centering
+						\begin{itemize}
+						\item [UC11] - Company Send of Propsal
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Company Send of Proposal \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the company is logged to S\&C platform and it already received some student through the recommendation mechanism \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item the company goes to \textit{Personal Internships} section
+								\item the company select the corresponding internship 
+								\item the company select a student for that internship
+								\item the system shows the profile of the student
+								\item the company clicks on "Send Proposal" button
+								\item the system sends an email to the student
+								\item the student logs into the platform using his credentials
+								\item The student goes to \textit{Notification} 
+								section 
+								\item the student clicks on the notification 
+								received 
+								\item The student clicks on \textit{Accept 
+									Proposal} or\textit{Reject Proposal}
+								button to approve or reject the 
+								proposal
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & the system return to the homepage \\
+						\hline
+						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student respond to the proposal when the deadline has already passed; the 
+								system notifies the student that they 
+								cannot reply to the proposal
+								\item The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the student notification section, and the company cannot view it. \\
+						\end{enumerate}} \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC12] - Selection Process Configuration
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Selection Process Configuration \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & Internship deadline is expired and the 
+						comapny is logged to S\&C platform  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The company goes to \textit{Personal 
+								Internships} section
+								\item The company select the 
+								appropriate Internship advice  
+								\item The system shows the internship 
+								advice page
+								\item  The company goes on 
+								\textit{Configuration} section
+								\item  the company configures the 
+								number of steps (up to 2), the 
+								metrics to evaluate students and 
+								the questionnaire provided at 
+								each step 
+								\item the company save the 
+								configuration clicking on \textit{Save}
+								button 
+								\item the company goes on \textit{Students 
+								Applied} section
+								\item the system shows a page with all 
+								the students applied for the 
+								internship 
+								\item the company decided, for each 
+								candidate, the date of each step
+								\item the company click on the button 
+								\textit{Save}
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & The selection process is now configured 
+						for each student; the system 
+						automatically sends an e-mail to the 
+						students to inform them   \\
+						\hline
+						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item the company has not configured 
+								every part; the system warn the 
+								company
+								\item The company has not assigned 
+								the respective dates for each 
+								student \\
+						\end{enumerate}} \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC15] - Collection of Student Selection Process Feedbacks
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Collection of Student Selection Process Feedbacks \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the selection process is complete and the student has arleady received the email with the result of the interview \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The student logs into the platform with his credentials
+								\item The student goes to the \textit{Notification} Section
+								\item The system shows the page with all the notifications for the student
+								\item The student open the notification related to the selection process result 
+								\item The student open the questionnaire attached to the notification
+								\item The system shows a form with a series of questions to answer
+								\item The student answers to the questions 
+								\item The student clicks the button \textit{Submit} to submit the feedback
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & the feedback is submitted; the system collects the feedback in order to improve the recommendation 
+						mechanism \\
+						\hline
+						Exception & the student doesn't answer to all the questions when he tries to submit; the system shows a warn message \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC16] - Collection of Company Selection Process Feedbacks
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Collection of Company Selection Process Feedbacks \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The company is logged to S\&C platform and it completed a selection process  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The company goes to \textit{Personal Internships} section
+								\item The system shows a page with 
+								all the internships advice of the company  
+								\item The company select the interested 
+								internship  
+								\item the company opens the form in the page of the internship
+								\item the system shows a form with a series of questions to answer 
+								\item the company answers to the questions
+								\item the company clicks on the button \textit{Submit}
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & the feedback is submitted;the system collects the
+						feedback in order to improve the recommendation
+						mechanism \\
+						\hline
+						Exception & the company doesn't answer to all the questions when he tries to submit; the system shows a warn message \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+						\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC17] - Collection of Internship Feedbacks
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Collection of Internships Feedback \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item User
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The User is logged to S\&C platform and it completed an internship \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The user goes to \textit{Ongoing Internships} section
+								\item The system shows a page with 
+								all the ongoing internships of the user 
+								\item The User select the interested 
+								internship  
+								\item the User opens the form in the page of the internship
+								\item the system shows a form with a series of questions to answer 
+								\item the User answers to the questions
+								\item the User clicks on the button \textit{Submit}
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & thefeedback is submitted;the system collects the
+						feedback inorder to improve the recommendation
+						mechanism \\
+						\hline
+						Exception & the user doesn't answer to all the questions when he tries to submit; the system shows a warn message \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC18] - Collection of Complaints
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Collection of Complaints \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item User
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The user is logged to S\&C platform, 
+						and there is an ongoing internship in 
+						which it is involved.  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The user goes on \textit{Ongoing 
+								Internships} section 
+								\item The system shows a page with 
+								all the ongoing internships 
+								related to the user  
+								\item The user select the interested 
+								internship  
+								\item The system shows the page 
+								where the user can monitor the 
+								execution of the internship
+								\item The user write a complaint 
+								using the apposite box (max 200 
+								worlds) 
+								\item The user click on the \textit{Submit}
+								button
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & The complaint has been submitted; 
+						the system collect the complain 
+						related to the internship \\
+						\hline
+						Exception & The complain exceed the max number 
+						of worlds (200); the system warn the 
+						user that the complaint is too long \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+					\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC19] - Company Cancellation
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Company Cancellation \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The company is logged to S\&C platform \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item the company press the button \textit{Delete Profile}
+								\item The system automatically delete 
+								all the internship advice of the 
+								company 
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & Now the company is not registered to 
+						the platform; the system shows the sign
+						in page  \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC20] - Student Cancellation
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Student Cancellation \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & The student is logged to S\&C platform \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item the student press the button \textit{Delete Profile}
+								\item The system automatically delete 
+								all the applications of the student
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & Now the student is not registered to 
+						the platform; the system shows the sign
+						in page  \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
 		\subsection{Sequence diagrams}
+		
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC1] - Student Registration}
+				\includegraphics[scale=0.3]{StudentRegistration.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC2] - Company Registration}
+				\includegraphics[scale=0.3]{CompanyRegistration.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC3] - User Login}
+				\includegraphics[scale=0.3]{UserLogin.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC4] - Publish Internship Advice}
+				\includegraphics[scale=0.3]{PublishInternshipAdvice.jpg}
+				
+			\end{figure}
+			
+		
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC5] - Search of all Internships}
+				\includegraphics[scale=0.3]{SearchAllInternships.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC6] - Search of All Companies}
+				\includegraphics[scale=0.3]{SearchAllCompanies.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC7] - Search an Internship by Name}
+				\includegraphics[scale=0.3]{SearchByName.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC8] - Internship Recommendation}
+				\includegraphics[scale=0.3]{InternshipRecommendation.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC9] - Students Recommendation}
+				\includegraphics[scale=0.3]{StudentsRecommendation.jpg}
+				
+			\end{figure}
+			
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC10] - Student Application Process}
+				\includegraphics[scale=0.3]{StudentApplicationProcess.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC11] - Company Send of Proposal}
+				\includegraphics[scale=0.3]{CompanyProposal.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC12] - Selection Process Configuration}
+				\includegraphics[scale=0.3]{ProcessConfiguration.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC15] - Collection of Student Selection Process Feedbacks}
+				\includegraphics[scale=0.3]{StudentFeedback.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC16] - Collection of Company Selection Process Feedbacks}
+				\includegraphics[scale=0.3]{CompanyFeedback.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC17] - Collection of Internships Feedbacks}
+				\includegraphics[scale=0.3]{InternshipFeedback.jpg}
+				
+			\end{figure}
+			
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC18] - Collection of Complaints}
+				\includegraphics[scale=0.3]{CollectionComplaints.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC19] - Company Cancellation}
+				\includegraphics[scale=0.3]{CompanyCancellation.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC20] - Student Cancellation}
+				\includegraphics[scale=0.3]{StudentCancellation.jpg}
+				
+			\end{figure}
 		\subsection{Activity diagrams}
 		\subsection{Requirements mapping}
 			\begin{table} [h!]

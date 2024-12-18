@@ -1,22 +1,15 @@
-\xpginauxfiletrue 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\setforeignlanguage {english}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Requirements mapping for goal G1}}{10}{table.caption.12}%
-\setforeignlanguage {english}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Requirements mapping for goal G2}}{11}{table.caption.13}%
-\setforeignlanguage {english}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Requirements mapping for goal G3}}{11}{table.caption.14}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces \selectlanguage *[]{english}Requirements mapping for goal G1}}{41}{table.caption.53}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces \selectlanguage *[]{english}Requirements mapping for goal G2}}{42}{table.caption.54}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces \selectlanguage *[]{english}Requirements mapping for goal G3}}{42}{table.caption.55}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\setforeignlanguage {english}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Commands to add a particular entry to the table of contents.}}{28}{table.caption.17}%
-\setforeignlanguage {english}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Some non-standard paper sizes supported by kaobook.}}{29}{table.caption.18}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces \selectlanguage *[]{english}Commands to add a particular entry to the table of contents.}}{59}{table.caption.58}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces \selectlanguage *[]{english}Some non-standard paper sizes supported by kaobook.}}{60}{table.caption.59}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\xpginauxfilefalse 
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file
