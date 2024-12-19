@@ -91,13 +91,29 @@
 		\subsection{High-level class diagram}
 			\includegraphics{class_diagram(NO NOT).jpg}
 			
-			This is the entire high-level class diagram. Due to the fact that it is quite large, perhaps it is convenient to divide it into four parts:
+			This figure represent the domain class diagram of the system. It represents the fact that the system connects students and companies, facilitating the management of applications, selection processes, interviews, internships, and communication between the parties. It provides tools for sending notifications, collecting feedback, and managing questionnaire and complaints.
+			
+			The system's users are modeled through the \textit{User} class, which represents both Students (class \textit{Student}) and Companies (class \textit{Company}). Each user has basic attributes (email and password) and can receive personalized notifications (class \textit{Notification}, with subtypes for students and companies).
+			
+			Companies can publish internships advice (class \textit{InternshipAdvice}), and a student's application for an internship is managed by the \textit{Application} class. Company can also send a proposal of application (class \textit{Proposal)} to a student for one of its internships advice.
+			
+			Each application can go through a \textit{SelectionProcess}, divided into several \textit{SelectionStep}. During the selection process, the student may undergo an interview (\textit{Interview} class) and his answers are collected by the system through questionnaires (\textit{Questionnaire} class).
+			
+			Internship advice is associated with a concrete Internsihp (class \textit{Internship}) offered by companies; Internships are linked to feedback (\textit{InternshipFeedback}) and complaints (\textit{Complain}). 
+			The system supports the collection of feedback in two forms:
 			\begin{itemize}
-				\item \emph{application part}: \textsc{User} is specialized into \textsc{Company} (which publishes \textsc{InternshipAdvice}) and \textsc{Student} (which applies for \textsc{InternshipAdvice});
-				\item \emph{selection part}: each \textsc{InternshipAdvice} is related to \textsc{SelectionProcess}, which is made up of a number of \textsc{SelectionStep}s that actualize in \textsc{Interviews}s for the students currently enrolled in the selection process;
-				\item \emph{notification part}: both user categories may receive notifications, in particular (for simplicity they are not detailed into the diagram);
-				\item \emph{feedback\&complaints part}: \textsc{User}s can upload \textsc{Feedback}s and \textsc{Complaint}s.
+				\item \textit{SelectionFeedback}: feedback on the selection processes.
+				\item {InternshipFeedback}: feedback related to internships
+			
 			\end{itemize}
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			\subsection{State Diagrams}
 				In this subsection, the most relevant state diagrams are presented in order to better understand the system's evolution through its different phases. We focus in particular on the representation of an internship's state and the evolution of a student's application.
@@ -107,7 +123,7 @@
 						\includegraphics[scale=0.3]{stateInternship.jpg}
 					\end{center}
 					
-					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Terminated} is the state where the internship has ended (either because it finished or was interrupted); \textit{Closed} is the state where the internship is removed from the system (the company deletes the internship advice).
+					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Closed} is the state where the internship has ended (either because it finished or was interrupted); \textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice).
 					
 				\subparagraph{State of an application for an internship}
 					\begin{center}
@@ -179,6 +195,6 @@
 				according to the GDPR. This means that users should be always able to request their data
 				\item The data collected for matching (feedback, ...) are sufficiently detailed to support effective statistical analysis.
 				\item The number of students and companies using the platform will be manageable by the system without compromising its performance
-				\item To better protect the users’ sensitive information their data should be encrypted
+				\item To better protect the users’ sensitive information their data should be encrypted (An example is the digital signature on CVs)
 			\end{itemize}
 		

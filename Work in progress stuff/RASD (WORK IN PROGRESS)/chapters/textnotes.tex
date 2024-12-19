@@ -15,10 +15,92 @@
 	\section{External Interface Requirements}
 		\subsection{User Interfaces}
 		\subsection{Hardware Interfaces}
+			There are no specific hardware interfaces required, except for the devices used to access the platform. Both students and companies need a hardware device (such as a computer) with an internet connection to access S\&C.
 		\subsection{Software Interfaces}
+				To manage the sending of all notifications (recommendation notifications, notifications for selection results, etc.) between two or more users, the \textit{mail service} must be used. In fact, both students and companies are required to provide their email address (university/company email) during registration. Every time the system sends a notification to a user, they will receive an email informing them of the received notification. To view the content of the notification in more detail, the user must log into the system and go to the appropriate section of the platform.
+				
+				To do this, the system will send a request to the mail service, which will then forward the desired email to the specific user.
+	
+	
 		\subsection{Communication Interfaces}
+			
+			Both students and companies use the internet to access the platform; in particular, companies require an internet connection for all the functionalities they can perform through the platform (posting internship advice, configuring the selection process, etc.). Similarly, students also need an internet connection for their functionalities (searching for internships, applying, etc.).
+			
+			The backend of the system will expose a unified REST compliant API to communicate with all clients using HTTPS and TCP/IP.
 	\section{Functional Requirements}
-		\subsection{Use-case diagrams}
+	
+		Here are described all the functional requirements of the S\&C platform:
+		
+		
+		[R00000] when a notification of a user is generated, the user receives it on its mailbox (in a more concise version) and can consult it on its notification section
+		
+		[R10101] the system allows students to sign up to the platform with their institutional mails
+		
+		[R10102] the system allows a student to set up whether he/she wants to take part into the recommendation
+		
+		[R10103] the system allows students upload their CV to the platform
+		
+		[R10104] the system allows students to publish on their profile a brief description of themselves
+		
+		[R10105] when a CV is uploaded,the system verifies if it is digitally signed by the profile mail
+		
+		[R10106] the system allows students to log in into the system by providing the registration mail and the chosen	password
+		
+		[R10107] the system allows students to change their profile information (including the CV) and their access information
+		
+		[R10201] the system allows companies to sign up to the platform with their company address
+		
+		[R10202] the system allows companies to insert the main information regarding their business area and area of expertise
+		
+		[R10203] the system allows a company to set up if it wants to take part into the recommendation analysis
+		
+		[R10204] the system allows companies to log in into the system by providing the registration mail and the chosen password
+		
+		[R10205] the system allows companies to change their profile information and their access information
+		
+		[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms) and the submission deadline
+		
+		[R10401] the system allows students to search internships advice by name (and also to see the complete list of available advice). The system shall act as a search engine to present also the names of the advice that are similar to the searched one
+		
+		[R10402] the system allows students to search companies by name (and also to see the complete list of registered companies) and then access to their profile
+		
+		[R10403] the system allows students to filter the results they searched (e.g. ”only paid internships”, ”only companies located in Lombardy”)
+		
+		[R10501] whenthesystem recognizes that a new internship advice that might interest a student (that allowed the recommendation option) published, it notifies that student by sending him an e-mail (to its registration address)
+		
+		[R10601] when the system recognizes that a student has a profile that would fit an internship advice, thecompany that published the advice is notified (for students and companies that both take part into the recommendation analysis)
+		
+		[R10701] the system allows students to apply for any internship advice which deadline has not expired
+		
+		[R10702] when a student applies for an internship, the related company is notified by the system
+		
+		[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students)
+		
+		[R20102] the system includes into a selection process only student that had an accepted application for the relative internship advice
+		
+		[R20201] the system notifies students for any interview date
+		
+		[R20202] the system automatically calculates the scores of questionnaire closed answers
+		
+		[R20203] the system allows companies to manually insert scores for questionnaire open answers
+		
+		[R20204] the system allows companies to visualize and compare selections scores
+		
+		[R20205] in any selection phase, the system allows companies to discard a student currently involved in the selection process (discarded students are removed by the selection process)
+		
+		[R20206] in any selection phase, the system allows companies to accept a student currently involved in the selection process (accepted students are removed by the selection process)
+		
+		[R20207] the system allows companies to write a personalized message to communicate the result of a selection
+		
+		[R20208] when a selection result is prepared for a student (with the relative message), it is notified to the student
+		
+		[R30101] the system allows students and companies to consult the internships (ongoing or finished)
+		
+		[R30102] the system allows students and companies to report complaints on the internships they are involved in
+		
+		[R30103] the system does not allow users different from their creator to consult complains
+		
+		\subsection{Use-case diagram}
 			
 			\begin{figure}[H]
 				\centering
@@ -917,21 +999,21 @@
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC15] - Collection of Student Selection Process Feedbacks}
+				{\bfseries [UC14] - Collection of Student Selection Process Feedbacks}
 				\includegraphics[scale=0.3]{StudentFeedback.jpg}
 				
 			\end{figure}
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC16] - Collection of Company Selection Process Feedbacks}
+				{\bfseries [UC15] - Collection of Company Selection Process Feedbacks}
 				\includegraphics[scale=0.3]{CompanyFeedback.jpg}
 				
 			\end{figure}
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC17] - Collection of Internships Feedbacks}
+				{\bfseries [UC16] - Collection of Internships Feedbacks}
 				\includegraphics[scale=0.3]{InternshipFeedback.jpg}
 				
 			\end{figure}
@@ -939,25 +1021,35 @@
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC18] - Collection of Complaints}
+				{\bfseries [UC17] - Collection of Complaints}
 				\includegraphics[scale=0.3]{CollectionComplaints.jpg}
 				
 			\end{figure}
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC19] - Company Cancellation}
+				{\bfseries [UC18] - Company Cancellation}
 				\includegraphics[scale=0.3]{CompanyCancellation.jpg}
 				
 			\end{figure}
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC20] - Student Cancellation}
+				{\bfseries [UC19] - Student Cancellation}
 				\includegraphics[scale=0.3]{StudentCancellation.jpg}
 				
 			\end{figure}
 		\subsection{Activity diagrams}
+		
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC13] - Selection process Running}
+				\includegraphics[scale=0.3]{ProcessRun.jpg}
+				
+			\end{figure}
+			
+			in the figure it is represented the activity diagram associated do the selection process running UC; in this case we prefer use an activity diagram to represent also the interaction, during the selection interview, between the 2 actors without explicitly using the system; in fact, the filling of the questionnaire and the oral answers are all done without the use of the system; then, to collect the answers, the company use the system and the student receive a notification with the outcome of the interview for this step (Accepted, Rejected, Suspended)
+		
 		\subsection{Requirements mapping}
 			\begin{table} [h!]
 				\centering
@@ -1080,8 +1172,29 @@
 		The recommendation system should produce its results with at most 1 week of distance from the last time it produced them.
 	\section{Design Constraints}
 		\subsection{Standards compliance}
+			\begin{itemize}
+				\item Since S\&C uses personal data of users, it is necessary that the platform is in compliance with the General Data 		 Protection 	Regulation (GDPR), a regulation in EU law on data protection and privacy for all individuals within the European Union (EU) and the European Economic Area (EEA).
+				
+				\item The CVs uploaded by students on the platform must necessarily be in the EUROPASS format in order to be processed by the system.
+			\end{itemize}
+			
 		\subsection{Hardware limitations}
+		
+			To make the best use of the platform, it is necessary that the devices used to access it meet the following requirements:
+			
+			\begin{itemize}
+				\item \textbf{CPU}: minimum Intel i3 is required, but for better performance, Intel i5 is recommended.
+				\item \textbf{RAM}: minimum 4 GB of RAM for users who use the platform in a relatively simple way, such as sending CVs or applying for internships.
+				\item\textbf{Internet Connection}: a stable connection of 5 Mbps is required for a smooth experience. This would support navigation on the platform and viewing content. Slower connections may lead to long loading times on pages with a lot of data.
+				\item \textbf{Screen Resolution}: Users should have devices with screens of at least 1280x720 px to ensure a good visual experience.
+			\end{itemize}
+			
+			
+			\textbf{OBS}: The platform is designed to be developed as a desktop application rather than as a web app or smartphone application. Therefore, the use of a computer is required.
+			
+			
 		\subsection{Other constraints}
+			The platform is designed to allow companies to advertise their internships and for students to find internships relevant to their studies. No overly complicated functionality is required; therefore, the UI must be user-friendly to allow users to navigate the platform easily.
 	\section{Software System Attributes}
 		\subsection{Reliability}
 			Considering the criticality of the information managed by the application (e.g. interview dates, CV, e-mail addresses) we require an high level of reliability in each sub-part of the system.
@@ -1104,6 +1217,13 @@
 				\item uploaded CV should be scanned to ensure that they don't contain viruses.
 			\end{itemize}
 		\subsection{Maintainability}
+			For S\&C, which manages multiple users (students and companies) and handles a large amount of sensitive data, maintainability is a crucial aspect:
+			\begin{itemize}
+				\item the code has to bell well documented and tested; in particular, a testing routine has to be provided to check if the system still work or not.
+				\item The system structure should provide the ability to deploy updates in the backend without the users noticing it
+				\item to facilitate maintainability, system components should be created to be as modular as possible
+			\end{itemize}
+			
 			
 		\subsection{Portability}
 			We highlight the fact that the application targets are students and companies that may use operative systems of any kind, therefore portability should be increased, in order to spread the audience. On the other hand, non-desktop devices (such as mobile devices, smartwatches ecc.) are not an huge concern of this kind of application, so we don't put much effort on emphasizing the portability also in this direction. At the end, we encourage portability but we ask for it at least for general purposes desktop operative systems.
