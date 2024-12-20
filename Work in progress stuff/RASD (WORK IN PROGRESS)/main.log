@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.16)  19 DEC 2024 17:57
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.16)  20 DEC 2024 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4510,30 +4510,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 684--684
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
-Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
-guage=dflt;mapping=tex-text;!
-Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
-guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 6125) in paragraph at lines 716--716
-[]\TU/EBGaramond(2)/m/n/10 The system shows the page
+Underfull \hbox (badness 5924) in paragraph at lines 725--725
+\TU/EBGaramond(2)/m/n/10 dent the questionnaire with
  []
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
-Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
-guage=dflt;mapping=tex-text;!
-Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
-guage=dflt;mapping=tex-text;!
-Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
-guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 5417) in paragraph at lines 716--716
+Underfull \hbox (badness 5417) in paragraph at lines 725--725
 []\TU/EBGaramond(2)/m/n/10 The student answers to the
  []
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 1331) in paragraph at lines 725--725
+[]\TU/EBGaramond(2)/m/n/10 The company asks some oral
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 725--725
+\TU/EBGaramond(2)/m/n/10 questions (if they are config-
+ []
+
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 3158) in paragraph at lines 725--725
+[]\TU/EBGaramond(2)/m/n/10 The student answers to oral
+ []
+
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 1173) in paragraph at lines 725--725
+\TU/EBGaramond(2)/m/n/10 propriate button to send the
+ []
+
 
 
 \openout4 = `main1.mw'.
@@ -4548,6 +4586,13 @@ Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;l
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 6125) in paragraph at lines 761--761
+[]\TU/EBGaramond(2)/m/n/10 The system shows the page
+ []
+
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
@@ -4555,8 +4600,8 @@ guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 2961) in paragraph at lines 753--753
-[]\TU/EBGaramond(2)/m/n/10 the company answers to the
+Underfull \hbox (badness 5417) in paragraph at lines 761--761
+[]\TU/EBGaramond(2)/m/n/10 The student answers to the
  []
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
@@ -4581,6 +4626,11 @@ Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;l
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 2961) in paragraph at lines 798--798
+[]\TU/EBGaramond(2)/m/n/10 the company answers to the
+ []
+
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 
@@ -4599,11 +4649,8 @@ Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;l
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
-
-Underfull \hbox (badness 6125) in paragraph at lines 838--838
-[]\TU/EBGaramond(2)/m/n/10 The system shows the page
- []
-
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
@@ -4620,27 +4667,52 @@ Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;l
 guage=dflt;mapping=tex-text;!
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 873--873
+Underfull \hbox (badness 6125) in paragraph at lines 883--883
+[]\TU/EBGaramond(2)/m/n/10 The system shows the page
+ []
+
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+
+
+\openout4 = `main1.mw'.
+
+[28] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
+guage=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--918
 []\TU/EBGaramond(2)/m/n/10 The system automatically
  []
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 1577) in paragraph at lines 903--903
+Underfull \hbox (badness 1577) in paragraph at lines 948--948
 []\TU/EBGaramond(2)/m/n/10 the student press the button
  []
 
 Missing character: There is no 𝛼 in font EB Garamond Regular/OT:script=latn;lan
 guage=dflt;mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--903
+Underfull \hbox (badness 10000) in paragraph at lines 948--948
 []\TU/EBGaramond(2)/m/n/10 The system automatically
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 903--903
+Underfull \hbox (badness 2573) in paragraph at lines 948--948
 \TU/EBGaramond(2)/m/n/10 delete all the applications of
  []
 
@@ -4648,7 +4720,7 @@ Underfull \hbox (badness 2573) in paragraph at lines 903--903
 
 \openout4 = `main1.mw'.
 
-[28] (main1.mw)
+[29] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/StudentRegistration.jpg Graphic file (type bmp)
@@ -4659,7 +4731,7 @@ File: images/CompanyRegistration.jpg.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[29] (main1.mw)
+[30] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UserLogin.jpg.png Graphic file (type bmp)
@@ -4670,7 +4742,7 @@ File: images/PublishInternshipAdvice.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[30] (main1.mw)
+[31] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/SearchAllInternships.jpg Graphic file (type bmp)
@@ -4681,7 +4753,7 @@ File: images/SearchAllCompanies.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[31] (main1.mw)
+[32] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/SearchByName.jpg Graphic file (type bmp)
@@ -4692,7 +4764,7 @@ File: images/InternshipRecommendation.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[32] (main1.mw)
+[33] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/StudentsRecommendation.jpg Graphic file (type bmp)
@@ -4701,7 +4773,7 @@ File: images/StudentsRecommendation.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[33] (main1.mw)
+[34] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/StudentApplicationProcess.jpg Graphic file (type bmp)
@@ -4710,7 +4782,7 @@ File: images/StudentApplicationProcess.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[34] (main1.mw)
+[35] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CompanyProposal.jpg Graphic file (type bmp)
@@ -4719,7 +4791,7 @@ File: images/CompanyProposal.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[35] (main1.mw)
+[36] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/ProcessConfiguration.jpg Graphic file (type bmp)
@@ -4728,7 +4800,7 @@ File: images/ProcessConfiguration.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[36] (main1.mw)
+[37] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/StudentFeedback.jpg Graphic file (type bmp)
@@ -4737,7 +4809,7 @@ File: images/StudentFeedback.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[37] (main1.mw)
+[38] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CompanyFeedback.jpg Graphic file (type bmp)
@@ -4746,7 +4818,7 @@ File: images/CompanyFeedback.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[38] (main1.mw)
+[39] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/InternshipFeedback.jpg Graphic file (type bmp)
@@ -4755,7 +4827,7 @@ File: images/InternshipFeedback.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[39] (main1.mw)
+[40] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CollectionComplaints.jpg Graphic file (type bmp)
@@ -4764,7 +4836,7 @@ File: images/CollectionComplaints.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[40] (main1.mw)
+[41] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CompanyCancellation.jpg Graphic file (type bmp)
@@ -4775,7 +4847,7 @@ File: images/StudentCancellation.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[41] (main1.mw)
+[42] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/ProcessRun.jpg Graphic file (type bmp)
@@ -4784,28 +4856,21 @@ File: images/ProcessRun.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[42] (main1.mw)
-\openout4 = `main1.mw'.
-
-
-
-LaTeX Warning: Float too large for page by 384.04114pt on input line 1120.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-\openout4 = `main1.mw'.
-
 [43] (main1.mw)
 \openout4 = `main1.mw'.
+
+
+
+LaTeX Warning: Float too large for page by 384.04114pt on input line 1165.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
@@ -4825,7 +4890,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout4 = `main1.mw'.
 
-[46
+[46] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+
+\openout4 = `main1.mw'.
+
+[47
 
 ] (main1.mw)
 \openout4 = `main1.mw'.
@@ -4834,7 +4906,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout4 = `main1.mw'.
 
-[47] (main1.mw)
+[48] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -4856,7 +4928,7 @@ File: images/calendar1.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[48
+[49
 
 
 ] (main1.mw)
@@ -4868,7 +4940,7 @@ File: images/calendar2.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[49] (main1.mw)
+[50] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/model1-1.png Graphic file (type bmp)
@@ -4879,7 +4951,7 @@ File: images/model1-2.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[50] (main1.mw)
+[51] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/model1-3.png Graphic file (type bmp)
@@ -4890,7 +4962,7 @@ File: images/model1-4.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[51] (main1.mw)
+[52] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/model1-5.png Graphic file (type bmp)
@@ -4899,7 +4971,7 @@ File: images/model1-5.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[52] (main1.mw)
+[53] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/model2-1.png Graphic file (type bmp)
@@ -4910,7 +4982,7 @@ File: images/model2-2.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[53] (main1.mw)
+[54] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/model2-3.png Graphic file (type bmp)
@@ -4921,14 +4993,14 @@ File: images/model2-4.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[54] (main1.mw)
+[55] (main1.mw)
 \openout4 = `main1.mw'.
 
 ) (chapters/references.tex
 
 \openout4 = `main1.mw'.
 
-[55] (main1.mw)
+[56] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -4943,28 +5015,28 @@ Overfull \hbox (30.38211pt too wide) in paragraph at lines 3--3
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Visscher2008' on page 56 undefined on input line 9.
+LaTeX Warning: Citation 'Visscher2008' on page 57 undefined on input line 9.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'James2013' on page 56 undefined on input line 9.
+LaTeX Warning: Citation 'James2013' on page 57 undefined on input line 9.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Visscher2008' on page 56 undefined on input line 9.
+LaTeX Warning: Citation 'Visscher2008' on page 57 undefined on input line 9.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'James2013' on page 56 undefined on input line 9.
+LaTeX Warning: Citation 'James2013' on page 57 undefined on input line 9.
 
 
 Overfull \hbox (44.184pt too wide) in paragraph at lines 9--9
@@ -4982,21 +5054,21 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 15.
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'James2013' on page 56 undefined on input line 15.
+LaTeX Warning: Citation 'James2013' on page 57 undefined on input line 15.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'James2013' on page 56 undefined on input line 15.
+LaTeX Warning: Citation 'James2013' on page 57 undefined on input line 15.
 
 
 Overfull \hbox (34.888pt too wide) in paragraph at lines 15--15
 [][] 
  []
 
-Package marginnote Info: Margin note 60.1 is on absolute page 60 on input line 
+Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 
 26.
 Package marginnote Info: right page because not two side mode on input line 26.
 
@@ -5470,14 +5542,14 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 62.
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Battle2014' on page 56 undefined on input line 62.
+LaTeX Warning: Citation 'Battle2014' on page 57 undefined on input line 62.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Battle2014' on page 56 undefined on input line 62.
+LaTeX Warning: Citation 'Battle2014' on page 57 undefined on input line 62.
 
 
 Overfull \hbox (35.52802pt too wide) in paragraph at lines 62--62
@@ -5490,14 +5562,14 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 77.
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Zou2005' on page 56 undefined on input line 77.
+LaTeX Warning: Citation 'Zou2005' on page 57 undefined on input line 77.
 
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'Zou2005' on page 56 undefined on input line 77.
+LaTeX Warning: Citation 'Zou2005' on page 57 undefined on input line 77.
 
 
 Overfull \hbox (29.56pt too wide) in paragraph at lines 77--77
@@ -5508,7 +5580,7 @@ Overfull \hbox (29.56pt too wide) in paragraph at lines 77--77
 
 \openout4 = `main1.mw'.
 
-[56
+[57
 
 
 ] (main1.mw)
@@ -5722,7 +5794,7 @@ Overfull \hbox (16.688pt too wide) in paragraph at lines 127--127
 \TU/EBGaramond(2)/m/n/8 dows. 
  []
 
-Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 
+Package marginnote Info: Margin note 62.1 is on absolute page 62 on input line 
 147.
 Package marginnote Info: right page because not two side mode on input line 147
 .
@@ -5932,7 +6004,7 @@ Overfull \hbox (13.84799pt too wide) in paragraph at lines 147--147
 \TU/EBGaramond(2)/m/n/8 cally. 
  []
 
-Package marginnote Info: Margin note 61.2 is on absolute page 61 on input line 
+Package marginnote Info: Margin note 62.2 is on absolute page 62 on input line 
 178.
 Package marginnote Info: right page because not two side mode on input line 178
 .
@@ -6176,7 +6248,7 @@ Overfull \hbox (16.12799pt too wide) in paragraph at lines 178--178
 
 \openout4 = `main1.mw'.
 
-[57] (main1.mw)
+[58] (main1.mw)
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
@@ -6474,14 +6546,14 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
 
 \openout4 = `main1.mw'.
 
-[58] (main1.mw)
+[59] (main1.mw)
 \openout4 = `main1.mw'.
 
 )
 
 \openout4 = `main1.mw'.
 
-[59] (main1.mw)
+[60] (main1.mw)
 \openout4 = `main1.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -6524,7 +6596,7 @@ LaTeX Font Info:    Font shape `TU/LibertinusSans(0)/b/n' will be
 
 \openout4 = `main1.mw'.
 
-[60
+[61
 
 
 
@@ -7078,7 +7150,7 @@ Overfull \hbox (17.944pt too wide) in paragraph at lines 52--52
 
 \openout4 = `main1.mw'.
 
-[61
+[62
 
 
 ] (main1.mw)
@@ -7330,7 +7402,7 @@ Overfull \hbox (17.696pt too wide) in paragraph at lines 104--104
 [][][]\TU/EBGaramond(2)/m/n/8 TOC[][]. 
  []
 
-Package marginnote Info: Margin note 66.1 is on absolute page 66 on input line 
+Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 
 136.
 Package marginnote Info: right page because not two side mode on input line 136
 .
@@ -7424,7 +7496,7 @@ Overfull \hbox (14.776pt too wide) in paragraph at lines 136--136
 
 \openout4 = `main1.mw'.
 
-[62] (main1.mw)
+[63] (main1.mw)
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
@@ -7500,7 +7572,7 @@ Overfull \hbox (156.25pt too wide) in paragraph at lines 154--171
 [][] 
  []
 
-Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 
+Package marginnote Info: Margin note 68.1 is on absolute page 68 on input line 
 171.
 Package marginnote Info: right page because not two side mode on input line 171
 .
@@ -7749,7 +7821,7 @@ Overfull \hbox (14.51999pt too wide) in paragraph at lines 202--202
 
 \openout4 = `main1.mw'.
 
-[63] (main1.mw)
+[64] (main1.mw)
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
@@ -8046,7 +8118,7 @@ Overfull \hbox (22.504pt too wide) in paragraph at lines 295--295
 \openout4 = `main1.mw'.
 
 
-LaTeX Warning: Citation 'James2013' on page 64 undefined on input line 296.
+LaTeX Warning: Citation 'James2013' on page 65 undefined on input line 296.
 
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(2)/b/it/10'.
@@ -8055,7 +8127,7 @@ Package microtype Info: Character `156' is missing
 
 \openout4 = `main1.mw'.
 
-[64] (main1.mw)
+[65] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -8443,7 +8515,7 @@ Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
 
 \openout4 = `main1.mw'.
 
-[65
+[66
 
 
 ] (main1.mw)
@@ -8592,7 +8664,7 @@ Overfull \hbox (17.48pt too wide) in paragraph at lines 116--116
 \TU/EBGaramond(2)/m/n/8 boxes. 
  []
 
-Package marginnote Info: Margin note 70.1 is on absolute page 70 on input line 
+Package marginnote Info: Margin note 71.1 is on absolute page 71 on input line 
 133.
 Package marginnote Info: right page because not two side mode on input line 133
 .
@@ -8828,7 +8900,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 149.
-Package marginnote Info: Margin note 70.2 is on absolute page 71 on input line 
+Package marginnote Info: Margin note 71.2 is on absolute page 72 on input line 
 162.
 Package marginnote Info: right page because not two side mode on input line 162
 .
@@ -8940,14 +9012,14 @@ Package mdframed Info: mdframed inside a box
 
 \openout4 = `main1.mw'.
 
-[66] (main1.mw)
+[67] (main1.mw)
 \openout4 = `main1.mw'.
 
 )
 
 \openout4 = `main1.mw'.
 
-[67] (main1.mw)
+[68] (main1.mw)
 \openout4 = `main1.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -8988,7 +9060,7 @@ part without number
 
 \openout4 = `main1.mw'.
 
-[68
+[69
 
 
 
@@ -9001,7 +9073,7 @@ chapter A.
 
 \openout4 = `main1.mw'.
 
-[69
+[70
 
 
 ] (main1.mw)
@@ -9011,14 +9083,14 @@ chapter A.
 
 \openout4 = `main1.mw'.
 
-[70] (main1.mw)
-\openout4 = `main1.mw'.
-
-
-
-\openout4 = `main1.mw'.
-
 [71] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+
+\openout4 = `main1.mw'.
+
+[72] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -9073,7 +9145,7 @@ original language. There
 
 \openout4 = `main1.mw'.
 
-[72
+[73
 
 
 ] (main1.mw)
@@ -9085,7 +9157,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 
 \openout4 = `main1.mw'.
 
-[73] (main1.mw)
+[74] (main1.mw)
 \openout4 = `main1.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -9140,7 +9212,7 @@ No file main.gls.
 
 \openout4 = `main1.mw'.
 
-[74
+[75
 
 
 
@@ -9163,7 +9235,7 @@ runsystem(makeindex main.idx)...executed safely (allowed).
 
 \openout4 = `main1.mw'.
 
-[75
+[76
 
 
 
@@ -9993,12 +10065,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63998 strings out of 408758
- 1297645 string characters out of 5747653
+ 64003 strings out of 408758
+ 1297685 string characters out of 5747653
  3037474 words of memory out of 5000000
  84414 multiletter control sequences out of 15000+600000
  567951 words of font info for 162 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,159p,10920b,4273s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (79 pages).
+Output written on main.pdf (80 pages).

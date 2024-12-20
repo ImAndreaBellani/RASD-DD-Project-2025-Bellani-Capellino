@@ -690,7 +690,52 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC15] - Collection of Student Selection Process Feedbacks
+						\item [UC13] - Selection Process Running
+					\end{itemize}
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Selection Process Running \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Student
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & Internship deadline is expired, the company configure the selection process and it has ready to start \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+								\item The company gives to the sudent the questionnaire with closed and open questions
+								\item The student answers to the questionnaire
+								\item The company asks some oral questions (if they are configured in this step)
+								\item The student answers to oral questions
+								\item The company logs to the platform 
+								\item the company goes into \textit{Personal Internship} section
+								\item the system shows the page with all the personal internships of the company
+								\item the company select the appropriate internship 
+								\item the company select, from the list of students, the appropriate student
+								\item the company select the appropriate step of the selection process
+								\item the company click the button \textit{Insert Answers}
+								\item the sytstem shows a form to fill with the answers
+								\item the company insert the answers
+								\item the company clicks on the button \textit{Evaluate}
+								\item the system shows the page with the evaluated answers
+								\item the company decide to accept/reject/postpone the student
+								\item the company click on the appropriate button to send the rigth notification
+						\end{enumerate}} \\
+						\hline 
+						Exit condition & the evaluation of this step of the selection process is completed; the system send a notification to the student to inform him about the decision of the company   \\
+						\hline
+						Exception & the company doesn't insert all the answers; the system shows an error message and the company has to fill all the fields of the form \\
+						\hline
+					\end{tabular}
+				\end{table}
+				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC14] - Collection of Student Selection Process Feedbacks
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -726,7 +771,7 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC16] - Collection of Company Selection Process Feedbacks
+						\item [UC15] - Collection of Company Selection Process Feedbacks
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -764,7 +809,7 @@
 						\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC17] - Collection of Internship Feedbacks
+						\item [UC16] - Collection of Internship Feedbacks
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -803,7 +848,7 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC18] - Collection of Complaints
+						\item [UC17] - Collection of Complaints
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -851,7 +896,7 @@
 					\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC19] - Company Cancellation
+						\item [UC18] - Company Cancellation
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -882,7 +927,7 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC20] - Student Cancellation
+						\item [UC19] - Student Cancellation
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
