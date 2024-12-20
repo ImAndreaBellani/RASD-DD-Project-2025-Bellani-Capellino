@@ -2391,21 +2391,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">main.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Visscher2008</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">James2013</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Visscher2008</bcf:citekey>
-    <bcf:citekey order="2" intorder="2">James2013</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">James2013</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">James2013</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Battle2014</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Battle2014</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Zou2005</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Zou2005</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">James2013</bcf:citekey>
-    <bcf:citekeycount count="0">Visscher2008</bcf:citekeycount>
+    <bcf:citekey order="1" intorder="1">James2013</bcf:citekey>
     <bcf:citekeycount count="0">James2013</bcf:citekeycount>
-    <bcf:citekeycount count="0">Battle2014</bcf:citekeycount>
-    <bcf:citekeycount count="0">Zou2005</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -26,7 +26,7 @@
 			
 			Both students and companies use the internet to access the platform; in particular, companies require an internet connection for all the functionalities they can perform through the platform (posting internship advice, configuring the selection process, etc.). Similarly, students also need an internet connection for their functionalities (searching for internships, applying, etc.).
 			
-			The backend of the system will expose a unified REST compliant API to communicate with all clients using HTTPS and TCP/IP.
+			due to the confidentiality of exchanged data, a secure communication mean is required, such as HTTPS or VPN
 	\section{Functional Requirements}
 	
 		Here are described all the functional requirements of the S\&C platform:
@@ -48,6 +48,8 @@
 		
 		[R10107] the system allows students to change their profile information (including the CV) and their access information
 		
+		[R10108] when a student registers, the system extracts from the CV name and surname to create the profile
+		
 		[R10201] the system allows companies to sign up to the platform with their company address
 		
 		[R10202] the system allows companies to insert the main information regarding their business area and area of expertise
@@ -60,19 +62,37 @@
 		
 		[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms) and the submission deadline
 		
-		[R10401] the system allows students to search internships advice by name (and also to see the complete list of available advice). The system shall act as a search engine to present also the names of the advice that are similar to the searched one
+		[R10302] the system allows companies to delete internship advice which deadline is not expired yet
+		
+		[R10401] the system allows students to search internships advice by name The system shall act as a search engine to present also the names of the advice that are similar to the searched one
 		
 		[R10402] the system allows students to search companies by name (and also to see the complete list of registered companies) and then access to their profile
 		
 		[R10403] the system allows students to filter the results they searched (e.g. ”only paid internships”, ”only companies located in Lombardy”)
 		
-		[R10501] whenthesystem recognizes that a new internship advice that might interest a student (that allowed the recommendation option) published, it notifies that student by sending him an e-mail (to its registration address)
+		[R10404] the system allows students to consult the list of all published internship advice, listed from the most recent to the last
 		
-		[R10601] when the system recognizes that a student has a profile that would fit an internship advice, thecompany that published the advice is notified (for students and companies that both take part into the recommendation analysis)
+		[R10501] when the system recognizes that a new internship advice that might interest a student (that allowed the recommendation option) published, it notifies that student by sending him an e-mail (to its registration address)
+		
+		[R10601] when the system recognizes that a student has a profile that would fit an internship advice, the company that published the advice is notified (for students and companies that both take part into the recommendation analysis)
 		
 		[R10701] the system allows students to apply for any internship advice which deadline has not expired
 		
 		[R10702] when a student applies for an internship, the related company is notified by the system
+		
+		[R10801] the system allows companies to approve, discard or ignore each application they may receive for one of their published advice
+		
+		[R10901] when a company opens a student profile, it can propose to him to apply for one of its internships. Then, the students receives a notification
+		
+		[R11001] the system allows student that received an internship proposal from a company can decide to accept it, discard it or ignore it
+		
+		[R11002] when a student accept an internship proposal, it is implicitly accepted by the company 
+		
+		[R11101] when a student gets his/her result of the selection, the system provides to him a non-compulsory questionnaire regarding his/her experience (in the context of that selection process)
+		
+		[R11102] when a company ends a selection process, the system provides to it a non-compulsory questionnaire regarding its experience (in the context of that selection process) 
+		
+		[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory 
 		
 		[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students)
 		
@@ -94,9 +114,11 @@
 		
 		[R20208] when a selection result is prepared for a student (with the relative message), it is notified to the student
 		
+		[R20209] when a selected process related to an internship advice has ended, the system deletes the advice
+		
 		[R30101] the system allows students and companies to consult the internships (ongoing or finished)
 		
-		[R30102] the system allows students and companies to report complaints on the internships they are involved in
+		[R30102] the system allows students and companies to report complaints (at most 50 words)on the internships they are involved in
 		
 		[R30103] the system does not allow users different from their creator to consult complains
 		
@@ -139,9 +161,7 @@
 						background
 						\item The Student flags the \textit{receive 
 						notification} box (part of the form) 
-						if he wants to receive notification 
-						from the system about future 
-						published internship 
+						if he wants to take part into the recommendation process 
 						\item The student press the button 
 						\textit{Upload CV} to upload the 
 						curriculum (the button is part of 
@@ -149,17 +169,21 @@
 						\item The student press the button 
 						\textit{Register} to complete the 
 						registration
+						\item the system checks the digital signature on the CV
 						\end{enumerate}} \\
 					\hline 
 					Exit condition & The student has successfully registered 
 					to the platform and the system shows the 
 					homepage \\
 					\hline
-					Exception & There arleady exist a student with 
-					those e-mail; the system return to 
-					the entry condition showing an 
-					error message \textit{Student arleady 
-					registered} \\
+					Exception &	\parbox{5cm}{\begin{enumerate}[label=\alpha]
+							\item There arleady exist a student with 
+							those e-mail; the system return to 
+							the entry condition showing an 
+							error message \textit{Student arleady 
+							registered}
+							\item the CV is not digitally signed; the system shows an error message informing the student about that
+							\end{enumerate}} \\
 					\hline
 				\end{tabular}
 			\end{table}
@@ -193,9 +217,7 @@
 							area, its e-mail and password
 							\item The Company flags the “receive 
 							notification” box (part of the form) if it 
-							wants to receive notification from the 
-							system about the availability of 
-							students who may be of its interest
+							wants to take part into the recommendation process
 							\item The company press the button 
 							\textit{Register} to complete the 
 							registration
@@ -243,9 +265,12 @@
 					Exit condition & the user has successfully logged to the 
 					platform and the homepage is shown \\
 					\hline
-					Exception & The user has not yet registered to the 
-					platform; the system will return to the 
-					registration page \\
+					Exception & \parbox{5cm}{\begin{enumerate}
+							\item The user has not yet registered to the 
+							platform; the system will return to the 
+							registration page
+							\item the credentials are not correct; the system shows an error message and the system return to the login page
+							\end{enumerate}} \\
 					\hline
 				\end{tabular}
 			\end{table}
@@ -266,7 +291,7 @@
 						\end{itemize}
 					} \\
 					\hline
-					Entry condition & The company is logged to S\&C platform \\
+					Entry condition & The company is logged to S\&C platform and it wants to publish a new internship advice \\
 					\hline
 					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 							\item The company goes to the \textit{Publish 
@@ -313,7 +338,7 @@
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & The student is logged to S\&C platform  \\
+						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student goes to the \textit{View 
@@ -355,7 +380,7 @@
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & The student is logged to S\&C platform  \\
+						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student goes to the \textit{View 
@@ -391,7 +416,7 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC7] - Search an internship by name
+						\item [UC7] - Search an internship by name 
 					\end{itemize}
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
 						\hline
@@ -402,18 +427,18 @@
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & The student is logged to S\&C platform  \\
+						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student search the internship 
-								by digiting its subject on the search 
+								by typing its subject on the search 
 								bar 
 								\item The student flags the appropriate 
 								options they want the internship to 
 								meet  
 								\item The systems shows a page with all 
-								the internships advices matching 
-								the subject and the options chosen 
+								the internships advice matching 
+								the subject and the options chosen, from the most relevant from the last
 								\item The student select an internship who 
 								interested them
 						\end{enumerate}} \\
@@ -455,7 +480,7 @@
 						} \\
 						\hline
 						Entry condition & the student, at registration, flags the 
-						option to receive notifications and he received an email informing him that a new internship advice has been published \\
+						option to receive notifications and the recommendation analysis is completed\\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student logs to the platform  
@@ -470,8 +495,6 @@
 						\hline 
 						Exit condition & The student view the internship more in 
 						detail \\
-						\hline
-						Exception & The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the student's notification section, and the student cannot view it. \\
 						\hline
 					\end{tabular}
 				\end{table}
@@ -491,7 +514,7 @@
 						} \\
 						\hline
 						Entry condition & the company, at registration, flags the 
-						option to receive notifications and it received an email with a list of new interesting students for one of its internships\\
+						option to receive notifications and the recommendation analysis is completed\\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The comapny logs to the platform  
@@ -507,8 +530,6 @@
 						\hline 
 						Exit condition & The company view the profile of the student more in 
 						detail \\
-						\hline
-						Exception & The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the company's notification section, and the student cannot view it. \\
 						\hline
 					\end{tabular}
 				\end{table}
@@ -531,7 +552,7 @@
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & the student is logged to S\&C platform \\
+						Entry condition & the student is logged to S\&C platform and he finds an internship he wants to apply \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student access the page of the 
@@ -563,12 +584,7 @@
 						the student to to inform whether the 
 						application has been accepted or rejected  \\
 						\hline
-						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item The deadline has already passed; the 
-								system notifies the student that they 
-								cannot apply for that internship
-								\item The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the company notification section, and the company cannot view it. \\
-								\end{enumerate}} \\
+						Exception & The deadline has already passed; the system notifies the student that they cannot apply for that internship \\
 						\hline
 					\end{tabular}
 				\end{table}
@@ -579,7 +595,7 @@
 				\begin{table} [H]
 					\centering
 						\begin{itemize}
-						\item [UC11] - Company Send of Propsal
+						\item [UC11] - Company Send of Proposal
 					\end{itemize}
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
 						\hline
@@ -613,12 +629,9 @@
 						\hline 
 						Exit condition & the system return to the homepage \\
 						\hline
-						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item The student respond to the proposal when the deadline has already passed; the 
+						Exception & The student respond to the proposal when the deadline has already passed; the 
 								system notifies the student that they 
-								cannot reply to the proposal
-								\item The notification was not sent to the system within the minimum required time; therefore, the notification does not appear in the student notification section, and the company cannot view it. \\
-						\end{enumerate}} \\
+								cannot reply to the proposal \\
 						\hline
 					\end{tabular}
 				\end{table}
@@ -639,7 +652,7 @@
 						} \\
 						\hline
 						Entry condition & Internship deadline is expired and the 
-						comapny is logged to S\&C platform  \\
+						company is logged to S\&C platform  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The company goes to \textit{Personal 
@@ -654,7 +667,7 @@
 								number of steps (up to 2), the 
 								metrics to evaluate students and 
 								the questionnaire provided at 
-								each step 
+								each step (it is defined the structure, deciding which questions are closed or open/oral, and also the score for each closed question)
 								\item the company save the 
 								configuration clicking on \textit{Save}
 								button 
@@ -705,7 +718,7 @@
 						Entry condition & Internship deadline is expired, the company configure the selection process and it has ready to start \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item The company gives to the sudent the questionnaire with closed and open questions
+								\item The company gives to the student the questionnaire with closed and open questions
 								\item The student answers to the questionnaire
 								\item The company asks some oral questions (if they are configured in this step)
 								\item The student answers to oral questions
@@ -716,7 +729,7 @@
 								\item the company select, from the list of students, the appropriate student
 								\item the company select the appropriate step of the selection process
 								\item the company click the button \textit{Insert Answers}
-								\item the sytstem shows a form to fill with the answers
+								\item the system shows a form to fill with the answers
 								\item the company insert the answers
 								\item the company clicks on the button \textit{Evaluate}
 								\item the system shows the page with the evaluated answers
@@ -735,19 +748,19 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC14] - Collection of Student Selection Process Feedbacks
+						\item [UC14] - Collection of Student Selection Process Feedback
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
 						\hline
-						Name & Collection of Student Selection Process Feedbacks \\
+						Name & Collection of Student Selection Process Feedback \\
 						\hline
 						Actors & \parbox{5cm}{\begin{itemize}
 								\item Student
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & the selection process is complete and the student has arleady received the email with the result of the interview \\
+						Entry condition & the selection process is complete and the student has already received the email with the result of the interview \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
 								\item The student logs into the platform with his credentials
@@ -771,28 +784,22 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC15] - Collection of Company Selection Process Feedbacks
+						\item [UC15] - Collection of Company Selection Process Feedback
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
 						\hline
-						Name & Collection of Company Selection Process Feedbacks \\
+						Name & Collection of Company Selection Process Feedback \\
 						\hline
 						Actors & \parbox{5cm}{\begin{itemize}
 								\item Company
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & The company is logged to S\&C platform and it completed a selection process  \\
+						Entry condition & The company is logged to S\&C platform and has just sent the selection results \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item The company goes to \textit{Personal Internships} section
-								\item The system shows a page with 
-								all the internships advice of the company  
-								\item The company select the interested 
-								internship  
-								\item the company opens the form in the page of the internship
-								\item the system shows a form with a series of questions to answer 
+								\item The system shows a form with a series of questions to answer 
 								\item the company answers to the questions
 								\item the company clicks on the button \textit{Submit}
 						\end{enumerate}} \\
@@ -809,7 +816,7 @@
 						\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC16] - Collection of Internship Feedbacks
+						\item [UC16] - Collection of Internship Feedback
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
@@ -835,8 +842,8 @@
 								\item the User clicks on the button \textit{Submit}
 						\end{enumerate}} \\
 						\hline 
-						Exit condition & thefeedback is submitted;the system collects the
-						feedback inorder to improve the recommendation
+						Exit condition & the feedback is submitted;the system collects the
+						feedback in order to improve the recommendation
 						mechanism \\
 						\hline
 						Exception & the user doesn't answer to all the questions when he tries to submit; the system shows a warn message \\
@@ -876,8 +883,8 @@
 								where the user can monitor the 
 								execution of the internship
 								\item The user write a complaint 
-								using the apposite box (max 200 
-								worlds) 
+								using the apposite box (max 50 
+								words) 
 								\item The user click on the \textit{Submit}
 								button
 						\end{enumerate}} \\
@@ -887,69 +894,8 @@
 						related to the internship \\
 						\hline
 						Exception & The complain exceed the max number 
-						of worlds (200); the system warn the 
+						of words (50); the system warn the 
 						user that the complaint is too long \\
-						\hline
-					\end{tabular}
-				\end{table}
-				
-					\begin{table} [H]
-					\centering
-					\begin{itemize}
-						\item [UC18] - Company Cancellation
-					\end{itemize}
-					
-					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
-						\hline
-						Name & Company Cancellation \\
-						\hline
-						Actors & \parbox{5cm}{\begin{itemize}
-								\item Company
-							\end{itemize}
-						} \\
-						\hline
-						Entry condition & The company is logged to S\&C platform \\
-						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item the company press the button \textit{Delete Profile}
-								\item The system automatically delete 
-								all the internship advice of the 
-								company 
-						\end{enumerate}} \\
-						\hline 
-						Exit condition & Now the company is not registered to 
-						the platform; the system shows the sign
-						in page  \\
-						\hline
-					\end{tabular}
-				\end{table}
-				
-				\begin{table} [H]
-					\centering
-					\begin{itemize}
-						\item [UC19] - Student Cancellation
-					\end{itemize}
-					
-					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
-						\hline
-						Name & Student Cancellation \\
-						\hline
-						Actors & \parbox{5cm}{\begin{itemize}
-								\item Student
-							\end{itemize}
-						} \\
-						\hline
-						Entry condition & The student is logged to S\&C platform \\
-						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
-								\item the student press the button \textit{Delete Profile}
-								\item The system automatically delete 
-								all the applications of the student
-						\end{enumerate}} \\
-						\hline 
-						Exit condition & Now the student is not registered to 
-						the platform; the system shows the sign
-						in page  \\
 						\hline
 					\end{tabular}
 				\end{table}
@@ -1071,19 +1017,6 @@
 				
 			\end{figure}
 			
-			\begin{figure}[H]
-				\centering
-				{\bfseries [UC18] - Company Cancellation}
-				\includegraphics[scale=0.3]{CompanyCancellation.jpg}
-				
-			\end{figure}
-			
-			\begin{figure}[H]
-				\centering
-				{\bfseries [UC19] - Student Cancellation}
-				\includegraphics[scale=0.3]{StudentCancellation.jpg}
-				
-			\end{figure}
 		\subsection{Activity diagrams}
 		
 			\begin{figure}[H]
@@ -1110,7 +1043,7 @@
 					
 					[R10103] the system allows students upload their CV to the platform & [D10302] information companies insert in internship advice do not contradict each other \\
 					
-					[R10104] the system allows students to publish on their profile a brief description of themselves & \\
+					[R10104] the system allows students to add on their profile the name, the surname and a brief description of themselves & \\
 					
 					[R10105] when a CV is uploaded, the system verifies if it is digitally signed by the profile mail & \\
 					
@@ -1128,7 +1061,7 @@
 					
 					[R10205] the system allows companies to change their profile information and their access information & \\
 					
-					[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms) and the submission deadline & \\
+					[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms), the submission deadline and the max number of applications & \\
 					
 					[R10401] the system allows students to search internships advice by name (and also to see the complete list of available advice). The system shall act as a search engine to present also the names of the advice that are similar to the searched one & \\
 					
@@ -1157,7 +1090,6 @@
 					[R11102] when a company ends a selection process, the system provides to it a non-compulsory questionnaire regarding its experience (in the context of that selection process) & \\
 					
 					[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory & \\
-					
 					\hline
 				\end{tabular}
 				\caption{Requirements mapping for goal G1}
@@ -1228,14 +1160,10 @@
 			To make the best use of the platform, it is necessary that the devices used to access it meet the following requirements:
 			
 			\begin{itemize}
-				\item \textbf{CPU}: minimum Intel i3 is required, but for better performance, Intel i5 is recommended.
 				\item \textbf{RAM}: minimum 4 GB of RAM for users who use the platform in a relatively simple way, such as sending CVs or applying for internships.
 				\item\textbf{Internet Connection}: a stable connection of 5 Mbps is required for a smooth experience. This would support navigation on the platform and viewing content. Slower connections may lead to long loading times on pages with a lot of data.
 				\item \textbf{Screen Resolution}: Users should have devices with screens of at least 1280x720 px to ensure a good visual experience.
 			\end{itemize}
-			
-			
-			\textbf{OBS}: The platform is designed to be developed as a desktop application rather than as a web app or smartphone application. Therefore, the use of a computer is required.
 			
 			
 		\subsection{Other constraints}
@@ -1264,7 +1192,7 @@
 		\subsection{Maintainability}
 			For S\&C, which manages multiple users (students and companies) and handles a large amount of sensitive data, maintainability is a crucial aspect:
 			\begin{itemize}
-				\item the code has to bell well documented and tested; in particular, a testing routine has to be provided to check if the system still work or not.
+				\item the code has to be well documented and tested; in particular, a testing routine has to be provided to check if the system still work or not.
 				\item The system structure should provide the ability to deploy updates in the backend without the users noticing it
 				\item to facilitate maintainability, system components should be created to be as modular as possible
 			\end{itemize}

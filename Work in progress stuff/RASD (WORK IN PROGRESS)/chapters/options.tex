@@ -21,7 +21,8 @@
 					\item "1. coordination of glass disposal; 2. ..." (main activities the internship involves);
 					\item "no paid, canteen tickets available" (terms of the internship);
 					\item "22/11/2024" (advice deadline).
-				\end{itemize}
+					\item max 42 applications (max number of applications)				
+					\end{itemize}
 				
 				Now the internship advice is visible to students registered on the platform (and also to FinestraMI).
 			\end{flushleft}
@@ -95,7 +96,7 @@
 			
 			The system's users are modeled through the \textit{User} class, which represents both Students (class \textit{Student}) and Companies (class \textit{Company}). Each user has basic attributes (email and password) and can receive personalized notifications (class \textit{Notification}, with subtypes for students and companies).
 			
-			Companies can publish internships advice (class \textit{InternshipAdvice}), and a student's application for an internship is managed by the \textit{Application} class. Company can also send a proposal of application (class \textit{Proposal)} to a student for one of its internships advice.
+			Companies can publish internships advice (class \textit{InternshipAdvice}); students can apply for an internship but also companies can send proposal of application to the students. This mechanism of applications is managed by the \textit{Application} class. Each application born with one and only one of the boolean flags to true, corresponding to the kind of user that unleashed that application. Once the other user accepts the proposal of the counterpart, its flag is put to \textit{true}; at the end, students that will enroll the selection process are the only related to applications with the 2 flags true.
 			
 			Each application can go through a \textit{SelectionProcess}, divided into several \textit{SelectionStep}. During the selection process, the student may undergo an interview (\textit{Interview} class) and his answers are collected by the system through questionnaires (\textit{Questionnaire} class).
 			
@@ -123,7 +124,7 @@
 						\includegraphics[scale=0.3]{stateInternship.jpg}
 					\end{center}
 					
-					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Closed} is the state where the internship has ended (either because it finished or was interrupted); \textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice).
+					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Closed} is the state where the internship has ended (either because it finished or was interrupted); \textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice or the selection process is ended).
 					
 				\subparagraph{State of an application for an internship}
 					\begin{center}
@@ -162,7 +163,7 @@
 		\subsection{Student}
 			The student, once logged into the platform, is able to proactively search for internship advice that may interest them. Once the internship of interest has been selected, they can apply for an interview directly through the platform. Additionally, the student receives a list of possible internships that may suit them, based on their studies/CV, via the aforementioned recommendation mechanism. Furthermore, the student may also receive a proposal to apply directly from the company offering the internship. Once they have completed a selection process, the student will receive the outcome directly through the platform.
 		
-		\subsection{Comapny}
+		\subsection{Company}
 			The company, once logged into the platform, can publish internship announcements it wants to offer. The system will periodically send the company a list of potential students who may be suitable for their internships, based on their CVs, to whom it can directly send a proposal to apply for one of its internships. Conversely, the company can also accept or reject a student's application. For a given internship, once the application period has ended, the company can schedule the selection process for each candidate directly through the system. During the selection phase, the company also collects all candidate responses using the system.Finally, the company will provide the outcome of the selection to each student directly through the platform.
 		
 		\subsection{common characteristics}
@@ -170,19 +171,19 @@
 		
 	\section{Assumptions, dependencies and constraints}
 		\subsection{Domain Assumption}
-			the following assumption are made for domain. They are properties or condition that the system will take for granted. They must be checked to ensure a correct platform behaviour.
+			the following assumption are made for domain. They are properties or condition that the system will take for granted. They must be checked to ensure a correct platform behavior.
 			
 			[D1] Users must have a reliable internet connection
 			
-			[D2] When users log in, the credentials they enter must be correct
+			[D2] Information contained in the CVs are truthful
 			
-			[D3] Informations contained in the CVs are truthful
+			[D3] Company fill the form about internship advice accordingly to their business decisions
 			
-			[D4] Company properly fill the form about internship adivce
+			[D4] Company correctly enters the answers provided by the student during the interview into the system
 			
-			[D5] Company correctly enters the answers provided by the student during the interview into the system
+			[D5] When users registers, they register with an active email address that belongs to them
 			
-			[D6] Notifications to users must be delivered as quickly as possible (according with the requirements defined for each notification)
+			[D6] Uploaded CVs are written in EuroPass format
 			
 		\subsection{Dependencies}
 			\begin{itemize}
@@ -195,6 +196,7 @@
 				according to the GDPR. This means that users should be always able to request their data
 				\item The data collected for matching (feedback, ...) are sufficiently detailed to support effective statistical analysis.
 				\item The number of students and companies using the platform will be manageable by the system without compromising its performance
-				\item To better protect the users’ sensitive information their data should be encrypted (An example is the digital signature on CVs)
+				\item To better protect the users’ sensitive information their data should be encrypted
+				\item the mail used by the student to register is able to digitally sign the CV
 			\end{itemize}
 		
