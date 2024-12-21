@@ -1,8 +1,41 @@
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces High-level class diagram}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Internship state diagram}}{9}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Application for an internship state diagram}}{10}{figure.caption.18}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use-case diagram}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces [UC1] - Student Registration}}{31}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces [UC2] - Company Registration}}{32}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces [UC3] - User Login}}{33}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces [UC4] - Publish Internship Advice}}{34}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces [UC5] - Search of all Internships}}{35}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces [UC6] - Search of All Companies}}{36}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces [UC7] - Search an Internship by Name}}{36}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces [UC8] - Internship Recommendation}}{37}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces [UC9] - Students Recommendation}}{38}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces [UC10] - Student Application Process}}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces [UC11] - Company Send of Proposal}}{40}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces [UC12] - Selection Process Configuration}}{41}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces [UC14] - Collection of Student Selection Process Feedback}}{42}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces [UC15] - Collection of Company Selection Process Feedback}}{43}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces [UC16] - Collection of Internships Feedback}}{44}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces [UC17] - Collection of Complaints}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces [UC13] - Selection process Running}}{46}{figure.caption.53}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Calendar modeling}}{49}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Calendar simulation example steps 1-2}}{50}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Calendar simulation example steps 2-3}}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Users modeling}}{51}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Application modeling}}{51}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Applications simulation show predicate}}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Applications simulation steps 1-2}}{52}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Applications simulation steps 1-2}}{53}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Selection process signatures}}{54}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Selection process facts}}{54}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Selection calendar modeling}}{55}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Selection process world example}}{55}{figure.caption.65}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

@@ -90,7 +90,11 @@
 				Alice has just finished the internship at WeWorkGreat, an non-compulsory questionnaire is given to her with some general questions related to her experience at the company (e.g. "did the company respect the terms listed in the advice?" e.c.c.). Since it is not compulsory, Alice decides to not compile it.
 			\end{flushleft}
 		\subsection{High-level class diagram}
-			\includegraphics{CLASS DIAGRAM (NO NOT).jpg}
+			\begin{figure}[H]
+				\centering
+				\includegraphics{CLASS DIAGRAM (NO NOT).jpg}
+				\caption{High-level class diagram}
+			\end{figure}
 			
 			This figure represent the domain class diagram of the system. It represents the fact that the system connects students and companies, facilitating the management of applications, selection processes, interviews, internships, and communication between the parties. It provides tools for sending notifications, collecting feedback, and managing questionnaire and complaints.
 			
@@ -120,16 +124,20 @@
 				In this subsection, the most relevant state diagrams are presented in order to better understand the system's evolution through its different phases. We focus in particular on the representation of an internship's state and the evolution of a student's application.
 				
 				\subparagraph{State of an internship}
-					\begin{center}
+					\begin{figure}[H]
+						\centering
 						\includegraphics[scale=0.3]{stateInternship.jpg}
-					\end{center}
+						\caption{Internship state diagram}
+					\end{figure}
 					
 					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Closed} is the state where the internship has ended (either because it finished or was interrupted); \textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice or the selection process is ended).
 					
 				\subparagraph{State of an application for an internship}
-					\begin{center}
+					\begin{figure}[H]
+						\centering
 						\includegraphics[scale=0.3]{application.jpg}
-					\end{center}
+						\caption{Application for an internship state diagram}
+					\end{figure}
 					
 					In this state diagram, the evolution of a student's application for an internship is described. The \textit{Started} state refers to a student's application for an internship. The \textit{Conducted} state relates to the evolution of the selection process (open questions, closed questions, interviews, questionnaire completion, etc.). The \textit{Evaluation} state is where the company assesses the student's application. From this state, two subsequent states are possible: \textit{Accepted} if the application is accepted, or \textit{Rejected} if it is declined.
 					

@@ -6,37 +6,52 @@
 	\end{itemize}
 	
 	To describe the passing of time (especially in temporal simulations) we built a simple calendar in Alloy, which is basically a path of \CommentSty{date} linked each other by means of the relation \CommentSty{yesterday}:
-	\begin{center}
+	\begin{figure}[H]
+		\centering
 		\includegraphics{calendarModel.png}
-	\end{center}
+		\caption{Calendar modeling}
+	\end{figure}
 	
 	Then, What will be generated is a "path of dates" that represents the calendar and \CommentSty{Today} must "move" day-by-day following the calendar structure:
-	\begin{center}
+	\begin{figure}[H]
+		\centering
 		\includegraphics[width=12cm]{calendar1.png}
-	\end{center}
-	\begin{center}
+		\caption{Calendar simulation example steps 1-2}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
 		\includegraphics[width=12cm]{calendar2.png}
-	\end{center}
+		\caption{Calendar simulation example steps 2-3}
+	\end{figure}
 	
 	\section{Applications and withdrawals simulation (Alloy 6 temporal simulation)}
 		We modeled a simplified version of the sub-part of the system related to students applications to internship advice. Several parts were omitted in order to highlight what we believed were the most interesting constraints, such as the fact that companies have to accept students applications or the invitation mechanism:
-		\begin{flushleft}
-			\includegraphics[width=10cm]{model1-1.png}
-		\end{flushleft}
-		\begin{center}
+			\begin{figure}
+				\includegraphics[width=10cm, left]{model1-1.png}
+				\caption{Users modeling}
+			\end{figure}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model1-2.png}
-		\end{center}
+			\caption{Application modeling}
+		\end{figure}
 		By setting up a quite self-explainable predicate to show worlds are trades that can show clearly the expected behavior of the system:
-		\begin{center}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model1-3.png}
-		\end{center}
+			\caption{Applications simulation show predicate}
+		\end{figure}
 		we can simulate a classic scenario where students sends applications for available advice within deadlines:
-		\begin{center}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model1-4.png}
-		\end{center}
-		\begin{center}
+			\caption{Applications simulation steps 1-2}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model1-5.png}
-		\end{center}
+			\caption{Applications simulation steps 1-2}
+		\end{figure}
 		\begin{enumerate}[start=0]
 			\item the trace starts with two application enrolled \CommentSty{MidDay2} (which is \CommentSty{Today} in this step). These two applications refer to the same \CommentSty{InternshipAdvice} (\CommentSty{InternshipAdvice1});
 			\item in this step, \CommentSty{Application0} does not change while \CommentSty{Application1} has its student changed and its advice changed. We notice that even the application date is changed to the date point by actual \CommentSty{Today};
@@ -45,18 +60,24 @@
 		
 	\section{Selection process structure (static simulation)}
 		Although a selection process has without a doubt a dynamic behavior, we preferred to focus on modeling the constraints related to the process design:
-		\begin{flushleft}
-			\includegraphics[width=8cm]{model2-1.png}
-		\end{flushleft}
-		\begin{flushleft}
-			\includegraphics[width=10cm]{model2-2.png}
-		\end{flushleft}
-		\begin{center}
+		\begin{figure}
+			\includegraphics[width=8cm,left]{model2-1.png}
+			\caption{Selection process signatures}
+		\end{figure}
+		\begin{figure}
+			\includegraphics[width=10cm,left]{model2-2.png}
+			\caption{Selection calendar modeling}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model2-3.png}
-		\end{center}
+			\caption{Selection process facts}
+		\end{figure}
 		These constraints ensure that the process designed by the company does not rise contradictions, such as interviews ordered differently that the related steps.
 		Dynamic aspects related to selection processes such as score assignments are generally more interesting from a coherence point of view rather than logical contradictions (e.g. two identical open answers written by two different students should be evaluated in the same way in the context of the same selection process), a part for closed answers.
-		\begin{center}
+		\begin{figure}[H]
+			\centering
 			\includegraphics{model2-4.png}
-		\end{center}
+			\caption{Selection process world example}
+		\end{figure}
 		At the end, one of the purposes of this static modeling is also to clarify the selection process structure (also visually).
