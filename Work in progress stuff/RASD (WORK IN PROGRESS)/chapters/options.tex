@@ -90,7 +90,7 @@
 				Alice has just finished the internship at WeWorkGreat, an non-compulsory questionnaire is given to her with some general questions related to her experience at the company (e.g. "did the company respect the terms listed in the advice?" e.c.c.). Since it is not compulsory, Alice decides to not compile it.
 			\end{flushleft}
 		\subsection{High-level class diagram}
-			\includegraphics{class_diagram(NO NOT).jpg}
+			\includegraphics{CLASS DIAGRAM (NO NOT).jpg}
 			
 			This figure represent the domain class diagram of the system. It represents the fact that the system connects students and companies, facilitating the management of applications, selection processes, interviews, internships, and communication between the parties. It provides tools for sending notifications, collecting feedback, and managing questionnaire and complaints.
 			
@@ -185,6 +185,10 @@
 			
 			[D6] Uploaded CVs are written in EuroPass format
 			
+			[D7] Information on a student CV do not contradict each other
+			
+			[D8] Information companies insert in internship advice do not contradict each other
+			
 		\subsection{Dependencies}
 			\begin{itemize}
 				\item The system will integrate with email system to send notifications to Users
@@ -197,6 +201,5 @@
 				\item The data collected for matching (feedback, ...) are sufficiently detailed to support effective statistical analysis.
 				\item The number of students and companies using the platform will be manageable by the system without compromising its performance
 				\item To better protect the users’ sensitive information their data should be encrypted
-				\item the mail used by the student to register is able to digitally sign the CV
 			\end{itemize}
 		

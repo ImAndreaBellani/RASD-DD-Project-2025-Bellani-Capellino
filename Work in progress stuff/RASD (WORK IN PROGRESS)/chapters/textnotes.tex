@@ -1,38 +1,24 @@
-%Considerazioni:
-%	i requirements sono stati scritti con questa idea:
-%	una compagnia può “proporre” una internship a uno studente 	(manca uno scenario per questo, potrebbe essere aggiunto a quello della notifica). Si veda il requirement “R10602”
-%	non ho modellizzato il concetto di “richiesta di candidatura” (ma uno si candida e basta). Se non sei d’accordo lo metto.
-% mettere nelle definizioni la differenza tra internship e internship advice
-
-% METTERE SCREMATURA INIZIALE BASATA SUL CURRICULUM E METTERE MAX POSTI PER UN ADVICE (SE IL MAX POSTI E' RAGGIUNTO L'ADVICE E' ANCORA VISIBILE MA NON CI SI PUO' CANDIDARE) [MODIFICARE QUESTE COSE NEI REQ. E NELL'ALLOY]
-
-% RIGUARDARE LA SPECIFICA PER QUANTO RIGUARDA I FEEDBACK E I COMPLAINT (E ANCHE IL FATTO CHE "INTERNSHIP" NEL CLASS DIAGRAM NON E' "LA MIA INTERNSHIP" MA LA INTERNSHIP IN GENERALE, MAGARI NON E' UN ERRORE MA DI QUESTA COSA VA TENUTO CONTO)
-
-% RIGUARDARE I REQ. PER LE NOTIFICHE (TUTTE, ANHE QUELLE LEGATE ALL'ESITO DELLA SELEZIONE)
-
-% ENTITA' "NOTIFICA" NEL CLASS DIAGRAM?
 \chapter{Specific requirements}
 	\section{External Interface Requirements}
 		\subsection{User Interfaces}
 		\subsection{Hardware Interfaces}
-			There are no specific hardware interfaces required, except for the devices used to access the platform. Both students and companies need a hardware device (such as a computer) with an internet connection to access S\&C.
+			There are no specific hardware interfaces required, except for the devices used to access the platform. Both students and companies need a hardware device (such as a computer) with a network card to connect to S\&C.
 		\subsection{Software Interfaces}
 				To manage the sending of all notifications (recommendation notifications, notifications for selection results, etc.) between two or more users, the \textit{mail service} must be used. In fact, both students and companies are required to provide their email address (university/company email) during registration. Every time the system sends a notification to a user, they will receive an email informing them of the received notification. To view the content of the notification in more detail, the user must log into the system and go to the appropriate section of the platform.
 				
 				To do this, the system will send a request to the mail service, which will then forward the desired email to the specific user.
-	
-	
 		\subsection{Communication Interfaces}
+			Both students and companies use the Internet to access the platform; in particular, companies require an Internet connection for all the functionalities they can perform through the platform (posting internship advice, configuring the selection process, etc.). Similarly, students also need an Internet connection for their functionalities (searching for internships, applying, etc.).
 			
-			Both students and companies use the internet to access the platform; in particular, companies require an internet connection for all the functionalities they can perform through the platform (posting internship advice, configuring the selection process, etc.). Similarly, students also need an internet connection for their functionalities (searching for internships, applying, etc.).
-			
-			due to the confidentiality of exchanged data, a secure communication mean is required, such as HTTPS or VPN
-	\section{Functional Requirements}
-	
-		Here are described all the functional requirements of the S\&C platform:
+			Due to the confidentiality of exchanged data, a secure communication mean is required, such as HTTPS or VPN.
+	\section{Functional Requirements (and goals mapping)}
+		Here are described all the functional requirements of the S\&C platform.
 		
+		\subsection{General requirements}
 		
 		[R00000] when a notification of a user is generated, the user receives it on its mailbox (in a more concise version) and can consult it on its notification section
+		
+		\subsection{Requirements related to goal G1}
 		
 		[R10101] the system allows students to sign up to the platform with their institutional mails
 		
@@ -42,13 +28,11 @@
 		
 		[R10104] the system allows students to publish on their profile a brief description of themselves
 		
-		[R10105] when a CV is uploaded,the system verifies if it is digitally signed by the profile mail
+		[R10105] the system allows students to log in into the system by providing the registration mail and the chosen	password
 		
-		[R10106] the system allows students to log in into the system by providing the registration mail and the chosen	password
+		[R10106] the system allows students to change their profile information (including the CV) and their access information
 		
-		[R10107] the system allows students to change their profile information (including the CV) and their access information
-		
-		[R10108] when a student registers, the system extracts from the CV name and surname to create the profile
+		[R10107] when a student registers, the system extracts from the CV name and surname to create the profile
 		
 		[R10201] the system allows companies to sign up to the platform with their company address
 		
@@ -72,7 +56,7 @@
 		
 		[R10404] the system allows students to consult the list of all published internship advice, listed from the most recent to the last
 		
-		[R10501] when the system recognizes that a new internship advice that might interest a student (that allowed the recommendation option) published, it notifies that student by sending him an e-mail (to its registration address)
+		[R10501] when the system recognizes that a new internship advice that might interest a student (that allowed the recommendation option) published, it notifies that student
 		
 		[R10601] when the system recognizes that a student has a profile that would fit an internship advice, the company that published the advice is notified (for students and companies that both take part into the recommendation analysis)
 		
@@ -94,27 +78,33 @@
 		
 		[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory 
 		
+		\subsection{Requirements related to goal G2}
+		
 		[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students)
 		
 		[R20102] the system includes into a selection process only student that had an accepted application for the relative internship advice
 		
-		[R20201] the system notifies students for any interview date
+		[R20201] the system notifies students for any interview date that interest them
 		
-		[R20202] the system automatically calculates the scores of questionnaire closed answers
+		[R20202] the system allows companies insert students answers into the system
 		
-		[R20203] the system allows companies to manually insert scores for questionnaire open answers
+		[R20203] the system automatically calculates the scores of questionnaire closed answers
 		
-		[R20204] the system allows companies to visualize and compare selections scores
+		[R20204] the system allows companies to manually insert scores for questionnaire open answers
 		
-		[R20205] in any selection phase, the system allows companies to discard a student currently involved in the selection process (discarded students are removed by the selection process)
+		[R20205] the system allows companies to visualize and compare selections scores
 		
-		[R20206] in any selection phase, the system allows companies to accept a student currently involved in the selection process (accepted students are removed by the selection process)
+		[R20206] in any selection phase, the system allows companies to discard a student currently involved in the selection process (discarded students are removed by the selection process)
 		
-		[R20207] the system allows companies to write a personalized message to communicate the result of a selection
+		[R20207] in any selection phase, the system allows companies to accept a student currently involved in the selection process (accepted students are removed by the selection process)
 		
-		[R20208] when a selection result is prepared for a student (with the relative message), it is notified to the student
+		[R20208] the system allows companies to write a personalized message to communicate the result of a selection
 		
-		[R20209] when a selected process related to an internship advice has ended, the system deletes the advice
+		[R20209] when a selection result is prepared for a student (with the relative message), it is notified to the student
+		
+		[R20210] when a selected process related to an internship advice has ended, the system deletes the advice
+		
+		\subsection{Requirements related to goal G3}
 		
 		[R30101] the system allows students and companies to consult the internships (ongoing or finished)
 		
@@ -131,9 +121,7 @@
 				
 			\end{figure}
 			
-			The Use Case (UC) diagram shows, for each defined UC, which actors are involved and, in general, which actor initiates the UC. For UCs that can be performed by both actors (students and companies), the common name \textit{User} is used.
-			
-			
+			The Use Case (UC) diagram shows, for each defined UC, which actors are involved and, in general, which actor initiates the UC. For UCs that can be performed by both actors (students and companies), the common name \textit{User} is used.	
 			
 		\subsection{Use-cases}
 			
@@ -153,7 +141,7 @@
 					\hline
 					Entry condition & The student has opened the S\&C platform for the first time \\
 					\hline
-					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+					Event Flow & \parbox{5cm}{\begin{enumerate}
 						\item The student press the button \textit{Registration}
 						\item The student press the button \textit{Student Registration}
 						\item The system shows a form to compile
@@ -176,7 +164,7 @@
 					to the platform and the system shows the 
 					homepage \\
 					\hline
-					Exception &	\parbox{5cm}{\begin{enumerate}[label=\alpha]
+					Exception &	\parbox{5cm}{\begin{enumerate}
 							\item There arleady exist a student with 
 							those e-mail; the system return to 
 							the entry condition showing an 
@@ -207,7 +195,7 @@
 					\hline
 					Entry condition & The company has opened the S\&C platform for the first time \\
 					\hline
-					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+					Event Flow & \parbox{5cm}{\begin{enumerate}
 							\item The company press the button \textit{Registration}
 							\item The company press the button \textit{Company Registration}
 							\item The system shows a form to compile
@@ -254,7 +242,7 @@
 					\hline
 					Entry condition & The User has opened the S\&C platform \\
 					\hline
-					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+					Event Flow & \parbox{5cm}{\begin{enumerate}
 							\item The user press the button \textit{Login}
 							\item The system shows the Login page
 							\item The user logged to the platform 
@@ -293,7 +281,7 @@
 					\hline
 					Entry condition & The company is logged to S\&C platform and it wants to publish a new internship advice \\
 					\hline
-					Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+					Event Flow & \parbox{5cm}{\begin{enumerate}
 							\item The company goes to the \textit{Publish 
 							New Internship} section
 							\item The company press the button \textit{Add 
@@ -340,7 +328,7 @@
 						\hline
 						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship  \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student goes to the \textit{View 
 									Internships} section
 								\item The system shows the page with a 
@@ -382,7 +370,7 @@
 						\hline
 						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student goes to the \textit{View 
 									Companies} section
 								\item The system shows the page with a 
@@ -429,7 +417,7 @@
 						\hline
 						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student search the internship 
 								by typing its subject on the search 
 								bar 
@@ -447,7 +435,7 @@
 						page with all the details about the 
 						internship \\
 						\hline
-						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Exception & \parbox{5cm}{\begin{enumerate}
 								\item The student digits a subject and no 
 								internships match it. The system 
 								will warn the student that no 
@@ -482,7 +470,7 @@
 						Entry condition & the student, at registration, flags the 
 						option to receive notifications and the recommendation analysis is completed\\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student logs to the platform  
 								\item the student goes to the \textit{Notification} 
 								section
@@ -516,7 +504,7 @@
 						Entry condition & the company, at registration, flags the 
 						option to receive notifications and the recommendation analysis is completed\\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The comapny logs to the platform  
 								\item the company goes to the \textit{Personal Internships} 
 								section
@@ -554,7 +542,7 @@
 						\hline
 						Entry condition & the student is logged to S\&C platform and he finds an internship he wants to apply \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student access the page of the 
 								internship he wants to apply (in any way) 
 								\item The system shows the page of the 
@@ -609,7 +597,7 @@
 						\hline
 						Entry condition & the company is logged to S\&C platform and it already received some student through the recommendation mechanism \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item the company goes to \textit{Personal Internships} section
 								\item the company select the corresponding internship 
 								\item the company select a student for that internship
@@ -654,7 +642,7 @@
 						Entry condition & Internship deadline is expired and the 
 						company is logged to S\&C platform  \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The company goes to \textit{Personal 
 								Internships} section
 								\item The company select the 
@@ -687,7 +675,7 @@
 						automatically sends an e-mail to the 
 						students to inform them   \\
 						\hline
-						Exception & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Exception & \parbox{5cm}{\begin{enumerate}
 								\item the company has not configured 
 								every part; the system warn the 
 								company
@@ -717,7 +705,7 @@
 						\hline
 						Entry condition & Internship deadline is expired, the company configure the selection process and it has ready to start \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The company gives to the student the questionnaire with closed and open questions
 								\item The student answers to the questionnaire
 								\item The company asks some oral questions (if they are configured in this step)
@@ -762,7 +750,7 @@
 						\hline
 						Entry condition & the selection process is complete and the student has already received the email with the result of the interview \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The student logs into the platform with his credentials
 								\item The student goes to the \textit{Notification} Section
 								\item The system shows the page with all the notifications for the student
@@ -798,7 +786,7 @@
 						\hline
 						Entry condition & The company is logged to S\&C platform and has just sent the selection results \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The system shows a form with a series of questions to answer 
 								\item the company answers to the questions
 								\item the company clicks on the button \textit{Submit}
@@ -830,7 +818,7 @@
 						\hline
 						Entry condition & The User is logged to S\&C platform and it completed an internship \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The user goes to \textit{Ongoing Internships} section
 								\item The system shows a page with 
 								all the ongoing internships of the user 
@@ -871,7 +859,7 @@
 						and there is an ongoing internship in 
 						which it is involved.  \\
 						\hline
-						Event Flow & \parbox{5cm}{\begin{enumerate}[label=\alpha]
+						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The user goes on \textit{Ongoing 
 								Internships} section 
 								\item The system shows a page with 
@@ -1028,119 +1016,6 @@
 			
 			in the figure it is represented the activity diagram associated do the selection process running UC; in this case we prefer use an activity diagram to represent also the interaction, during the selection interview, between the 2 actors without explicitly using the system; in fact, the filling of the questionnaire and the oral answers are all done without the use of the system; then, to collect the answers, the company use the system and the student receive a notification with the outcome of the interview for this step (Accepted, Rejected, Suspended)
 		
-		\subsection{Requirements mapping}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-						\multicolumn{2}{||P{15cm}||}{[G1] students and companies establish contacts for doing internships} \\ [0.5ex]
-					\hline
-					[R00000] when a notification of a user is generated, the user receives it on its mailbox (in a more concise version) and can consult it on its notification section & \\
-					
-					[R10101] the system allows students to sign up to the platform with their institutional mails & [D10101] students upload their CV in Europass format \\
-					
-					[R10102] the system allows a student to set up whether he/she wants to take part into the recommendation  & [D10102] information on a student CV do not contradict each other \\
-					
-					[R10103] the system allows students upload their CV to the platform & [D10302] information companies insert in internship advice do not contradict each other \\
-					
-					[R10104] the system allows students to add on their profile the name, the surname and a brief description of themselves & \\
-					
-					[R10105] when a CV is uploaded, the system verifies if it is digitally signed by the profile mail & \\
-					
-					[R10106] the system allows students to log in into the system by providing the registration mail and the chosen password & \\
-					
-					[R10107] the system allows students to change their profile information (including the CV) and their access information & \\
-					
-					[R10201] the system allows companies to sign up to the platform with their company address & \\
-					
-					[R10202] the system allows companies to insert the main information regarding their business area and area of expertise & \\
-					
-					[R10203] the system allows a company to set up if it wants to take part into the recommendation analysis & \\
-					
-					[R10204] the system allows companies to log in into the system by providing the registration mail and the chosen password & \\
-					
-					[R10205] the system allows companies to change their profile information and their access information & \\
-					
-					[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms), the submission deadline and the max number of applications & \\
-					
-					[R10401] the system allows students to search internships advice by name (and also to see the complete list of available advice). The system shall act as a search engine to present also the names of the advice that are similar to the searched one & \\
-					
-					[R10402] the system allows students to search companies by name (and also to see the complete list of registered companies) and then access to their profile & \\
-					
-					[R10403] the system allows students to filter the results they searched (e.g. "only paid internships", "only companies located in Lombardy") & \\
-					
-					[R10501] when the system recognizes that a new internship advice that might interest a student (that allowed the recommendation option) is published, it notifies that student by sending him an e-mail (to its registration address) & \\
-					
-					[R10601] when the system recognizes that a student has a profile that would fit an internship advice, the company that published the advice is notified (for students and companies that both take part into the recommendation analysis) & \\
-					
-					[R10701] the system allows students to apply for any internship advice which deadline has not expired & \\
-					
-					[R10702] when a student applies for an internship, the related company is notified by the system & \\
-					
-					[R10801] the system allows companies to approve, discard or ignore each application they may receive for one of their published advice & \\
-					
-					[R10901] when a company opens a student profile, it can propose to him to apply for one of its internships. Then, the students receives a notification & \\
-					
-					[R11001] the system allows student that received an internship proposal from a company can decide to accept it, discard it or ignore it & \\
-					
-					[R11002] when a student accept an internship proposal, it is implicitly accepted by the company & \\
-					
-					[R11101] when a student gets his/her result of the selection, the system provides to him a non-compulsory questionnaire regarding his/her experience (in the context of that selection process)& \\
-					
-					[R11102] when a company ends a selection process, the system provides to it a non-compulsory questionnaire regarding its experience (in the context of that selection process) & \\
-					
-					[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory & \\
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G1}
-				\label {table:1}
-			\end{table}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-					\multicolumn{2}{||P{15cm}||}{[G2] internships selections can be monitored and supported by the system} \\ [0.5ex]
-					\hline
-					[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students) & \\
-					
-					[R20102] the system includes into a selection process only student that had an accepted application for the relative internship advice & \\
-					
-					[R20201] the system notifies students for any interview date & \\
-					
-					[R20202] the system automatically calculates the scores of questionnaire closed answers & \\
-					
-					[R20203] the system allows companies to manually insert scores for questionnaire open answers & \\
-					
-					[R20204] the system allows companies to visualize and compare selections scores & \\
-					
-					[R20205] in any selection phase, the system allows companies to discard a student currently involved in the selection process (discarded students are removed by the selection process) & \\
-					
-					[R20206] in any selection phase, the system allows companies to accept a student currently involved in the selection process (accepted students are removed by the selection process) & \\
-					
-					[R20207] the system allows companies to write a personalized message to communicate the result of a selection & \\
-					
-					[R20208] when a selection result is prepared for a student (with the relative message), it is notified to the student & \\[1ex]
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G2}
-				\label {table:1}
-			\end{table}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-					\multicolumn{2}{||P{15cm}||}{[G3] ongoing internships can be monitored from the system} \\ [0.5ex]
-					\hline
-					[R30101] the system allows students and companies to consult the internships (ongoing or finished) & \\
-					
-					[R30102] the system allows students and companies to report complaints on the internships they are involved in & \\
-					
-					[R30103] the system does not allow users different from their creator to consult complains & \\ [1ex]
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G3}
-				\label {table:1}
-			\end{table}
 	\section{Performance Requirements}
 		For the system functions related to user navigation, we require a response time up to 5 seconds.
 		
@@ -1157,17 +1032,15 @@
 			
 		\subsection{Hardware limitations}
 		
-			To make the best use of the platform, it is necessary that the devices used to access it meet the following requirements:
+			To make the best use of the platform, it is necessary that the devices used to access it meet (at least) the following requirements:
 			
 			\begin{itemize}
-				\item \textbf{RAM}: minimum 4 GB of RAM for users who use the platform in a relatively simple way, such as sending CVs or applying for internships.
-				\item\textbf{Internet Connection}: a stable connection of 5 Mbps is required for a smooth experience. This would support navigation on the platform and viewing content. Slower connections may lead to long loading times on pages with a lot of data.
-				\item \textbf{Screen Resolution}: Users should have devices with screens of at least 1280x720 px to ensure a good visual experience.
+				\item\textbf{Internet Connection}: a stable connection of 5 Mbps is required for a smooth experience. This would support navigation on the platform and viewing content. Slower connections may lead to long loading times on pages with a lot of data (note that we don't expect that the application provides large multimedia resources, such as high-quality images or videos);
+				\item \textbf{Screen Resolution}: users should have devices with screens of at least 1280x720 px to ensure a good visual experience.
 			\end{itemize}
 			
-			
 		\subsection{Other constraints}
-			The platform is designed to allow companies to advertise their internships and for students to find internships relevant to their studies. No overly complicated functionality is required; therefore, the UI must be user-friendly to allow users to navigate the platform easily.
+			The platform is designed to allow companies to advertise their internships and for students to find internships relevant to their studies. Therefore, S\&C average users may not have a strong knowledge of UI graphic conventions (e.g. conventional icons), this implies that UI has to be designed in order to meet these usability standards.
 	\section{Software System Attributes}
 		\subsection{Reliability}
 			Considering the criticality of the information managed by the application (e.g. interview dates, CV, e-mail addresses) we require an high level of reliability in each sub-part of the system.
@@ -1186,17 +1059,14 @@
 			\begin{itemize}
 				\item e-mails sent from the system always have to be sent from a certified mail address. Moreover, e-mails sent from the system must be encrypted and must not contain any password;
 				\item attacks related to system availability (e.g. DOS), to data confidentiality, integrity and users authenticity must be taken into consideration, also considering the public nature of the application;
-				\item a CV must be digitally signed from the student that upload it;
 				\item uploaded CV should be scanned to ensure that they don't contain viruses.
 			\end{itemize}
 		\subsection{Maintainability}
 			For S\&C, which manages multiple users (students and companies) and handles a large amount of sensitive data, maintainability is a crucial aspect:
 			\begin{itemize}
 				\item the code has to be well documented and tested; in particular, a testing routine has to be provided to check if the system still work or not.
-				\item The system structure should provide the ability to deploy updates in the backend without the users noticing it
+				\item The system structure should provide the ability to deploy updates in the back-end without the users noticing it
 				\item to facilitate maintainability, system components should be created to be as modular as possible
 			\end{itemize}
-			
-			
 		\subsection{Portability}
 			We highlight the fact that the application targets are students and companies that may use operative systems of any kind, therefore portability should be increased, in order to spread the audience. On the other hand, non-desktop devices (such as mobile devices, smartwatches ecc.) are not an huge concern of this kind of application, so we don't put much effort on emphasizing the portability also in this direction. At the end, we encourage portability but we ask for it at least for general purposes desktop operative systems.

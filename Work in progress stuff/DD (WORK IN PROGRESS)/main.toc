@@ -1,0 +1,135 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {english}{}\relax
+\contentsline {chapter}{\nonumberline Contents}{ii}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Purpose}{1}{section.1.1}%
+\contentsline {mtocsection}{\numberline {1.1}Purpose}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Goals}{1}{subsection.1.1.1}%
+\contentsline {mtocsubsection}{\numberline {1.1.1}Goals}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Scope}{1}{section.1.2}%
+\contentsline {mtocsection}{\numberline {1.2}Scope}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Phenomena}{1}{subsection.1.2.1}%
+\contentsline {mtocsubsection}{\numberline {1.2.1}Phenomena}{1}{subsection.1.2.1}%
+\contentsline {subsubsection}{\nonumberline World Phenomena}{1}{subsubsection*.5}%
+\contentsline {subsubsection}{\nonumberline Shared Phenomena}{2}{subsubsection*.7}%
+\contentsline {paragraph}{\nonumberline World-controlled Shared Phenomena}{2}{paragraph*.9}%
+\contentsline {paragraph}{\nonumberline Machine-controlled Shared Phenomena}{2}{paragraph*.11}%
+\contentsline {section}{\numberline {1.3}Definitions, Acronyms and Abbreviations}{3}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Definitions, Acronyms and Abbreviations}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Definitions}{3}{subsection.1.3.1}%
+\contentsline {mtocsubsection}{\numberline {1.3.1}Definitions}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Acronyms}{3}{subsection.1.3.2}%
+\contentsline {mtocsubsection}{\numberline {1.3.2}Acronyms}{3}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Abbreviations}{3}{subsection.1.3.3}%
+\contentsline {mtocsubsection}{\numberline {1.3.3}Abbreviations}{3}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Revision history}{3}{section.1.4}%
+\contentsline {mtocsection}{\numberline {1.4}Revision history}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Reference documents}{3}{section.1.5}%
+\contentsline {mtocsection}{\numberline {1.5}Reference documents}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Document structure}{4}{section.1.6}%
+\contentsline {mtocsection}{\numberline {1.6}Document structure}{4}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Architectural Design}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}%
+\contentsline {mtocsection}{\numberline {2.1}Overview}{5}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Specific requirements}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}External Interface Requirements}{6}{section.3.1}%
+\contentsline {mtocsection}{\numberline {3.1}External Interface Requirements}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{6}{subsection.3.1.1}%
+\contentsline {mtocsubsection}{\numberline {3.1.1}User Interfaces}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{6}{subsection.3.1.2}%
+\contentsline {mtocsubsection}{\numberline {3.1.2}Hardware Interfaces}{6}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{6}{subsection.3.1.3}%
+\contentsline {mtocsubsection}{\numberline {3.1.3}Software Interfaces}{6}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{6}{subsection.3.1.4}%
+\contentsline {mtocsubsection}{\numberline {3.1.4}Communication Interfaces}{6}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Functional Requirements}{6}{section.3.2}%
+\contentsline {mtocsection}{\numberline {3.2}Functional Requirements}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Use-case diagrams}{6}{subsection.3.2.1}%
+\contentsline {mtocsubsection}{\numberline {3.2.1}Use-case diagrams}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Use-cases}{6}{subsection.3.2.2}%
+\contentsline {mtocsubsection}{\numberline {3.2.2}Use-cases}{6}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Sequence diagrams}{6}{subsection.3.2.3}%
+\contentsline {mtocsubsection}{\numberline {3.2.3}Sequence diagrams}{6}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Activity diagrams}{6}{subsection.3.2.4}%
+\contentsline {mtocsubsection}{\numberline {3.2.4}Activity diagrams}{6}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Requirements mapping}{6}{subsection.3.2.5}%
+\contentsline {mtocsubsection}{\numberline {3.2.5}Requirements mapping}{6}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Performance Requirements}{9}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Performance Requirements}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Design Constraints}{9}{section.3.4}%
+\contentsline {mtocsection}{\numberline {3.4}Design Constraints}{9}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{9}{subsection.3.4.1}%
+\contentsline {mtocsubsection}{\numberline {3.4.1}Standards compliance}{9}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{9}{subsection.3.4.2}%
+\contentsline {mtocsubsection}{\numberline {3.4.2}Hardware limitations}{9}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Other constraints}{9}{subsection.3.4.3}%
+\contentsline {mtocsubsection}{\numberline {3.4.3}Other constraints}{9}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Software System Attributes}{9}{section.3.5}%
+\contentsline {mtocsection}{\numberline {3.5}Software System Attributes}{9}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{9}{subsection.3.5.1}%
+\contentsline {mtocsubsection}{\numberline {3.5.1}Reliability}{9}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Availability}{9}{subsection.3.5.2}%
+\contentsline {mtocsubsection}{\numberline {3.5.2}Availability}{9}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Security}{10}{subsection.3.5.3}%
+\contentsline {mtocsubsection}{\numberline {3.5.3}Security}{10}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{10}{subsection.3.5.4}%
+\contentsline {mtocsubsection}{\numberline {3.5.4}Maintainability}{10}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Portability}{10}{subsection.3.5.5}%
+\contentsline {mtocsubsection}{\numberline {3.5.5}Portability}{10}{subsection.3.5.5}%
+\contentsline {chapter}{\numberline {4}References}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Citations}{11}{section.4.1}%
+\contentsline {mtocsection}{\numberline {4.1}Citations}{11}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Glossaries and Indices}{12}{section.4.2}%
+\contentsline {mtocsection}{\numberline {4.2}Glossaries and Indices}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hyperreferences}{12}{section.4.3}%
+\contentsline {mtocsection}{\numberline {4.3}Hyperreferences}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.4}A Final Note on Compilation}{13}{section.4.4}%
+\contentsline {mtocsection}{\numberline {4.4}A Final Note on Compilation}{13}{section.4.4}%
+\contentsline {part}{\nonumberline Design and Additional Features}{15}{part*.16}%
+\contentsline {chapter}{\numberline {5}Page Design}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Headings}{16}{section.5.1}%
+\contentsline {mtocsection}{\numberline {5.1}Headings}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Headers \& Footers}{16}{section.5.2}%
+\contentsline {mtocsection}{\numberline {5.2}Headers \& Footers}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Table of Contents}{17}{section.5.3}%
+\contentsline {mtocsection}{\numberline {5.3}Table of Contents}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Paper Size}{18}{section.5.4}%
+\contentsline {mtocsection}{\numberline {5.4}Paper Size}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Page Layout}{18}{section.5.5}%
+\contentsline {mtocsection}{\numberline {5.5}Page Layout}{18}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Numbers \& Counters}{19}{section.5.6}%
+\contentsline {mtocsection}{\numberline {5.6}Numbers \& Counters}{19}{section.5.6}%
+\contentsline {section}{\numberline {5.7}White Space}{19}{section.5.7}%
+\contentsline {mtocsection}{\numberline {5.7}White Space}{19}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Mathematics and Boxes}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Theorems}{21}{section.6.1}%
+\contentsline {mtocsection}{\numberline {6.1}Theorems}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Boxes \& Environments}{22}{sidenote.6.3}%
+\contentsline {mtocsection}{\numberline {6.2}Boxes \& Custom Environments \sidenote [][*1.8]{Notice that in the table of contents and in the header, the name of this section is \enquote {Boxes \& Environments}; we achieved this with the optional argument of the \texttt {section} command.}}{22}{sidenote.6.3}%
+\contentsline {section}{\numberline {6.3}Experiments}{23}{section.6.3}%
+\contentsline {mtocsection}{\numberline {6.3}Experiments}{23}{section.6.3}%
+\contentsline {part}{\nonumberline Appendix}{24}{part*.20}%
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{25}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{25}{section.A.1}%
+\contentsline {mtocsection}{\numberline {A.1}Heading on Level\xspace 1 (section)}{25}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{25}{subsection.A.1.1}%
+\contentsline {mtocsubsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{25}{subsection.A.1.1}%
+\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{25}{subsubsection*.22}%
+\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{25}{paragraph*.24}%
+\contentsline {section}{\numberline {A.2}Lists}{26}{section.A.2}%
+\contentsline {mtocsection}{\numberline {A.2}Lists}{26}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{26}{subsection.A.2.1}%
+\contentsline {mtocsubsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{26}{subsection.A.2.1}%
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{26}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{26}{subsection.A.2.2}%
+\contentsline {mtocsubsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{26}{subsection.A.2.2}%
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{26}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {A.2.3}Example for list\xspace (description)}{26}{subsection.A.2.3}%
+\contentsline {mtocsubsection}{\numberline {A.2.3}Example for list\xspace (description)}{26}{subsection.A.2.3}%
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{27}{subsubsection*.30}%
+\contentsline {chapter}{\numberline {B}Fonts Testing}{28}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Font Sizes}{28}{section.B.1}%
+\contentsline {mtocsection}{\numberline {B.1}Font Sizes}{28}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Font Families}{28}{section.B.2}%
+\contentsline {mtocsection}{\numberline {B.2}Font Families}{28}{section.B.2}%
+\contentsline {chapter}{Alphabetical Index}{31}{section*.31}%

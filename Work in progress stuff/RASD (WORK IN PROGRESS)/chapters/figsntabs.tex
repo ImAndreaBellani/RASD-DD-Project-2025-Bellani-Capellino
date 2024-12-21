@@ -5,24 +5,24 @@
 		\item applications and withdrawals to internship advice (using Alloy 6 temporal operators).
 	\end{itemize}
 	
-	To describe the passing of time (especially in temporal simulations) we built a tiny Alloy \emph{calendar}, which is basically a path of \CommentSty{date} linked each other by means of the relation \CommentSty{yesterday}:
+	To describe the passing of time (especially in temporal simulations) we built a simple calendar in Alloy, which is basically a path of \CommentSty{date} linked each other by means of the relation \CommentSty{yesterday}:
 	\begin{center}
 		\includegraphics{calendarModel.png}
 	\end{center}
 	
 	Then, What will be generated is a "path of dates" that represents the calendar and \CommentSty{Today} must "move" day-by-day following the calendar structure:
 	\begin{center}
-		\includegraphics{calendar1.png}
+		\includegraphics[width=12cm]{calendar1.png}
 	\end{center}
 	\begin{center}
-		\includegraphics{calendar2.png}
+		\includegraphics[width=12cm]{calendar2.png}
 	\end{center}
 	
 	\section{Applications and withdrawals simulation (Alloy 6 temporal simulation)}
 		We modeled a simplified version of the sub-part of the system related to students applications to internship advice. Several parts were omitted in order to highlight what we believed were the most interesting constraints, such as the fact that companies have to accept students applications or the invitation mechanism:
-		\begin{center}
-			\includegraphics{model1-1.png}
-		\end{center}
+		\begin{flushleft}
+			\includegraphics[width=10cm]{model1-1.png}
+		\end{flushleft}
 		\begin{center}
 			\includegraphics{model1-2.png}
 		\end{center}
@@ -39,18 +39,18 @@
 		\end{center}
 		\begin{enumerate}[start=0]
 			\item the trace starts with two application enrolled \CommentSty{MidDay2} (which is \CommentSty{Today} in this step). These two applications refer to the same \CommentSty{InternshipAdvice} (\CommentSty{InternshipAdvice1});
-			\item in this step, \CommentSty{Application0} does not change while \CommentSty{Application1} has its student changed and its advice change. We notice that even the application date is changed to the date point by actual \CommentSty{Today};
+			\item in this step, \CommentSty{Application0} does not change while \CommentSty{Application1} has its student changed and its advice changed. We notice that even the application date is changed to the date point by actual \CommentSty{Today};
 			\item in this step each application changes somehow. Their dates are properly updated and they are not related to advice which deadline has already expired.
 		\end{enumerate}
 		
 	\section{Selection process structure (static simulation)}
 		Although a selection process has without a doubt a dynamic behavior, we preferred to focus on modeling the constraints related to the process design:
-		\begin{center}
-			\includegraphics{model2-1.png}
-		\end{center}
-		\begin{center}
-			\includegraphics{model2-2.png}
-		\end{center}
+		\begin{flushleft}
+			\includegraphics[width=8cm]{model2-1.png}
+		\end{flushleft}
+		\begin{flushleft}
+			\includegraphics[width=10cm]{model2-2.png}
+		\end{flushleft}
 		\begin{center}
 			\includegraphics{model2-3.png}
 		\end{center}
@@ -59,4 +59,4 @@
 		\begin{center}
 			\includegraphics{model2-4.png}
 		\end{center}
-		At the end, one of the main purposes of this static modeling is also to clarify the selection process structure (also visually).
+		At the end, one of the purposes of this static modeling is also to clarify the selection process structure (also visually).
