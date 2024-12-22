@@ -167,14 +167,7 @@
 					to the platform and the system shows the 
 					homepage \\
 					\hline
-					Exception &	\parbox{5cm}{\begin{enumerate}
-							\item There arleady exist a student with 
-							those e-mail; the system return to 
-							the entry condition showing an 
-							error message \textit{Student arleady 
-							registered}
-							\item the CV is not digitally signed; the system shows an error message informing the student about that
-							\end{enumerate}} \\
+					Exception & There already exist a student with those e-mail; the system return to the entry condition showing an error message \textit{Student already registered} \\
 					\hline
 				\end{tabular}
 			\end{table}
@@ -891,6 +884,36 @@
 					\end{tabular}
 				\end{table}
 				
+				
+				\begin{table} [H]
+					\centering
+					\begin{itemize}
+						\item [UC18] - Delete Internship Advice
+					\end{itemize}
+					
+					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
+						\hline
+						Name & Delete Internship advice \\
+						\hline
+						Actors & \parbox{5cm}{\begin{itemize}
+								\item Company
+							\end{itemize}
+						} \\
+						\hline
+						Entry condition & the company is logged to the platform, it finished a selection process and it wants to delete and internship advice  \\
+						\hline
+						Event Flow & \parbox{5cm}{\begin{enumerate}
+								\item The company goes on \textit{Personal Internships} section 
+								\item The system shows a page with 
+								all the internships advice of the company  
+								\item The user select the interested 
+								internship advice 
+								\item The user click on \textit{Delete} button
+						\end{enumerate}} \\
+						\hline 
+					\end{tabular}
+				\end{table}
+				
 		\subsection{Sequence diagrams}
 		
 			\begin{figure}[H]
@@ -1021,6 +1044,14 @@
 				{\bfseries [UC17] - Collection of Complaints}
 				\caption{[UC17] - Collection of Complaints}
 				\includegraphics[scale=0.3]{CollectionComplaints.jpg}
+				
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				{\bfseries [UC18] - Delete Internship Advice}
+				\caption{[UC18] - Delete Internship Advice}
+				\includegraphics[scale=0.3]{Delete.jpg}
 				
 			\end{figure}
 			

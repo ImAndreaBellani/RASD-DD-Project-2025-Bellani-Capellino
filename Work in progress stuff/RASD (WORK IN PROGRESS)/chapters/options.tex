@@ -98,7 +98,7 @@
 			
 			This figure represent the domain class diagram of the system. It represents the fact that the system connects students and companies, facilitating the management of applications, selection processes, interviews, internships, and communication between the parties. It provides tools for sending notifications, collecting feedback, and managing questionnaire and complaints.
 			
-			The system's users are modeled through the \textit{User} class, which represents both Students (class \textit{Student}) and Companies (class \textit{Company}). Each user has basic attributes (email and password) and can receive personalized notifications (class \textit{Notification}, with subtypes for students and companies).
+			The system's users are modeled through the \textit{User} class, which represents both Students (class \textit{Student}) and Companies (class \textit{Company}). Each user has basic attributes (email and password) and can receive personalized notifications (class \textit{Notification}.
 			
 			Companies can publish internships advice (class \textit{InternshipAdvice}); students can apply for an internship but also companies can send proposal of application to the students. This mechanism of applications is managed by the \textit{Application} class. Each application born with one and only one of the boolean flags to true, corresponding to the kind of user that unleashed that application. Once the other user accepts the proposal of the counterpart, its flag is put to \textit{true}; at the end, students that will enroll the selection process are the only related to applications with the 2 flags true.
 			
@@ -130,7 +130,7 @@
 						\caption{Internship state diagram}
 					\end{figure}
 					
-					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Assigned} is the state where the internship has been assigned to specific students; \textit{Closed} is the state where the internship has ended (either because it finished or was interrupted); \textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice or the selection process is ended).
+					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice manually or the selection process is ended).
 					
 				\subparagraph{State of an application for an internship}
 					\begin{figure}[H]
