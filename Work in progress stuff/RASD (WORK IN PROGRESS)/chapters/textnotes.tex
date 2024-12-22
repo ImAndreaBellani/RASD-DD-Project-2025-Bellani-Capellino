@@ -18,6 +18,13 @@
 		
 		[R00000] when a notification of a user is generated, the user receives it on its mailbox (in a more concise version) and can consult it on its notification section
 		
+		To satisfy almost each goal, we take for grant these two domain assumptions:
+		
+
+		[D1] Users must have a reliable internet connection
+		
+		[D5] When users registers, they register with an active email address that belongs to them
+		
 		\subsection{Requirements related to goal G1}
 		
 		[R10101] the system allows students to sign up to the platform with their institutional mails
@@ -78,6 +85,15 @@
 		
 		[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory 
 		
+		To satisfy G1, these domain assumptions must hold:
+		
+	
+		[D2] Information contained in the CVs are truthful and do not conflict each other
+		
+		[D3] Company fill the form about internship advice with only information compatible with their business decisions and not conflicting each other
+		
+		[D6] Uploaded CVs are written in EuroPass format
+		
 		\subsection{Requirements related to goal G2}
 		
 		[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students)
@@ -103,6 +119,11 @@
 		[R20209] when a selection result is prepared for a student (with the relative message), it is notified to the student
 		
 		[R20210] when a selected process related to an internship advice has ended, the system deletes the advice
+		
+		To ensure that the goal is satisfied, this domain assumption must hold:
+		
+		
+		[D4] Company correctly enters the answers provided by the student during the interview into the system
 		
 		\subsection{Requirements related to goal G3}
 		
@@ -211,10 +232,10 @@
 					to the platform and the system shows the 
 					homepage \\
 					\hline
-					Exception & There arleady exist a company with 
+					Exception & There already exist a company with 
 					those e-mail; the system return to 
 					the entry condition showing an 
-					error message \textit{Company arleady 
+					error message \textit{Company already 
 						registered} \\
 					\hline
 				\end{tabular}
@@ -888,27 +909,26 @@
 				\begin{table} [H]
 					\centering
 					\begin{itemize}
-						\item [UC18] - Delete Internship Advice
+						\item [UC18] - Ongoing internship closing
 					\end{itemize}
 					
 					\begin{tabular}{|| P{7.5cm} | P{7.5cm} ||}
 						\hline
-						Name & Delete Internship advice \\
+						Name & Ongoing internship closing \\
 						\hline
 						Actors & \parbox{5cm}{\begin{itemize}
 								\item Company
 							\end{itemize}
 						} \\
 						\hline
-						Entry condition & the company is logged to the platform, it finished a selection process and it wants to delete and internship advice  \\
+						Entry condition & the company is logged to the platform, one of its internship is concluded from the company point of view (for any reason)  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The company goes on \textit{Personal Internships} section 
 								\item The system shows a page with 
-								all the internships advice of the company  
-								\item The user select the interested 
-								internship advice 
-								\item The user click on \textit{Delete} button
+								all the ongoing internships hosted by the company  
+								\item The company selects the one to close
+								\item The company clicks on \textit{Close} button
 						\end{enumerate}} \\
 						\hline 
 					\end{tabular}
@@ -1049,8 +1069,8 @@
 			
 			\begin{figure}[H]
 				\centering
-				{\bfseries [UC18] - Delete Internship Advice}
-				\caption{[UC18] - Delete Internship Advice}
+				{\bfseries [UC18] - Ongoing internship closing}
+				\caption{[UC18] - Ongoing internship closing}
 				\includegraphics[scale=0.3]{Delete.jpg}
 				
 			\end{figure}
@@ -1096,7 +1116,7 @@
 		\subsection{Reliability}
 			Considering the criticality of the information managed by the application (e.g. interview dates, CV, e-mail addresses) we require an high level of reliability in each sub-part of the system.
 			
-			For the recommendation system reliability we ask for a... .
+			For the recommendation system reliability, we ask for a \emph{mean average precision} between 0.15 and 0.25 (considering the kind of data manipulated and assuming that the system contains data of users mainly located in Italy).
 		\subsection{Availability}
 			Since the application does not have real-time interactions or much critical functions to ensure, if the system went down for few hours it would not be an huge concern for most users. However, there some functions that require an higher level of availability than the others:
 			\begin{itemize}

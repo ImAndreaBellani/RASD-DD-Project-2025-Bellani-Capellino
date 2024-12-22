@@ -87,7 +87,7 @@
 			\end{flushleft}
 			\textbf{User provides a feedback at the conclusion of an internship}
 			\begin{flushleft}
-				Alice has just finished the internship at WeWorkGreat, an non-compulsory questionnaire is given to her with some general questions related to her experience at the company (e.g. "did the company respect the terms listed in the advice?" e.c.c.). Since it is not compulsory, Alice decides to not compile it.
+				Alice has just finished the internship at WeWorkGreat, WeWorkGreat manually closes the internship from its private area and an non-compulsory questionnaire is given to both Alice and WeWorkGreat with some general questions related the experience (questions differ for Alice and for WeWorkGreat, e.g. Alice is asked to evaluate the experience with its colleagues). Since these questionnaires are non-compulsory, Alice decides to not compile it, while the company decides to.
 			\end{flushleft}
 		\subsection{High-level class diagram}
 			\begin{figure}[H]
@@ -121,25 +121,25 @@
 			
 			
 			\subsection{State Diagrams}
-				In this subsection, the most relevant state diagrams are presented in order to better understand the system's evolution through its different phases. We focus in particular on the representation of an internship's state and the evolution of a student's application.
+				In this subsection, the most relevant state diagrams are presented in order to better understand the system's evolution through its different phases. We focus in particular on the representation of an internship advice's state and the evolution of a student's application.
 				
 				\subparagraph{State of an internship}
 					\begin{figure}[H]
 						\centering
 						\includegraphics[scale=0.3]{stateInternship.jpg}
-						\caption{Internship state diagram}
+						\caption{Internship advice state diagram}
 					\end{figure}
 					
-					In this state diagram, each state represents the status an internship can have. \textit{Activated} is the state where the internship is published and visible on the platform (in the form of an internship advice); \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Deleted} is the state where the internship is removed from the system (the company deletes the internship advice manually or the selection process is ended).
+					In this state diagram, each state represents the status an internship advice can have. \textit{Activated} is the state where the internship advice is published and visible on the platform; \textit{Under Selection} is the state where the company is conducting the selection process;\textit{Deleted} is the state where the internship advice is removed from the system (the company deletes the internship advice manually or the selection process is ended).
 					
 				\subparagraph{State of an application for an internship}
 					\begin{figure}[H]
 						\centering
-						\includegraphics[scale=0.3]{application.jpg}
+						\includegraphics{application.jpg}
 						\caption{Application for an internship state diagram}
 					\end{figure}
 					
-					In this state diagram, the evolution of a student's application for an internship is described. The \textit{Started} state refers to a student's application for an internship. The \textit{Conducted} state relates to the evolution of the selection process (open questions, closed questions, interviews, questionnaire completion, etc.). The \textit{Evaluation} state is where the company assesses the student's application. From this state, two subsequent states are possible: \textit{Accepted} if the application is accepted, or \textit{Rejected} if it is declined.
+					An application for an advice may start with the proposal from a company or with a request from a student. Anyway, both cases must end up with the two flags to true, otherwise the student would not take part into the selection process.
 					
 	\section{Product functions}
 		\textbf{Sign-up and login}
@@ -183,20 +183,15 @@
 			
 			[D1] Users must have a reliable internet connection
 			
-			[D2] Information contained in the CVs are truthful
+			[D2] Information contained in the CVs are truthful and do not conflict each other
 			
-			[D3] Company fill the form about internship advice accordingly to their business decisions
+			[D3] Company fill the form about internship advice with only information compatible with their business decisions and not conflicting each other
 			
 			[D4] Company correctly enters the answers provided by the student during the interview into the system
 			
 			[D5] When users registers, they register with an active email address that belongs to them
 			
 			[D6] Uploaded CVs are written in EuroPass format
-			
-			[D7] Information on a student CV do not contradict each other
-			
-			[D8] Information companies insert in internship advice do not contradict each other
-			
 		\subsection{Dependencies}
 			\begin{itemize}
 				\item The system will integrate with email system to send notifications to Users
