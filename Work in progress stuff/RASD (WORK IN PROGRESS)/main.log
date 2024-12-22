@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  22 DEC 2024 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  22 DEC 2024 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3241,30 +3241,30 @@ Overfull \hbox (34.5741pt too wide) in paragraph at lines 1--1
 <images/UC.jpg, id=410, 689.57625pt x 399.74344pt>
 File: images/UC.jpg Graphic file (type jpg)
 <use images/UC.jpg>
-Package pdftex.def Info: images/UC.jpg  used on input line 144.
+Package pdftex.def Info: images/UC.jpg  used on input line 178.
 (pdftex.def)             Requested size: 689.57455pt x 399.74245pt.
+\openout4 = `main.mw.mw'.
 
-Underfull \hbox (badness 2393) in paragraph at lines 185--185
+ [16 <./images/UC.jpg>] (./main.mw.mw)
+\openout4 = `main.mw.mw'.
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 219--219
 \T1/EBGaramond-OsF/m/n/10 (+20) pro-vid-ing his in-sti-tu-tional e-
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 185--185
+Underfull \hbox (badness 3861) in paragraph at lines 219--219
 \T1/EBGaramond-OsF/m/n/10 (+20) de-scrip-tion on his aca-demic
  []
 
-\openout4 = `main.mw.mw'.
 
-[16 <./images/UC.jpg>] (./main.mw.mw)
-\openout4 = `main.mw.mw'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 []\T1/EBGaramond-OsF/m/n/10 (+20) The Com-pany com-pile the
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 229--229
+Underfull \hbox (badness 5316) in paragraph at lines 263--263
 \T1/EBGaramond-OsF/m/n/10 (+20) form pro-vid-ing its name, a
  []
 
@@ -3299,7 +3299,7 @@ Underfull \hbox (badness 5316) in paragraph at lines 229--229
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 586--586
+Underfull \hbox (badness 4660) in paragraph at lines 620--620
 \T1/EBGaramond-OsF/m/it/10 (+20) Ap-pli-ca-tion \T1/EBGaramond-OsF/m/n/10 (+20)
  or\T1/EBGaramond-OsF/m/it/10 (+20) Reject Ap-pli-ca-
  []
@@ -3310,7 +3310,7 @@ Underfull \hbox (badness 4660) in paragraph at lines 586--586
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 633--633
+Underfull \hbox (badness 1117) in paragraph at lines 667--667
 []\T1/EBGaramond-OsF/m/n/10 (+20) The stu-dent clicks on \T1/EBGaramond-OsF/m/i
 t/10 (+20) Ac-cept
  []
@@ -3321,17 +3321,17 @@ t/10 (+20) Ac-cept
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 688--688
+Underfull \hbox (badness 4505) in paragraph at lines 722--722
 []\T1/EBGaramond-OsF/m/n/10 (+20) the com-pany con-fig-ures the
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 702--702
+Underfull \hbox (badness 1715) in paragraph at lines 736--736
 \T1/EBGaramond-OsF/m/n/10 (+20) the re-spec-tive dates for each
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--702
+Underfull \hbox (badness 10000) in paragraph at lines 736--736
 
  []
 
@@ -3341,17 +3341,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 702--702
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 743--743
+Underfull \hbox (badness 3386) in paragraph at lines 777--777
 \T1/EBGaramond-OsF/m/n/10 (+20) dent the ques-tion-naire with
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 743--743
+Underfull \hbox (badness 3623) in paragraph at lines 777--777
 []\T1/EBGaramond-OsF/m/n/10 (+20) The stu-dent an-swers to the
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 743--743
+Underfull \hbox (badness 1917) in paragraph at lines 777--777
 []\T1/EBGaramond-OsF/m/n/10 (+20) The stu-dent an-swers to oral
  []
 
@@ -3370,12 +3370,12 @@ Overfull \vbox (7.99234pt too high) has occurred while \output is active []
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 779--779
+Underfull \hbox (badness 3623) in paragraph at lines 813--813
 []\T1/EBGaramond-OsF/m/n/10 (+20) The stu-dent an-swers to the
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 810--810
+Underfull \hbox (badness 1769) in paragraph at lines 844--844
 []\T1/EBGaramond-OsF/m/n/10 (+20) the com-pany an-swers to the
  []
 
@@ -3385,7 +3385,7 @@ Underfull \hbox (badness 1769) in paragraph at lines 810--810
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 895--895
+Underfull \hbox (badness 4181) in paragraph at lines 929--929
 []\T1/EBGaramond-OsF/m/n/10 (+20) The sys-tem shows the page
  []
 
@@ -3395,14 +3395,14 @@ Underfull \hbox (badness 4181) in paragraph at lines 895--895
 \openout4 = `main.mw.mw'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 932--932
+Underfull \hbox (badness 10000) in paragraph at lines 966--966
 \T1/EBGaramond-OsF/m/n/10 (+20) all the on-go-ing in-tern-ships
  []
 
 <images/StudentRegistration.jpg, id=605, 542.025pt x 507.39563pt>
 File: images/StudentRegistration.jpg Graphic file (type jpg)
 <use images/StudentRegistration.jpg>
-Package pdftex.def Info: images/StudentRegistration.jpg  used on input line 942
+Package pdftex.def Info: images/StudentRegistration.jpg  used on input line 976
 .
 (pdftex.def)             Requested size: 162.60875pt x 152.21986pt.
 \openout4 = `main.mw.mw'.
@@ -3414,7 +3414,7 @@ Package pdftex.def Info: images/StudentRegistration.jpg  used on input line 942
 File: images/CompanyRegistration.jpg.png Graphic file (type png)
 <use images/CompanyRegistration.jpg.png>
 Package pdftex.def Info: images/CompanyRegistration.jpg.png  used on input line
- 949.
+ 983.
 (pdftex.def)             Requested size: 219.07011pt x 159.22107pt.
 \openout4 = `main.mw.mw'.
 
@@ -3424,7 +3424,7 @@ Package pdftex.def Info: images/CompanyRegistration.jpg.png  used on input line
 <images/UserLogin.jpg.png, id=628, 714.41907pt x 490.83376pt>
 File: images/UserLogin.jpg.png Graphic file (type png)
 <use images/UserLogin.jpg.png>
-Package pdftex.def Info: images/UserLogin.jpg.png  used on input line 957.
+Package pdftex.def Info: images/UserLogin.jpg.png  used on input line 991.
 (pdftex.def)             Requested size: 214.32738pt x 147.25125pt.
 \openout4 = `main.mw.mw'.
 
@@ -3436,7 +3436,7 @@ Package pdftex.def Info: images/UserLogin.jpg.png  used on input line 957.
 File: images/PublishInternshipAdvice.jpg Graphic file (type jpg)
 <use images/PublishInternshipAdvice.jpg>
 Package pdftex.def Info: images/PublishInternshipAdvice.jpg  used on input line
- 966.
+ 1000.
 (pdftex.def)             Requested size: 246.84912pt x 165.99643pt.
 \openout4 = `main.mw.mw'.
 
@@ -3446,8 +3446,8 @@ Package pdftex.def Info: images/PublishInternshipAdvice.jpg  used on input line
 <images/SearchAllInternships.jpg, id=641, 764.10469pt x 521.69907pt>
 File: images/SearchAllInternships.jpg Graphic file (type jpg)
 <use images/SearchAllInternships.jpg>
-Package pdftex.def Info: images/SearchAllInternships.jpg  used on input line 97
-6.
+Package pdftex.def Info: images/SearchAllInternships.jpg  used on input line 10
+10.
 (pdftex.def)             Requested size: 229.23317pt x 156.51093pt.
 \openout4 = `main.mw.mw'.
 
@@ -3458,8 +3458,8 @@ Package pdftex.def Info: images/SearchAllInternships.jpg  used on input line 97
 <images/SearchAllCompanies.jpg, id=646, 745.28438pt x 524.71031pt>
 File: images/SearchAllCompanies.jpg Graphic file (type jpg)
 <use images/SearchAllCompanies.jpg>
-Package pdftex.def Info: images/SearchAllCompanies.jpg  used on input line 984.
-
+Package pdftex.def Info: images/SearchAllCompanies.jpg  used on input line 1018
+.
 (pdftex.def)             Requested size: 223.58704pt x 157.41429pt.
 \openout4 = `main.mw.mw'.
 
@@ -3469,13 +3469,13 @@ Package pdftex.def Info: images/SearchAllCompanies.jpg  used on input line 984.
 <images/SearchByName.jpg, id=651, 797.98125pt x 475.02469pt>
 File: images/SearchByName.jpg Graphic file (type jpg)
 <use images/SearchByName.jpg>
-Package pdftex.def Info: images/SearchByName.jpg  used on input line 992.
+Package pdftex.def Info: images/SearchByName.jpg  used on input line 1026.
 (pdftex.def)             Requested size: 239.39621pt x 142.5085pt.
 <images/InternshipRecommendation.jpg, id=652, 682.80093pt x 493.845pt>
 File: images/InternshipRecommendation.jpg Graphic file (type jpg)
 <use images/InternshipRecommendation.jpg>
 Package pdftex.def Info: images/InternshipRecommendation.jpg  used on input lin
-e 1000.
+e 1034.
 (pdftex.def)             Requested size: 204.84186pt x 148.15463pt.
 \openout4 = `main.mw.mw'.
 
@@ -3487,7 +3487,7 @@ mw)
 File: images/StudentsRecommendation.jpg Graphic file (type jpg)
 <use images/StudentsRecommendation.jpg>
 Package pdftex.def Info: images/StudentsRecommendation.jpg  used on input line 
-1008.
+1042.
 (pdftex.def)             Requested size: 205.0677pt x 153.80077pt.
 \openout4 = `main.mw.mw'.
 
@@ -3499,7 +3499,7 @@ Package pdftex.def Info: images/StudentsRecommendation.jpg  used on input line
 File: images/StudentApplicationProcess.jpg Graphic file (type jpg)
 <use images/StudentApplicationProcess.jpg>
 Package pdftex.def Info: images/StudentApplicationProcess.jpg  used on input li
-ne 1017.
+ne 1051.
 (pdftex.def)             Requested size: 193.77544pt x 168.48073pt.
 \openout4 = `main.mw.mw'.
 
@@ -3509,7 +3509,7 @@ ne 1017.
 <images/CompanyProposal.jpg, id=667, 515.67656pt x 499.11469pt>
 File: images/CompanyProposal.jpg Graphic file (type jpg)
 <use images/CompanyProposal.jpg>
-Package pdftex.def Info: images/CompanyProposal.jpg  used on input line 1025.
+Package pdftex.def Info: images/CompanyProposal.jpg  used on input line 1059.
 (pdftex.def)             Requested size: 154.70415pt x 149.73555pt.
 \openout4 = `main.mw.mw'.
 
@@ -3520,7 +3520,7 @@ Package pdftex.def Info: images/CompanyProposal.jpg  used on input line 1025.
 File: images/ProcessConfiguration.jpg Graphic file (type jpg)
 <use images/ProcessConfiguration.jpg>
 Package pdftex.def Info: images/ProcessConfiguration.jpg  used on input line 10
-33.
+67.
 (pdftex.def)             Requested size: 210.48799pt x 175.25609pt.
 \openout4 = `main.mw.mw'.
 
@@ -3530,7 +3530,7 @@ Package pdftex.def Info: images/ProcessConfiguration.jpg  used on input line 10
 <images/StudentFeedback.jpg, id=678, 612.03656pt x 532.99126pt>
 File: images/StudentFeedback.jpg Graphic file (type jpg)
 <use images/StudentFeedback.jpg>
-Package pdftex.def Info: images/StudentFeedback.jpg  used on input line 1041.
+Package pdftex.def Info: images/StudentFeedback.jpg  used on input line 1075.
 (pdftex.def)             Requested size: 183.61238pt x 159.8986pt.
 \openout4 = `main.mw.mw'.
 
@@ -3541,7 +3541,7 @@ Package pdftex.def Info: images/StudentFeedback.jpg  used on input line 1041.
 <images/CompanyFeedback.jpg, id=683, 548.80031pt x 526.96875pt>
 File: images/CompanyFeedback.jpg Graphic file (type jpg)
 <use images/CompanyFeedback.jpg>
-Package pdftex.def Info: images/CompanyFeedback.jpg  used on input line 1049.
+Package pdftex.def Info: images/CompanyFeedback.jpg  used on input line 1083.
 (pdftex.def)             Requested size: 164.64136pt x 158.09184pt.
 \openout4 = `main.mw.mw'.
 
@@ -3551,7 +3551,7 @@ Package pdftex.def Info: images/CompanyFeedback.jpg  used on input line 1049.
 <images/InternshipFeedback.jpg, id=688, 595.47469pt x 523.9575pt>
 File: images/InternshipFeedback.jpg Graphic file (type jpg)
 <use images/InternshipFeedback.jpg>
-Package pdftex.def Info: images/InternshipFeedback.jpg  used on input line 1057
+Package pdftex.def Info: images/InternshipFeedback.jpg  used on input line 1091
 .
 (pdftex.def)             Requested size: 178.64377pt x 157.18846pt.
 \openout4 = `main.mw.mw'.
@@ -3562,8 +3562,8 @@ Package pdftex.def Info: images/InternshipFeedback.jpg  used on input line 1057
 <images/CollectionComplaints.jpg, id=693, 688.82344pt x 429.10312pt>
 File: images/CollectionComplaints.jpg Graphic file (type jpg)
 <use images/CollectionComplaints.jpg>
-Package pdftex.def Info: images/CollectionComplaints.jpg  used on input line 10
-66.
+Package pdftex.def Info: images/CollectionComplaints.jpg  used on input line 11
+00.
 (pdftex.def)             Requested size: 206.64862pt x 128.73192pt.
 \openout4 = `main.mw.mw'.
 
@@ -3574,7 +3574,7 @@ Package pdftex.def Info: images/CollectionComplaints.jpg  used on input line 10
 <images/Delete.jpg, id=698, 653.44125pt x 507.39563pt>
 File: images/Delete.jpg Graphic file (type jpg)
 <use images/Delete.jpg>
-Package pdftex.def Info: images/Delete.jpg  used on input line 1074.
+Package pdftex.def Info: images/Delete.jpg  used on input line 1108.
 (pdftex.def)             Requested size: 196.03387pt x 152.21986pt.
 \openout4 = `main.mw.mw'.
 
@@ -3584,7 +3584,7 @@ Package pdftex.def Info: images/Delete.jpg  used on input line 1074.
 <images/ProcessRun.jpg, id=704, 629.35126pt x 570.63188pt>
 File: images/ProcessRun.jpg Graphic file (type jpg)
 <use images/ProcessRun.jpg>
-Package pdftex.def Info: images/ProcessRun.jpg  used on input line 1084.
+Package pdftex.def Info: images/ProcessRun.jpg  used on input line 1118.
 (pdftex.def)             Requested size: 188.80682pt x 171.19089pt.
 \openout4 = `main.mw.mw'.
 
@@ -3785,8 +3785,23 @@ Underfull \hbox (badness 7832) in paragraph at lines 24--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-[]|\T1/EBGaramond-OsF/m/n/10 (+20) Final overview and Ef-fort
+Underfull \hbox (badness 1112) in paragraph at lines 26--26
+[]|\T1/EBGaramond-OsF/m/n/10 (+20) Final overview, Ef-fort Spent
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 26--26
+\T1/EBGaramond-OsF/m/n/10 (+20) com-pi-la-tion and User In-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+\T1/EBGaramond-OsF/m/n/10 (+20) state, ac-tiv-ity, use-case di-a-
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 26--27
+\T1/EBGaramond-OsF/m/n/10 (+20) grams com-ple-tion and User
  []
 
 ) (./chapters/mathematics.tex
@@ -4542,11 +4557,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57852 strings out of 474934
- 1153602 string characters out of 5763815
+ 57850 strings out of 474934
+ 1153538 string characters out of 5763815
  2462512 words of memory out of 5000000
- 77693 multiletter control sequences out of 15000+600000
- 632326 words of font info for 229 fonts, out of 8000000 for 9000
+ 77694 multiletter control sequences out of 15000+600000
+ 632042 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,20n,159p,10918b,2470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb
@@ -4557,7 +4572,7 @@ xlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2023/texmf-dis
 t/fonts/type1/public/cm-super/sfsx2074.pfb><c:/texlive/2023/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (63 pages, 2605588 bytes).
+Output written on main.pdf (63 pages, 2607396 bytes).
 PDF statistics:
  1139 PDF objects out of 1200 (max. 8388607)
  997 compressed objects within 10 object streams

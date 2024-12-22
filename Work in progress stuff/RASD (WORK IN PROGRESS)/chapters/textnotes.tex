@@ -1,6 +1,40 @@
 \chapter{Specific requirements}
 	\section{External Interface Requirements}
 		\subsection{User Interfaces}
+			We don't highlight particular requirements for the user interface layout, however to clarify the platform navigation map we grouped in this section what we believed was the appropriate platform structure (in scenarios, use-cases and requirements):
+			\begin{itemize}
+				\item public section:
+					\begin{itemize}
+						\item registration section:
+							\begin{itemize}
+								\item student registration page;
+								\item company registration page;
+							\end{itemize}
+						\item login section;
+					\end{itemize}
+				\item private section:
+					\begin{itemize}
+						\item common sections:
+							\begin{itemize}
+								\item ongoing internships section: where users can consult statuses of internships that interest them;
+							\end{itemize}
+						\item only-students sections:
+							\begin{itemize}
+								\item published advice section: where students can search advice;
+								\item registered companies section: where students can search companies;
+								\item notifications section: where students can consult notifications sent to them;
+								\item interviews calendars section: where students can consult interviews calendars of selection processes they are involved into;
+							\end{itemize}
+						\item only-companies sections:
+							\begin{itemize}
+								\item advice publication section: where companies can consult their published advice;
+								\item selection processes management section: where companies can manage and consult their selection processes.
+							\end{itemize}
+					\end{itemize}
+			\end{itemize}
+			Note that scenarios and use-cases (as well as sequence diagrams and requirements) may refer to those sections with different names; in particular, \emph{Personal Internship section} and \emph{Internship Section} are synonyms of \emph{Advice publication section}.
+			
+			At the end, we often had to detail system sections contents in order to clarify uses cases but without the pretense to state them as user interface definitions. For what concerns user interface requirements, we only ask to follow the structure above as a guideline.
 		\subsection{Hardware Interfaces}
 			There are no specific hardware interfaces required, except for the devices used to access the platform. Both students and companies need a hardware device (such as a computer) with a network card to connect to S\&C.
 		\subsection{Software Interfaces}
