@@ -4,30 +4,31 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces [UC1] - Student Registration}}{7}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces [UC2] - Company Registration}}{8}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces [UC3] - User Login}}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Data logic model scheme}}{10}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Public pages navigation map}}{11}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces WelcomePage and RegistrationMenuPage mock-up}}{11}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces StudentRegistrationPage mock-up}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces CompanyRegistrationPage mock-up}}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces LoginPage mock-up}}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Private pages students navigation map}}{13}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Private pages companies navigation map}}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Profiles pages (students above, companies below) mock-up from the profile's owner view point}}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Profiles pages (students on the left, companies on the right) mock-up from other users view point}}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces NotificationsPage and Notification modal box mock-up}}{15}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Feedback questionnaire window mock-up}}{15}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces CompanySearchPage mock-up}}{16}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces AdviceSearchPage mock-up}}{16}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces PersonalAdvicePage mock-up}}{17}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces PublishAdvicePage mock-up}}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces AdviceDetailsPage (students view-point) mock-up}}{17}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces AdviceDetailsPage (company view-point) mock-up}}{18}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces InterestingAdvicePage mock-up}}{18}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces InvitesPage and ApplicationsPage mock-up}}{19}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces ConfigProcessPage mock-up}}{19}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces ProcessManagementPage, StepsManagementPage, ViewStatsPage and ProcessFinalizationPage mock-up}}{20}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces InterviewsPage mock-up}}{20}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces InternshipsPage and InternshipDetailsPage mock-up (from students view point)}}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Public pages navigation map}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces WelcomePage and RegistrationMenuPage mock-up}}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces StudentRegistrationPage mock-up}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces CompanyRegistrationPage mock-up}}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces LoginPage mock-up}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Private pages students navigation map}}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Private pages companies navigation map}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Profiles pages (students above, companies below) mock-up from the profile's owner view point}}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Profiles pages (students on the left, companies on the right) mock-up from other users view point}}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces NotificationsPage and Notification modal box mock-up}}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Feedback questionnaire window mock-up}}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces CompanySearchPage mock-up}}{17}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces AdviceSearchPage mock-up}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces PersonalAdvicePage mock-up}}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces PublishAdvicePage mock-up}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces AdviceDetailsPage (students view-point) mock-up}}{18}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces AdviceDetailsPage (company view-point) mock-up}}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces InterestingAdvicePage mock-up}}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces InvitesPage and ApplicationsPage mock-up}}{20}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces ConfigProcessPage mock-up}}{20}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces ProcessManagementPage, StepsManagementPage, ViewStatsPage and ProcessFinalizationPage mock-up}}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces InterviewsPage mock-up}}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces InternshipsPage and InternshipDetailsPage mock-up (from students view point)}}{22}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

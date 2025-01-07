@@ -98,25 +98,21 @@
 			{\bfseries [UC3] - User Login}
 			\includegraphics[scale=0.3]{UserLoginDD.jpg}
 			\caption{[UC3] - User Login}
-			
 		\end{figure}
 		
 		The figure shows the user login process, which is similar for both students and companies; in this case, the request is handled by the Authentication Manager, which selects the student from the database to allow login. If the student is not found, an error message is displayed.
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	\section{Component Interfaces}
+	\section{Data Logic Model}
+		Starting from the high-level class diagram presented in the RASD, the logic scheme of the database is designed:
+		\begin{figure}[H]
+			\centering
+			\includegraphics{datalogic.png}
+			\caption{Data logic model scheme}
+		\end{figure}
+		Classes are almost one-to-one mapped with tables (with reification of vector attributes), the only relevant differences are:
+		\begin{itemize}
+			\item feedback-tables has an attribute for each questionnaire answer, this is not a concern since questionnaires are static (each questionnaire always has the same set of questions);
+			\item the \emph{Recommendation} table was added, in order to store the recommendation analysis results;
+			\item selection process questionnaires and CVs are missing since they are stored in Mongo DB (they are far more suitable for an unstructured data representation).
+		\end{itemize}
 	\section{Selected Architectural Styles and Patterns}

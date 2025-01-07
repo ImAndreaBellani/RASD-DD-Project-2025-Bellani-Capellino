@@ -31,50 +31,52 @@
 \contentsline {mtocsection}{\numberline {2.4}Runtime View}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Component Interfaces}{9}{section.2.5}%
 \contentsline {mtocsection}{\numberline {2.5}Component Interfaces}{9}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{9}{section.2.6}%
-\contentsline {mtocsection}{\numberline {2.6}Selected Architectural Styles and Patterns}{9}{section.2.6}%
-\contentsline {chapter}{\numberline {3}User Interface Design}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Public pages}{11}{section.3.1}%
-\contentsline {mtocsection}{\numberline {3.1}Public pages}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Public pages navigation map}{11}{subsection.3.1.1}%
-\contentsline {mtocsubsection}{\numberline {3.1.1}Public pages navigation map}{11}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Registration pages mock-up}{11}{subsection.3.1.2}%
-\contentsline {mtocsubsection}{\numberline {3.1.2}Registration pages mock-up}{11}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Login pages mock-up}{12}{subsection.3.1.3}%
-\contentsline {mtocsubsection}{\numberline {3.1.3}Login pages mock-up}{12}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Private pages}{12}{section.3.2}%
-\contentsline {mtocsection}{\numberline {3.2}Private pages}{12}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Private pages students navigation map}{13}{subsection.3.2.1}%
-\contentsline {mtocsubsection}{\numberline {3.2.1}Private pages students navigation map}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Private pages companies navigation map}{13}{subsection.3.2.2}%
-\contentsline {mtocsubsection}{\numberline {3.2.2}Private pages companies navigation map}{13}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Profile pages}{14}{subsection.3.2.3}%
-\contentsline {mtocsubsection}{\numberline {3.2.3}Profile pages}{14}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Profile pages mock-up}{14}{subsubsection.3.2.3.1}%
-\contentsline {subsection}{\numberline {3.2.4}Notifications pages}{15}{subsection.3.2.4}%
-\contentsline {mtocsubsection}{\numberline {3.2.4}Notifications pages}{15}{subsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}Notifications pages mock-up}{15}{subsubsection.3.2.4.1}%
-\contentsline {subsection}{\numberline {3.2.5}Companies pages}{16}{subsection.3.2.5}%
-\contentsline {mtocsubsection}{\numberline {3.2.5}Companies pages}{16}{subsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.5.1}Companies pages mock-up}{16}{subsubsection.3.2.5.1}%
-\contentsline {subsection}{\numberline {3.2.6}Advice-related pages}{16}{subsection.3.2.6}%
-\contentsline {mtocsubsection}{\numberline {3.2.6}Advice-related pages}{16}{subsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.6.1}Advice-related pages mock-up}{16}{subsubsection.3.2.6.1}%
-\contentsline {subsection}{\numberline {3.2.7}Invites and Applications pages}{19}{subsection.3.2.7}%
-\contentsline {mtocsubsection}{\numberline {3.2.7}Invites and Applications pages}{19}{subsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.7.1}Invites and Applications pages mock-up}{19}{subsubsection.3.2.7.1}%
-\contentsline {subsection}{\numberline {3.2.8}Process-related pages}{19}{subsection.3.2.8}%
-\contentsline {mtocsubsection}{\numberline {3.2.8}Process-related pages}{19}{subsection.3.2.8}%
-\contentsline {subsubsection}{\numberline {3.2.8.1}Process-related pages mock-up}{19}{subsubsection.3.2.8.1}%
-\contentsline {subsection}{\numberline {3.2.9}Interviews pages}{20}{subsection.3.2.9}%
-\contentsline {mtocsubsection}{\numberline {3.2.9}Interviews pages}{20}{subsection.3.2.9}%
-\contentsline {subsubsection}{\numberline {3.2.9.1}Interviews pages mock-up}{20}{subsubsection.3.2.9.1}%
-\contentsline {subsection}{\numberline {3.2.10}Internships pages}{21}{subsection.3.2.10}%
-\contentsline {mtocsubsection}{\numberline {3.2.10}Internships pages}{21}{subsection.3.2.10}%
-\contentsline {subsubsection}{\numberline {3.2.10.1}Internships pages mock-up}{21}{subsubsection.3.2.10.1}%
-\contentsline {section}{\numberline {3.3}Requirements UI sections mapping}{21}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Requirements UI sections mapping}{21}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Requirements traceability}{22}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Implemention, Integration and Test Plan}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Effort Spent}{24}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Software Used}{25}{chapter.7}%
+\contentsline {section}{\numberline {2.6}Data Logic Model}{9}{section.2.6}%
+\contentsline {mtocsection}{\numberline {2.6}Data Logic Model}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Selected Architectural Styles and Patterns}{10}{section.2.7}%
+\contentsline {mtocsection}{\numberline {2.7}Selected Architectural Styles and Patterns}{10}{section.2.7}%
+\contentsline {chapter}{\numberline {3}User Interface Design}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Public pages}{12}{section.3.1}%
+\contentsline {mtocsection}{\numberline {3.1}Public pages}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Public pages navigation map}{12}{subsection.3.1.1}%
+\contentsline {mtocsubsection}{\numberline {3.1.1}Public pages navigation map}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Registration pages mock-up}{12}{subsection.3.1.2}%
+\contentsline {mtocsubsection}{\numberline {3.1.2}Registration pages mock-up}{12}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Login pages mock-up}{13}{subsection.3.1.3}%
+\contentsline {mtocsubsection}{\numberline {3.1.3}Login pages mock-up}{13}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Private pages}{13}{section.3.2}%
+\contentsline {mtocsection}{\numberline {3.2}Private pages}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Private pages students navigation map}{14}{subsection.3.2.1}%
+\contentsline {mtocsubsection}{\numberline {3.2.1}Private pages students navigation map}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Private pages companies navigation map}{14}{subsection.3.2.2}%
+\contentsline {mtocsubsection}{\numberline {3.2.2}Private pages companies navigation map}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Profile pages}{15}{subsection.3.2.3}%
+\contentsline {mtocsubsection}{\numberline {3.2.3}Profile pages}{15}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Profile pages mock-up}{15}{subsubsection.3.2.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Notifications pages}{16}{subsection.3.2.4}%
+\contentsline {mtocsubsection}{\numberline {3.2.4}Notifications pages}{16}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Notifications pages mock-up}{16}{subsubsection.3.2.4.1}%
+\contentsline {subsection}{\numberline {3.2.5}Companies pages}{17}{subsection.3.2.5}%
+\contentsline {mtocsubsection}{\numberline {3.2.5}Companies pages}{17}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Companies pages mock-up}{17}{subsubsection.3.2.5.1}%
+\contentsline {subsection}{\numberline {3.2.6}Advice-related pages}{17}{subsection.3.2.6}%
+\contentsline {mtocsubsection}{\numberline {3.2.6}Advice-related pages}{17}{subsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Advice-related pages mock-up}{17}{subsubsection.3.2.6.1}%
+\contentsline {subsection}{\numberline {3.2.7}Invites and Applications pages}{20}{subsection.3.2.7}%
+\contentsline {mtocsubsection}{\numberline {3.2.7}Invites and Applications pages}{20}{subsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.7.1}Invites and Applications pages mock-up}{20}{subsubsection.3.2.7.1}%
+\contentsline {subsection}{\numberline {3.2.8}Process-related pages}{20}{subsection.3.2.8}%
+\contentsline {mtocsubsection}{\numberline {3.2.8}Process-related pages}{20}{subsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.8.1}Process-related pages mock-up}{20}{subsubsection.3.2.8.1}%
+\contentsline {subsection}{\numberline {3.2.9}Interviews pages}{21}{subsection.3.2.9}%
+\contentsline {mtocsubsection}{\numberline {3.2.9}Interviews pages}{21}{subsection.3.2.9}%
+\contentsline {subsubsection}{\numberline {3.2.9.1}Interviews pages mock-up}{21}{subsubsection.3.2.9.1}%
+\contentsline {subsection}{\numberline {3.2.10}Internships pages}{22}{subsection.3.2.10}%
+\contentsline {mtocsubsection}{\numberline {3.2.10}Internships pages}{22}{subsection.3.2.10}%
+\contentsline {subsubsection}{\numberline {3.2.10.1}Internships pages mock-up}{22}{subsubsection.3.2.10.1}%
+\contentsline {section}{\numberline {3.3}Requirements UI sections mapping}{23}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Requirements UI sections mapping}{23}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Requirements traceability}{24}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Implemention, Integration and Test Plan}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Effort Spent}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Software Used}{27}{chapter.7}%
