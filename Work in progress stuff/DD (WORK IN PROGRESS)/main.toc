@@ -1,5 +1,5 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\selectlanguage *[]{english}
+\babel@toc {english}{}\relax
 \contentsline {chapter}{\nonumberline Contents}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Purpose}{1}{section.1.1}%
@@ -20,118 +20,61 @@
 \contentsline {mtocsection}{\numberline {1.5}Reference documents}{2}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Document structure}{2}{section.1.6}%
 \contentsline {mtocsection}{\numberline {1.6}Document structure}{2}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Architectural Design}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.1}Overview}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Component View}{4}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.2}Component View}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Deployment View}{6}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.3}Deployment View}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Runtime View}{6}{section.2.4}%
-\contentsline {mtocsection}{\numberline {2.4}Runtime View}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Component Interfaces}{8}{section.2.5}%
-\contentsline {mtocsection}{\numberline {2.5}Component Interfaces}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{8}{section.2.6}%
-\contentsline {mtocsection}{\numberline {2.6}Selected Architectural Styles and Patterns}{8}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Specific requirements}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}External Interface Requirements}{9}{section.3.1}%
-\contentsline {mtocsection}{\numberline {3.1}External Interface Requirements}{9}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{9}{subsection.3.1.1}%
-\contentsline {mtocsubsection}{\numberline {3.1.1}User Interfaces}{9}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{9}{subsection.3.1.2}%
-\contentsline {mtocsubsection}{\numberline {3.1.2}Hardware Interfaces}{9}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{9}{subsection.3.1.3}%
-\contentsline {mtocsubsection}{\numberline {3.1.3}Software Interfaces}{9}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{9}{subsection.3.1.4}%
-\contentsline {mtocsubsection}{\numberline {3.1.4}Communication Interfaces}{9}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Functional Requirements}{9}{section.3.2}%
-\contentsline {mtocsection}{\numberline {3.2}Functional Requirements}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Use-case diagrams}{9}{subsection.3.2.1}%
-\contentsline {mtocsubsection}{\numberline {3.2.1}Use-case diagrams}{9}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Use-cases}{9}{subsection.3.2.2}%
-\contentsline {mtocsubsection}{\numberline {3.2.2}Use-cases}{9}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Sequence diagrams}{9}{subsection.3.2.3}%
-\contentsline {mtocsubsection}{\numberline {3.2.3}Sequence diagrams}{9}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Activity diagrams}{9}{subsection.3.2.4}%
-\contentsline {mtocsubsection}{\numberline {3.2.4}Activity diagrams}{9}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Requirements mapping}{9}{subsection.3.2.5}%
-\contentsline {mtocsubsection}{\numberline {3.2.5}Requirements mapping}{9}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Performance Requirements}{12}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Performance Requirements}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Design Constraints}{12}{section.3.4}%
-\contentsline {mtocsection}{\numberline {3.4}Design Constraints}{12}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{12}{subsection.3.4.1}%
-\contentsline {mtocsubsection}{\numberline {3.4.1}Standards compliance}{12}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{12}{subsection.3.4.2}%
-\contentsline {mtocsubsection}{\numberline {3.4.2}Hardware limitations}{12}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Other constraints}{12}{subsection.3.4.3}%
-\contentsline {mtocsubsection}{\numberline {3.4.3}Other constraints}{12}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Software System Attributes}{12}{section.3.5}%
-\contentsline {mtocsection}{\numberline {3.5}Software System Attributes}{12}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{12}{subsection.3.5.1}%
-\contentsline {mtocsubsection}{\numberline {3.5.1}Reliability}{12}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Availability}{12}{subsection.3.5.2}%
-\contentsline {mtocsubsection}{\numberline {3.5.2}Availability}{12}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Security}{13}{subsection.3.5.3}%
-\contentsline {mtocsubsection}{\numberline {3.5.3}Security}{13}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{13}{subsection.3.5.4}%
-\contentsline {mtocsubsection}{\numberline {3.5.4}Maintainability}{13}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Portability}{13}{subsection.3.5.5}%
-\contentsline {mtocsubsection}{\numberline {3.5.5}Portability}{13}{subsection.3.5.5}%
-\contentsline {chapter}{\numberline {4}References}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Citations}{14}{section.4.1}%
-\contentsline {mtocsection}{\numberline {4.1}Citations}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Glossaries and Indices}{15}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.2}Glossaries and Indices}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hyperreferences}{15}{section.4.3}%
-\contentsline {mtocsection}{\numberline {4.3}Hyperreferences}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}A Final Note on Compilation}{16}{section.4.4}%
-\contentsline {mtocsection}{\numberline {4.4}A Final Note on Compilation}{16}{section.4.4}%
-\contentsline {part}{\nonumberline Design and Additional Features}{18}{part*.11}%
-\contentsline {chapter}{\numberline {5}Page Design}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Headings}{19}{section.5.1}%
-\contentsline {mtocsection}{\numberline {5.1}Headings}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Headers \& Footers}{19}{section.5.2}%
-\contentsline {mtocsection}{\numberline {5.2}Headers \& Footers}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Table of Contents}{20}{section.5.3}%
-\contentsline {mtocsection}{\numberline {5.3}Table of Contents}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Paper Size}{20}{section.5.4}%
-\contentsline {mtocsection}{\numberline {5.4}Paper Size}{20}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Page Layout}{20}{section.5.5}%
-\contentsline {mtocsection}{\numberline {5.5}Page Layout}{20}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Numbers \& Counters}{21}{section.5.6}%
-\contentsline {mtocsection}{\numberline {5.6}Numbers \& Counters}{21}{section.5.6}%
-\contentsline {section}{\numberline {5.7}White Space}{21}{section.5.7}%
-\contentsline {mtocsection}{\numberline {5.7}White Space}{21}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Mathematics and Boxes}{23}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Theorems}{23}{section.6.1}%
-\contentsline {mtocsection}{\numberline {6.1}Theorems}{23}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Boxes \& Environments}{24}{sidenote.6.3}%
-\contentsline {mtocsection}{\numberline {6.2}Boxes \& Custom Environments \sidenote [][*1.8]{Notice that in the table of contents and in the header, the name of this section is \enquote {Boxes \& Environments}; we achieved this with the optional argument of the \texttt {section} command.}}{24}{sidenote.6.3}%
-\contentsline {section}{\numberline {6.3}Experiments}{25}{section.6.3}%
-\contentsline {mtocsection}{\numberline {6.3}Experiments}{25}{section.6.3}%
-\contentsline {part}{\nonumberline Appendix}{26}{part*.15}%
-\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{27}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{27}{section.A.1}%
-\contentsline {mtocsection}{\numberline {A.1}Heading on Level\xspace 1 (section)}{27}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{27}{subsection.A.1.1}%
-\contentsline {mtocsubsection}{\numberline {A.1.1}Heading on Level\xspace 2 (subsection)}{27}{subsection.A.1.1}%
-\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{27}{subsubsection*.17}%
-\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{27}{paragraph*.19}%
-\contentsline {section}{\numberline {A.2}Lists}{28}{section.A.2}%
-\contentsline {mtocsection}{\numberline {A.2}Lists}{28}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{28}{subsection.A.2.1}%
-\contentsline {mtocsubsection}{\numberline {A.2.1}Example for list\xspace (itemize)}{28}{subsection.A.2.1}%
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{28}{subsubsection*.21}%
-\contentsline {subsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{28}{subsection.A.2.2}%
-\contentsline {mtocsubsection}{\numberline {A.2.2}Example for list\xspace (enumerate)}{28}{subsection.A.2.2}%
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{28}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {A.2.3}Example for list\xspace (description)}{28}{subsection.A.2.3}%
-\contentsline {mtocsubsection}{\numberline {A.2.3}Example for list\xspace (description)}{28}{subsection.A.2.3}%
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{29}{subsubsection*.25}%
-\contentsline {chapter}{\numberline {B}Fonts Testing}{30}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Font Sizes}{30}{section.B.1}%
-\contentsline {mtocsection}{\numberline {B.1}Font Sizes}{30}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Font Families}{30}{section.B.2}%
-\contentsline {mtocsection}{\numberline {B.2}Font Families}{30}{section.B.2}%
-\contentsline {chapter}{Alphabetical Index}{33}{section*.26}%
+\contentsline {chapter}{\numberline {2}Architectural Design}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {mtocsection}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Component View}{5}{section.2.2}%
+\contentsline {mtocsection}{\numberline {2.2}Component View}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Deployment View}{7}{section.2.3}%
+\contentsline {mtocsection}{\numberline {2.3}Deployment View}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Runtime View}{7}{section.2.4}%
+\contentsline {mtocsection}{\numberline {2.4}Runtime View}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Component Interfaces}{9}{section.2.5}%
+\contentsline {mtocsection}{\numberline {2.5}Component Interfaces}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Selected Architectural Styles and Patterns}{9}{section.2.6}%
+\contentsline {mtocsection}{\numberline {2.6}Selected Architectural Styles and Patterns}{9}{section.2.6}%
+\contentsline {chapter}{\numberline {3}User Interface Design}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Public pages}{11}{section.3.1}%
+\contentsline {mtocsection}{\numberline {3.1}Public pages}{11}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Public pages navigation map}{11}{subsection.3.1.1}%
+\contentsline {mtocsubsection}{\numberline {3.1.1}Public pages navigation map}{11}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Registration pages mock-up}{11}{subsection.3.1.2}%
+\contentsline {mtocsubsection}{\numberline {3.1.2}Registration pages mock-up}{11}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Login pages mock-up}{12}{subsection.3.1.3}%
+\contentsline {mtocsubsection}{\numberline {3.1.3}Login pages mock-up}{12}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Private pages}{12}{section.3.2}%
+\contentsline {mtocsection}{\numberline {3.2}Private pages}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Private pages students navigation map}{13}{subsection.3.2.1}%
+\contentsline {mtocsubsection}{\numberline {3.2.1}Private pages students navigation map}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Private pages companies navigation map}{13}{subsection.3.2.2}%
+\contentsline {mtocsubsection}{\numberline {3.2.2}Private pages companies navigation map}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Profile pages}{14}{subsection.3.2.3}%
+\contentsline {mtocsubsection}{\numberline {3.2.3}Profile pages}{14}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Profile pages mock-up}{14}{subsubsection.3.2.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Notifications pages}{15}{subsection.3.2.4}%
+\contentsline {mtocsubsection}{\numberline {3.2.4}Notifications pages}{15}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Notifications pages mock-up}{15}{subsubsection.3.2.4.1}%
+\contentsline {subsection}{\numberline {3.2.5}Companies pages}{16}{subsection.3.2.5}%
+\contentsline {mtocsubsection}{\numberline {3.2.5}Companies pages}{16}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Companies pages mock-up}{16}{subsubsection.3.2.5.1}%
+\contentsline {subsection}{\numberline {3.2.6}Advice-related pages}{16}{subsection.3.2.6}%
+\contentsline {mtocsubsection}{\numberline {3.2.6}Advice-related pages}{16}{subsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Advice-related pages mock-up}{16}{subsubsection.3.2.6.1}%
+\contentsline {subsection}{\numberline {3.2.7}Invites and Applications pages}{19}{subsection.3.2.7}%
+\contentsline {mtocsubsection}{\numberline {3.2.7}Invites and Applications pages}{19}{subsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.7.1}Invites and Applications pages mock-up}{19}{subsubsection.3.2.7.1}%
+\contentsline {subsection}{\numberline {3.2.8}Process-related pages}{19}{subsection.3.2.8}%
+\contentsline {mtocsubsection}{\numberline {3.2.8}Process-related pages}{19}{subsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.8.1}Process-related pages mock-up}{19}{subsubsection.3.2.8.1}%
+\contentsline {subsection}{\numberline {3.2.9}Interviews pages}{20}{subsection.3.2.9}%
+\contentsline {mtocsubsection}{\numberline {3.2.9}Interviews pages}{20}{subsection.3.2.9}%
+\contentsline {subsubsection}{\numberline {3.2.9.1}Interviews pages mock-up}{20}{subsubsection.3.2.9.1}%
+\contentsline {subsection}{\numberline {3.2.10}Internships pages}{21}{subsection.3.2.10}%
+\contentsline {mtocsubsection}{\numberline {3.2.10}Internships pages}{21}{subsection.3.2.10}%
+\contentsline {subsubsection}{\numberline {3.2.10.1}Internships pages mock-up}{21}{subsubsection.3.2.10.1}%
+\contentsline {section}{\numberline {3.3}Requirements UI sections mapping}{21}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Requirements UI sections mapping}{21}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Requirements traceability}{22}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Implemention, Integration and Test Plan}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Effort Spent}{24}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Software Used}{25}{chapter.7}%

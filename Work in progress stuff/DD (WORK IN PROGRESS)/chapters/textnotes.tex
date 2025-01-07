@@ -1,173 +1,217 @@
-%Considerazioni:
-%	i requirements sono stati scritti con questa idea:
-%	una compagnia può “proporre” una internship a uno studente 	(manca uno scenario per questo, potrebbe essere aggiunto a quello della notifica). Si veda il requirement “R10602”
-%	non ho modellizzato il concetto di “richiesta di candidatura” (ma uno si candida e basta). Se non sei d’accordo lo metto.
-% mettere nelle definizioni la differenza tra internship e internship advice
-
-% METTERE SCREMATURA INIZIALE BASATA SUL CURRICULUM E METTERE MAX POSTI PER UN ADVICE (SE IL MAX POSTI E' RAGGIUNTO L'ADVICE E' ANCORA VISIBILE MA NON CI SI PUO' CANDIDARE) [MODIFICARE QUESTE COSE NEI REQ. E NELL'ALLOY]
-
-% RIGUARDARE LA SPECIFICA PER QUANTO RIGUARDA I FEEDBACK E I COMPLAINT (E ANCHE IL FATTO CHE "INTERNSHIP" NEL CLASS DIAGRAM NON E' "LA MIA INTERNSHIP" MA LA INTERNSHIP IN GENERALE, MAGARI NON E' UN ERRORE MA DI QUESTA COSA VA TENUTO CONTO)
-
-% RIGUARDARE I REQ. PER LE NOTIFICHE (TUTTE, ANHE QUELLE LEGATE ALL'ESITO DELLA SELEZIONE)
-
-% ENTITA' "NOTIFICA" NEL CLASS DIAGRAM?
-\chapter{Specific requirements}
-	\section{External Interface Requirements}
-		\subsection{User Interfaces}
-		\subsection{Hardware Interfaces}
-		\subsection{Software Interfaces}
-		\subsection{Communication Interfaces}
-	\section{Functional Requirements}
-		\subsection{Use-case diagrams}
-		\subsection{Use-cases}
-		\subsection{Sequence diagrams}
-		\subsection{Activity diagrams}
-		\subsection{Requirements mapping}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-						\multicolumn{2}{||P{15cm}||}{[G1] students and companies establish contacts for doing internships} \\ [0.5ex]
-					\hline
-					[R00000] when a notification of a user is generated, the user receives it on its mailbox (in a more concise version) and can consult it on its notification section & \\
-					
-					[R10101] the system allows students to sign up to the platform with their institutional mails & [D10101] students upload their CV in Europass format \\
-					
-					[R10102] the system allows a student to set up whether he/she wants to take part into the recommendation  & [D10102] information on a student CV do not contradict each other \\
-					
-					[R10103] the system allows students upload their CV to the platform & [D10302] information companies insert in internship advice do not contradict each other \\
-					
-					[R10104] the system allows students to publish on their profile a brief description of themselves & \\
-					
-					[R10105] when a CV is uploaded, the system verifies if it is digitally signed by the profile mail & \\
-					
-					[R10106] the system allows students to log in into the system by providing the registration mail and the chosen password & \\
-					
-					[R10107] the system allows students to change their profile information (including the CV) and their access information & \\
-					
-					[R10201] the system allows companies to sign up to the platform with their company address & \\
-					
-					[R10202] the system allows companies to insert the main information regarding their business area and area of expertise & \\
-					
-					[R10203] the system allows a company to set up if it wants to take part into the recommendation analysis & \\
-					
-					[R10204] the system allows companies to log in into the system by providing the registration mail and the chosen password & \\
-					
-					[R10205] the system allows companies to change their profile information and their access information & \\
-					
-					[R10301] the system allows companies to publish internship advice where they specify the main information regarding the internship (brief description, experience required, desired skills, main activities involved and the terms) and the submission deadline & \\
-					
-					[R10401] the system allows students to search internships advice by name (and also to see the complete list of available advice). The system shall act as a search engine to present also the names of the advice that are similar to the searched one & \\
-					
-					[R10402] the system allows students to search companies by name (and also to see the complete list of registered companies) and then access to their profile & \\
-					
-					[R10403] the system allows students to filter the results they searched (e.g. "only paid internships", "only companies located in Lombardy") & \\
-					
-					[R10501] when the system recognizes that a new internship advice that might interest a student (that allowed the recommendation option) is published, it notifies that student by sending him an e-mail (to its registration address) & \\
-					
-					[R10601] when the system recognizes that a student has a profile that would fit an internship advice, the company that published the advice is notified (for students and companies that both take part into the recommendation analysis) & \\
-					
-					[R10701] the system allows students to apply for any internship advice which deadline has not expired & \\
-					
-					[R10702] when a student applies for an internship, the related company is notified by the system & \\
-					
-					[R10801] the system allows companies to approve, discard or ignore each application they may receive for one of their published advice & \\
-					
-					[R10901] when a company opens a student profile, it can propose to him to apply for one of its internships. Then, the students receives a notification & \\
-					
-					[R11001] the system allows student that received an internship proposal from a company can decide to accept it, discard it or ignore it & \\
-					
-					[R11002] when a student accept an internship proposal, it is implicitly accepted by the company & \\
-					
-					[R11101] when a student gets his/her result of the selection, the system provides to him a non-compulsory questionnaire regarding his/her experience (in the context of that selection process)& \\
-					
-					[R11102] when a company ends a selection process, the system provides to it a non-compulsory questionnaire regarding its experience (in the context of that selection process) & \\
-					
-					[R11201] when a student concludes an internship, the system provides to him/her a non-compulsory questionnaire regarding him/her experience (in the context of that internship) and in the meantime it provides to the internship company an analogue questionnaire also non-compulsory & \\
-					
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G1}
-				\label {table:1}
-			\end{table}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-					\multicolumn{2}{||P{15cm}||}{[G2] internships selections can be monitored and supported by the system} \\ [0.5ex]
-					\hline
-					[R20101] when the deadline for an internship advice is expired, the system allows the company to set up the selection process by specifying for each step, the relative questionnaire (with metrics for each question) and the date in which provide it to a student (dates may differ between different students) & \\
-					
-					[R20102] the system includes into a selection process only student that had an accepted application for the relative internship advice & \\
-					
-					[R20201] the system notifies students for any interview date & \\
-					
-					[R20202] the system automatically calculates the scores of questionnaire closed answers & \\
-					
-					[R20203] the system allows companies to manually insert scores for questionnaire open answers & \\
-					
-					[R20204] the system allows companies to visualize and compare selections scores & \\
-					
-					[R20205] in any selection phase, the system allows companies to discard a student currently involved in the selection process (discarded students are removed by the selection process) & \\
-					
-					[R20206] in any selection phase, the system allows companies to accept a student currently involved in the selection process (accepted students are removed by the selection process) & \\
-					
-					[R20207] the system allows companies to write a personalized message to communicate the result of a selection & \\
-					
-					[R20208] when a selection result is prepared for a student (with the relative message), it is notified to the student & \\[1ex]
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G2}
-				\label {table:1}
-			\end{table}
-			\begin{table} [h!]
-				\centering
-				\begin{tabular}{ || P{7.5cm} P{7.5cm} || }
-					\hline
-					\multicolumn{2}{||P{15cm}||}{[G3] ongoing internships can be monitored from the system} \\ [0.5ex]
-					\hline
-					[R30101] the system allows students and companies to consult the internships (ongoing or finished) & \\
-					
-					[R30102] the system allows students and companies to report complaints on the internships they are involved in & \\
-					
-					[R30103] the system does not allow users different from their creator to consult complains & \\ [1ex]
-					\hline
-				\end{tabular}
-				\caption{Requirements mapping for goal G3}
-				\label {table:1}
-			\end{table}
-	\section{Performance Requirements}
-		For the system functions related to user navigation, we require a response time up to 5 seconds.
-		
-		The mail notification system should send any notification at most 1 minute after the moment in which the notification was generated.
-		
-		The recommendation system should produce its results with at most 1 week of distance from the last time it produced them.
-	\section{Design Constraints}
-		\subsection{Standards compliance}
-		\subsection{Hardware limitations}
-		\subsection{Other constraints}
-	\section{Software System Attributes}
-		\subsection{Reliability}
-			Considering the criticality of the information managed by the application (e.g. interview dates, CV, e-mail addresses) we require an high level of reliability in each sub-part of the system.
-			
-			For the recommendation system reliability we ask for a... .
-		\subsection{Availability}
-			Since the application does not have real-time interactions or much critical functions to ensure, if the system went down for few hours it would not be an huge concern for most users. However, there some functions that require an higher level of availability than the others:
+\chapter{User Interface Design}
+	While in the RASD we defined platform's proper UI structure, in this section we formalize navigation maps and present mock-up for each page:
+	\begin{itemize}
+		\item public pages:
+		\begin{itemize}
+			\item registration pages:
 			\begin{itemize}
-				\item notification system: it should be available for at least one hour in a day, in order to guarantee that notifications are not sent to users with a delay higher than one day (since notifications are also sent by email, we can rely on the availability of users mail servers, as stated in the assumption section);
-				\item selection process system: it is highly recommended that the selections calendars and the relative questionnaires are available at least in work hours. As we stated in the assumption section, we always take for grant the fact that companies (and students) have a copy of calendars (and also of the questionnaires) for the companies;
-				\item ongoing internship monitoring: at least in work hours, the monitoring system should be available. Little down-times are still tolerated but it is highly recommended that for the majority of the time is possible to monitor the ongoing internship status.
+				\item \textbf{WelcomePage}
+				\item \textbf{RegistrationMenuPage}
+				\item \textbf{StudentRegistrationPage}
+				\item \textbf{CompanyRegistrationPage}
 			\end{itemize}
-			As general rule, maintenance should always occur off the work hours of the majority of the companies registered.
-		\subsection{Security}
-			In this section we define the main kinds of security concern that the system should address:
+			\item logic pages:
 			\begin{itemize}
-				\item e-mails sent from the system always have to be sent from a certified mail address. Moreover, e-mails sent from the system must be encrypted and must not contain any password;
-				\item attacks related to system availability (e.g. DOS), to data confidentiality, integrity and users authenticity must be taken into consideration, also considering the public nature of the application;
-				\item a CV must be digitally signed from the student that upload it;
-				\item uploaded CV should be scanned to ensure that they don't contain viruses.
+				\item \textbf{LoginPage}
 			\end{itemize}
-		\subsection{Maintainability}
-			
-		\subsection{Portability}
-			We highlight the fact that the application targets are students and companies that may use operative systems of any kind, therefore portability should be increased, in order to spread the audience. On the other hand, non-desktop devices (such as mobile devices, smartwatches ecc.) are not an huge concern of this kind of application, so we don't put much effort on emphasizing the portability also in this direction. At the end, we encourage portability but we ask for it at least for general purposes desktop operative systems.
+		\end{itemize}
+		\item private pages:
+		\begin{itemize}
+			\item profile pages:
+			\begin{itemize}
+				\item \textbf{StudentProfilePage}
+				\item \textbf{CompanyProfilePage}
+			\end{itemize}
+			\item notifications pages:
+			\begin{itemize}
+				\item \textbf{NotificationsPage}
+			\end{itemize}
+			\item companies pages:
+			\begin{itemize}
+				\item \textbf{CompanySearchPage}
+			\end{itemize}
+			\item advice-related pages:
+			\begin{itemize}
+				\item \textbf{AdviceSearchPage}
+				\item \textbf{PersonalAdvicePage}
+				\item \textbf{PublishAdvicePage}
+				\item \textbf{AdviceDetailsPage}
+				\item \textbf{InterestingAdvicePage}
+			\end{itemize}
+			\item invites pages:
+			\begin{itemize}
+				\item \textbf{InvitesPage}
+			\end{itemize}
+			\item applications pages:
+			\begin{itemize}
+				\item \textbf{ApplicationsPage}
+			\end{itemize}
+			\item process-related pages:
+			\begin{itemize}
+				\item \textbf{ConfigProcessPage}
+				\item \textbf{ProcessManagementPage}
+				\item \textbf{StepsManagementPage}
+				\item \textbf{ViewStatsPage}
+				\item \textbf{ProcessFinalizationPage}
+			\end{itemize}
+			\item interviews pages:
+			\begin{itemize}
+				\item \textbf{InterviewsPage} : questa ci si è dimenticati di metterla nel menu delle compagnie, quando si fa la revisione metterla;
+			\end{itemize}
+			\item internships pages:
+			\begin{itemize}
+				\item \textbf{InternshipsPage}
+				\item \textbf{InternshipDetailsPage}
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	
+	Moreover, in this chapter we also specified how the sections defined in the User Interfaces section of the RASD are mapped onto the sections effectively designed.
+	
+	\section{Public pages}
+	\subsection{Public pages navigation map}
+	\begin{figure}[H]
+		\centering
+		\caption{Public pages navigation map}
+		\includegraphics[width=13cm]{UI/publicMap.png}
+	\end{figure}
+	\subsection{Registration pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{WelcomePage and RegistrationMenuPage mock-up}
+		\includegraphics{UI/regIntro.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{StudentRegistrationPage mock-up}
+		\includegraphics[width=10cm]{UI/regStudentForm.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{CompanyRegistrationPage mock-up}
+		\includegraphics[width=10cm]{UI/regCompanyForm.png}
+	\end{figure}
+	\subsection{Login pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{LoginPage mock-up}
+		\includegraphics[width=10cm]{UI/loginPage.png}
+	\end{figure}
+	\section{Private pages}
+	Note that for what concerns user navigation in private pages:
+	\begin{itemize}
+		\item as mock-up show, private sections can be accessed by means of a side-bar (this explains why navigation maps are not connected graphs);
+		\item navigation maps present the designated possibilities to navigate throw sections, while mock-ups often omit navigation buttons/links (e.g. InternshipDetailsPage $\rightarrow$ CompanyProfilePage). Therefore, to implement navigation hyperlinks always refer to maps.
+	\end{itemize}
+	\subsection{Private pages students navigation map}
+	\begin{figure}[H]
+		\centering
+		\caption{Private pages students navigation map}
+		\includegraphics[width=15cm]{UI/privateStudent.png}
+	\end{figure}
+	\subsection{Private pages companies navigation map}
+	\begin{figure}[H]
+		\centering
+		\caption{Private pages companies navigation map}
+		\includegraphics[width=15cm]{UI/companyPrivate.png}
+	\end{figure}
+	\subsection{Profile pages}
+	\subsubsection{Profile pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{Profiles pages (students above, companies below) mock-up from the profile's owner view point}
+		\includegraphics[width=11cm]{UI/profilesPages.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{Profiles pages (students on the left, companies on the right) mock-up from other users view point}
+		\includegraphics{UI/profilesPagesPublic.png}
+	\end{figure}
+	\subsection{Notifications pages}
+	\subsubsection{Notifications pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{NotificationsPage and Notification modal box mock-up}
+		\includegraphics[width=11cm]{UI/notifications.png}
+	\end{figure}
+	Non-compulsory questionnaires are shown on a single window accessible from a link in the notification related to them:
+	\begin{figure}[H]
+		\centering
+		\caption{Feedback questionnaire window mock-up}
+		\includegraphics[width=11cm]{UI/questionnaire.png}
+	\end{figure}
+	\subsection{Companies pages}
+	\subsubsection{Companies pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{CompanySearchPage mock-up}
+		\includegraphics[width=10cm]{UI/companiesPage.png}
+	\end{figure}
+	\subsection{Advice-related pages}
+	\subsubsection{Advice-related pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{AdviceSearchPage mock-up}
+		\includegraphics[width=11cm]{UI/adviceSearchPage.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{PersonalAdvicePage mock-up}
+		\includegraphics[width=11cm]{UI/adviceCompanyList.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{PublishAdvicePage mock-up}
+		\includegraphics[width=11cm]{UI/publishAdvice.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{AdviceDetailsPage (students view-point) mock-up}
+		\includegraphics[width=11cm]{UI/advicePage.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{AdviceDetailsPage (company view-point) mock-up}
+		\includegraphics[width=11cm]{UI/advicePageCompany.png}
+	\end{figure}
+	The trash button will turn into a \emph{Configure selection process} button once the advice deadline has last.
+	\begin{figure}[H]
+		\centering
+		\caption{InterestingAdvicePage mock-up}
+		\includegraphics[width=11cm]{UI/interestingInternships.png}
+	\end{figure}
+	\subsection{Invites and Applications pages}
+	\subsubsection{Invites and Applications pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{InvitesPage and ApplicationsPage mock-up}
+		\includegraphics[width=14cm]{UI/invitesApplications.png}
+	\end{figure}
+	\subsection{Process-related pages}
+	\subsubsection{Process-related pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{ConfigProcessPage mock-up}
+		\includegraphics[width=11cm]{UI/configProcess.png}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\caption{ProcessManagementPage, StepsManagementPage, ViewStatsPage and ProcessFinalizationPage mock-up}
+		\includegraphics[width=15cm]{UI/viewProcess.png}
+	\end{figure}
+	\subsection{Interviews pages}
+	\subsubsection{Interviews pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{InterviewsPage mock-up}
+		\includegraphics[width=15cm]{UI/myInterviews.png}
+	\end{figure}
+	\subsection{Internships pages}
+	\subsubsection{Internships pages mock-up}
+	\begin{figure}[H]
+		\centering
+		\caption{InternshipsPage and InternshipDetailsPage mock-up (from students view point)}
+		\includegraphics{UI/ongoingPage.png}
+	\end{figure}
+	In fact there is not much difference in what internships owners see. Companies can end instantly any ongoing internship that belongs to them.
+	\section{Requirements UI sections mapping}
