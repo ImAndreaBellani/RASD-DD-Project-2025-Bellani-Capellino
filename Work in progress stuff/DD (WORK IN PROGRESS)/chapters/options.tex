@@ -101,6 +101,148 @@
 		\end{figure}
 		
 		The figure shows the user login process, which is similar for both students and companies; in this case, the request is handled by the Authentication Manager, which selects the student from the database to allow login. If the student is not found, an error message is displayed.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC4] - Publish Internship Advice}
+			\caption{[UC4] - Publish Internship Advice}
+			\includegraphics[scale=0.3]{PublishInternshipAdviceDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows the publish internship advice process; the web server redirect the request to the publisher advice component, which create a new advice and put it in the relational DB; before that, the publisher advice check if the form is already filled: in the negative case, it presents to the client an error message.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC5] - Search of all Internships}
+			\caption{[UC5] - Search of all Internships}
+			\includegraphics[scale=0.3]{SearchAllInternshipsDD.jpg}
+			
+		\end{figure}
+		
+		
+		the figure shows the process of search on all the internships: the web server sends the request to the advice presenter, which selects all the advice from the relational DB; then the client requests a specific advice and the flow is the same: the advice presenter is called and it selects the advice (by title) from the relational DB
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC6] - Search of All Companies}
+			\caption{[UC6] - Search of All Companies}
+			\includegraphics[scale=0.3]{SearchAllCompaniesDD.jpg}
+			
+		\end{figure}
+		
+		
+		the figure shows the process of search on all the companies: the web server sends the request to the profile presenter, which selects all the companies from the relational DB; then the client requests a specific advice: the advice presenter is called and it selects the advice (by title) from the relational DB and it is presented to the client
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC7] - Search an Internship by Name}
+			\caption{[UC7] - Search an Internship by Name}
+			\includegraphics[scale=0.3]{SearchByNameDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows the process of proactive search of an internship; the request is redirect to the advice presenter, which receive then from the client the subject searched and the options flag; then this component query the relational DB to find if exists at least one advice that match the subject and the option: if it is true, return the list of this advice and then the client requests a specific one (as we mentioned before); if it is false, return an error message.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC8] - Internship Recommendation}
+			\caption{[UC8] - Internship Recommendation}
+			\includegraphics[scale=0.3]{InternshipRecommendationDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows how the students can look for internships advice recommended; first of all, the client displays a notification: the web server sends the notification to the notification presenter, which retrieves it from the database. Subsequently, to view the recommended advice, the web server forwards the request to the advice presenter, which retrieves the recommended advice related to the student from the database and then presents it to the client. Finally, the client selects an advice in the manner described earlier.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC9] - Students Recommendation}
+			\caption{[UC9] - Students Recommendation}
+			\includegraphics[scale=0.3]{StudentsRecommendationDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows how the companies can look for students recommended; first of all, the client displays a notification: the web server sends the notification to the notification presenter, which retrieves it from the database. Subsequently, to view the recommended students, the web server forwards the request to the profile presenter, which retrieves the recommended students related to the company from the database and then presents it to the client. Finally, the client selects a students(note that it has to retrieve also the CV from MongoDB, instead the other data are retrieved from the relational DB)
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC12] - Selection Process Configuration}
+			\caption{[UC12] - Selection Process Configuration}
+			\includegraphics[scale=0.3]{ProcessConfigurationDD.jpg}
+			
+		\end{figure}
+		
+		
+		the figure shows the selection process configuration; initially, the client requests the advice it wants to view (and the advice presenter retrieves it from the database). Subsequently, to initialize the selection process, a request is sent to the SP initializer, which displays the configuration to be completed. The client completes the configuration by entering the number of steps, metrics, and defining the questionnaires for the questions. The configuration is then saved by the SP initializer in the databases: metrics and the number of steps are stored in the relational database, while the questionnaires are saved in MongoDB’s non-relational database (as they are unstructured data).
+		
+		Afterward, similarly, the interview dates for each student are defined and saved in the relational database. Finally, the client sends a notification: the Notification Generator handles generating the notification, then triggers the SES API, which directs the email to the student's Mail client. If the configuration is incomplete, an error message will be displayed to the client.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC14] - Collection of Student Selection Process Feedback}
+			\caption{[UC14] - Collection of Student Selection Process Feedback}
+			\includegraphics[scale=0.3]{StudentFeedbackDD.jpg}
+		\end{figure}
+		
+		the figure shows the collection of students selection process feedback; the client requests the notification containing the form to be filled out to provide feedback (the form is displayed by the Feedback Manager). The client fills out the form and submits it to the Feedback Manager, which handles querying the database to insert the feedback. If the form is incomplete, the Feedback Manager will display an error message to the client.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC15] - Collection of Company Selection Process Feedback}
+			\caption{[UC15] - Collection of Company Selection Process Feedback}
+			\includegraphics[scale=0.3]{CompanyFeedbackDD.jpg}
+			
+		\end{figure}
+		
+		
+		the figure shows the collection of company selection process feedback; after sending the result notification, the client obtain the form from the Feedback Manager. The client fills out the form and submits it to the Feedback Manager, which handles querying the database to insert the feedback. If the form is incomplete, the Feedback Manager will display an error message to the client.
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC16] - Collection of Internships Feedback}
+			\caption{[UC16] - Collection of Internships Feedback}
+			\includegraphics[scale=0.3]{InternshipFeedbackDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows the collection of Internships feedback; the client requests an internship they want to view (in this case, an ongoing internship), which is displayed by the Internship Manager. Subsequently, the client requests the form to provide feedback, shown by the Feedback Manager. The client then fills out the form, and the Feedback Manager saves the results in the relational database, provided the form is fully completed. Otherwise, the Feedback Manager shows an error message to the client.
+		
+		
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC17] - Collection of Complaints}
+			\caption{[UC17] - Collection of Complaints}
+			\includegraphics[scale=0.3]{CollectionComplaintsDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows the collection of complaints written by the user; he flow is similar to the one described for the collection of internship feedback, with the difference that, in this case, the Feedback Manager performs a check on the length of the complaint (which must be less than 50 words).
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC18] - Ongoing internship closing}
+			\caption{[UC18] - Ongoing internship closing}
+			\includegraphics[scale=0.3]{DeleteDD.jpg}
+			
+		\end{figure}
+		
+		
+		The figure shows the process of closing an internship when it is completed. The Client, when requesting to close an internship, invokes the Internship Manager component, which is responsible for removing the internship from the relational database.
+		
+		
+		
+		
 	\section{Component Interfaces}
 	\section{Data Logic Model}
 		Starting from the high-level class diagram presented in the RASD, the logic scheme of the database is designed:
