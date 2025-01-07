@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  7 JAN 2025 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  7 JAN 2025 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3022,7 +3022,7 @@ Overfull \hbox (34.5741pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-<images/3Tier.jpg, id=296, 189.70876pt x 161.10187pt>
+<images/3Tier.jpg, id=320, 189.70876pt x 161.10187pt>
 File: images/3Tier.jpg Graphic file (type jpg)
 <use images/3Tier.jpg>
 Package pdftex.def Info: images/3Tier.jpg  used on input line 15.
@@ -3045,7 +3045,7 @@ Overfull \hbox (10.0451pt too wide) in paragraph at lines 15--16
  [5] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/componentView.png, id=330, 1642.135pt x 693.59125pt>
+<images/componentView.png, id=354, 1642.135pt x 693.59125pt>
 File: images/componentView.png Graphic file (type png)
 <use images/componentView.png>
 Package pdftex.def Info: images/componentView.png  used on input line 72.
@@ -3055,7 +3055,7 @@ Overfull \hbox (9.97643pt too wide) in paragraph at lines 72--73
 [][] 
  []
 
-<images/informalArc.png, id=332, 1082.54437pt x 523.45563pt>
+<images/informalArc.png, id=356, 1082.54437pt x 523.45563pt>
 File: images/informalArc.png Graphic file (type png)
 <use images/informalArc.png>
 Package pdftex.def Info: images/informalArc.png  used on input line 74.
@@ -3065,7 +3065,7 @@ Overfull \hbox (9.998pt too wide) in paragraph at lines 74--75
 [][] 
  []
 
-<images/StudentRegistrationDD.jpg, id=333, 706.13812pt x 495.35063pt>
+<images/StudentRegistrationDD.jpg, id=357, 706.13812pt x 495.35063pt>
 File: images/StudentRegistrationDD.jpg Graphic file (type jpg)
 <use images/StudentRegistrationDD.jpg>
 Package pdftex.def Info: images/StudentRegistrationDD.jpg  used on input line 8
@@ -3077,7 +3077,7 @@ Package pdftex.def Info: images/StudentRegistrationDD.jpg  used on input line 8
 )
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/CompanyRegistrationDD.jpg, id=344, 691.83469pt x 493.845pt>
+<images/CompanyRegistrationDD.jpg, id=368, 691.83469pt x 493.845pt>
 File: images/CompanyRegistrationDD.jpg Graphic file (type jpg)
 <use images/CompanyRegistrationDD.jpg>
 Package pdftex.def Info: images/CompanyRegistrationDD.jpg  used on input line 9
@@ -3088,7 +3088,7 @@ Package pdftex.def Info: images/CompanyRegistrationDD.jpg  used on input line 9
  [7 <./images/StudentRegistrationDD.jpg>] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UserLoginDD.jpg, id=351, 702.37407pt x 500.62032pt>
+<images/UserLoginDD.jpg, id=375, 702.37407pt x 500.62032pt>
 File: images/UserLoginDD.jpg Graphic file (type jpg)
 <use images/UserLoginDD.jpg>
 Package pdftex.def Info: images/UserLoginDD.jpg  used on input line 99.
@@ -3098,7 +3098,7 @@ Package pdftex.def Info: images/UserLoginDD.jpg  used on input line 99.
  [8 <./images/CompanyRegistrationDD.jpg>] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/datalogic.png, id=356, 934.49126pt x 606.265pt>
+<images/datalogic.png, id=380, 934.49126pt x 606.265pt>
 File: images/datalogic.png Graphic file (type png)
 <use images/datalogic.png>
 Package pdftex.def Info: images/datalogic.png  used on input line 109.
@@ -3123,7 +3123,7 @@ Overfull \hbox (34.5741pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-<images/UI/publicMap.png, id=367, 971.12813pt x 583.17876pt>
+<images/UI/publicMap.png, id=391, 971.12813pt x 583.17876pt>
 File: images/UI/publicMap.png Graphic file (type png)
 <use images/UI/publicMap.png>
 Package pdftex.def Info: images/UI/publicMap.png  used on input line 76.
@@ -3136,12 +3136,12 @@ Package pdftex.def Info: images/UI/publicMap.png  used on input line 76.
 ] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/regIntro.png, id=372, 1446.40375pt x 391.4625pt>
+<images/UI/regIntro.png, id=396, 1446.40375pt x 391.4625pt>
 File: images/UI/regIntro.png Graphic file (type png)
 <use images/UI/regIntro.png>
 Package pdftex.def Info: images/UI/regIntro.png  used on input line 82.
 (pdftex.def)             Requested size: 456.37pt x 123.51442pt.
-<images/UI/regStudentForm.png, id=373, 1004.25188pt x 564.1075pt>
+<images/UI/regStudentForm.png, id=397, 1004.25188pt x 564.1075pt>
 File: images/UI/regStudentForm.png Graphic file (type png)
 <use images/UI/regStudentForm.png>
 Package pdftex.def Info: images/UI/regStudentForm.png  used on input line 87.
@@ -3152,12 +3152,12 @@ Package pdftex.def Info: images/UI/regStudentForm.png  used on input line 87.
 w)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/regCompanyForm.png, id=380, 1004.25188pt x 564.1075pt>
+<images/UI/regCompanyForm.png, id=404, 1004.25188pt x 564.1075pt>
 File: images/UI/regCompanyForm.png Graphic file (type png)
 <use images/UI/regCompanyForm.png>
 Package pdftex.def Info: images/UI/regCompanyForm.png  used on input line 92.
 (pdftex.def)             Requested size: 284.52916pt x 159.82547pt.
-<images/UI/loginPage.png, id=381, 1004.25188pt x 564.1075pt>
+<images/UI/loginPage.png, id=405, 1004.25188pt x 564.1075pt>
 File: images/UI/loginPage.png Graphic file (type png)
 <use images/UI/loginPage.png>
 Package pdftex.def Info: images/UI/loginPage.png  used on input line 98.
@@ -3168,17 +3168,17 @@ Package pdftex.def Info: images/UI/loginPage.png  used on input line 98.
 s/UI/loginPage.png>] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/privateStudent.png, id=389, 1537.745pt x 372.39125pt>
+<images/UI/privateStudent.png, id=414, 1537.745pt x 372.39125pt>
 File: images/UI/privateStudent.png Graphic file (type png)
 <use images/UI/privateStudent.png>
 Package pdftex.def Info: images/UI/privateStudent.png  used on input line 110.
 (pdftex.def)             Requested size: 426.78795pt x 103.35399pt.
-<images/UI/companyPrivate.png, id=390, 1015.29312pt x 560.59438pt>
+<images/UI/companyPrivate.png, id=415, 1015.29312pt x 560.59438pt>
 File: images/UI/companyPrivate.png Graphic file (type png)
 <use images/UI/companyPrivate.png>
 Package pdftex.def Info: images/UI/companyPrivate.png  used on input line 116.
 (pdftex.def)             Requested size: 426.79202pt x 235.65332pt.
-<images/UI/profilesPages.png, id=391, 694.09312pt x 815.045pt>
+<images/UI/profilesPages.png, id=416, 694.09312pt x 815.045pt>
 File: images/UI/profilesPages.png Graphic file (type png)
 <use images/UI/profilesPages.png>
 Package pdftex.def Info: images/UI/profilesPages.png  used on input line 123.
@@ -3189,13 +3189,13 @@ Package pdftex.def Info: images/UI/profilesPages.png  used on input line 123.
 (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/profilesPagesPublic.png, id=399, 1437.37pt x 394.47375pt>
+<images/UI/profilesPagesPublic.png, id=424, 1437.37pt x 394.47375pt>
 File: images/UI/profilesPagesPublic.png Graphic file (type png)
 <use images/UI/profilesPagesPublic.png>
 Package pdftex.def Info: images/UI/profilesPagesPublic.png  used on input line 
 128.
 (pdftex.def)             Requested size: 456.37088pt x 125.24702pt.
-<images/UI/notifications.png, id=400, 698.10812pt x 816.55063pt>
+<images/UI/notifications.png, id=425, 698.10812pt x 816.55063pt>
 File: images/UI/notifications.png Graphic file (type png)
 <use images/UI/notifications.png>
 Package pdftex.def Info: images/UI/notifications.png  used on input line 135.
@@ -3206,12 +3206,12 @@ Package pdftex.def Info: images/UI/notifications.png  used on input line 135.
 main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/questionnaire.png, id=408, 1004.25188pt x 564.1075pt>
+<images/UI/questionnaire.png, id=433, 1004.25188pt x 564.1075pt>
 File: images/UI/questionnaire.png Graphic file (type png)
 <use images/UI/questionnaire.png>
 Package pdftex.def Info: images/UI/questionnaire.png  used on input line 141.
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/companiesPage.png, id=409, 1004.25188pt x 564.1075pt>
+<images/UI/companiesPage.png, id=434, 1004.25188pt x 564.1075pt>
 File: images/UI/companiesPage.png Graphic file (type png)
 <use images/UI/companiesPage.png>
 Package pdftex.def Info: images/UI/companiesPage.png  used on input line 148.
@@ -3222,13 +3222,13 @@ Package pdftex.def Info: images/UI/companiesPage.png  used on input line 148.
 w.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/adviceSearchPage.png, id=417, 1004.25188pt x 564.1075pt>
+<images/UI/adviceSearchPage.png, id=441, 1004.25188pt x 564.1075pt>
 File: images/UI/adviceSearchPage.png Graphic file (type png)
 <use images/UI/adviceSearchPage.png>
 Package pdftex.def Info: images/UI/adviceSearchPage.png  used on input line 155
 .
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/adviceCompanyList.png, id=418, 1004.25188pt x 564.1075pt>
+<images/UI/adviceCompanyList.png, id=442, 1004.25188pt x 564.1075pt>
 File: images/UI/adviceCompanyList.png Graphic file (type png)
 <use images/UI/adviceCompanyList.png>
 Package pdftex.def Info: images/UI/adviceCompanyList.png  used on input line 16
@@ -3240,17 +3240,17 @@ Package pdftex.def Info: images/UI/adviceCompanyList.png  used on input line 16
 n.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/publishAdvice.png, id=425, 1004.25188pt x 564.1075pt>
+<images/UI/publishAdvice.png, id=449, 1004.25188pt x 564.1075pt>
 File: images/UI/publishAdvice.png Graphic file (type png)
 <use images/UI/publishAdvice.png>
 Package pdftex.def Info: images/UI/publishAdvice.png  used on input line 165.
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/advicePage.png, id=426, 1004.25188pt x 564.1075pt>
+<images/UI/advicePage.png, id=450, 1004.25188pt x 564.1075pt>
 File: images/UI/advicePage.png Graphic file (type png)
 <use images/UI/advicePage.png>
 Package pdftex.def Info: images/UI/advicePage.png  used on input line 170.
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/advicePageCompany.png, id=427, 1004.25188pt x 564.1075pt>
+<images/UI/advicePageCompany.png, id=451, 1004.25188pt x 564.1075pt>
 File: images/UI/advicePageCompany.png Graphic file (type png)
 <use images/UI/advicePageCompany.png>
 Package pdftex.def Info: images/UI/advicePageCompany.png  used on input line 17
@@ -3262,13 +3262,13 @@ Package pdftex.def Info: images/UI/advicePageCompany.png  used on input line 17
 ges/UI/advicePage.png>] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/interestingInternships.png, id=435, 1004.25188pt x 564.1075pt>
+<images/UI/interestingInternships.png, id=459, 1004.25188pt x 564.1075pt>
 File: images/UI/interestingInternships.png Graphic file (type png)
 <use images/UI/interestingInternships.png>
 Package pdftex.def Info: images/UI/interestingInternships.png  used on input li
 ne 181.
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/invitesApplications.png, id=436, 1002.74625pt x 564.1075pt>
+<images/UI/invitesApplications.png, id=460, 1002.74625pt x 564.1075pt>
 File: images/UI/invitesApplications.png Graphic file (type png)
 <use images/UI/invitesApplications.png>
 Package pdftex.def Info: images/UI/invitesApplications.png  used on input line 
@@ -3280,12 +3280,12 @@ Package pdftex.def Info: images/UI/invitesApplications.png  used on input line
 g>] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/configProcess.png, id=443, 1004.25188pt x 564.1075pt>
+<images/UI/configProcess.png, id=467, 1004.25188pt x 564.1075pt>
 File: images/UI/configProcess.png Graphic file (type png)
 <use images/UI/configProcess.png>
 Package pdftex.def Info: images/UI/configProcess.png  used on input line 195.
 (pdftex.def)             Requested size: 312.98514pt x 175.80974pt.
-<images/UI/viewProcess.png, id=444, 1004.25188pt x 573.14125pt>
+<images/UI/viewProcess.png, id=468, 1004.25188pt x 573.14125pt>
 File: images/UI/viewProcess.png Graphic file (type png)
 <use images/UI/viewProcess.png>
 Package pdftex.def Info: images/UI/viewProcess.png  used on input line 200.
@@ -3296,12 +3296,12 @@ Package pdftex.def Info: images/UI/viewProcess.png  used on input line 200.
 main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-<images/UI/myInterviews.png, id=451, 1004.25188pt x 564.1075pt>
+<images/UI/myInterviews.png, id=475, 1004.25188pt x 564.1075pt>
 File: images/UI/myInterviews.png Graphic file (type png)
 <use images/UI/myInterviews.png>
 Package pdftex.def Info: images/UI/myInterviews.png  used on input line 207.
 (pdftex.def)             Requested size: 426.79375pt x 239.7382pt.
-<images/UI/ongoingPage.png, id=452, 1439.87938pt x 393.47pt>
+<images/UI/ongoingPage.png, id=476, 1439.87938pt x 393.47pt>
 File: images/UI/ongoingPage.png Graphic file (type png)
 <use images/UI/ongoingPage.png>
 Package pdftex.def Info: images/UI/ongoingPage.png  used on input line 214.
@@ -3313,93 +3313,23 @@ w.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-\T1/cmr/m/n/10 (+20) is-tra-tion-Menu-Page,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
-\T1/cmr/m/n/10 (+20) Stu-den-tReg-is-tra-
- []
-
-
-Underfull \hbox (badness 6741) in paragraph at lines 223--224
-\T1/cmr/m/n/10 (+20) tionPage, Com-pa-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 227--228
-[]|\T1/cmr/m/n/10 (+4) StudentProfilePage,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-\T1/cmr/m/n/10 (+20) Com-pa-nyPro-
- []
-
-
-Overfull \hbox (0.70795pt too wide) in paragraph at lines 231--232
-[]|\T1/cmr/m/n/10 (-20) PersonalAdvicePage| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-[]|\T1/cmr/m/n/10 (+20) InternshipsPage,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-\T1/cmr/m/n/10 (+20) In-tern-shipDe-
- []
-
-
-Overfull \hbox (4.05547pt too wide) in paragraph at lines 237--238
-[]|\T1/cmr/m/n/10 (-20) CompanySearchPage| 
- []
-
-
-Underfull \hbox (badness 7685) in paragraph at lines 239--239
-[]|\T1/cmr/m/n/10 (+20) interesting in-tern-
- []
-
-
-Overfull \hbox (10.09732pt too wide) in paragraph at lines 239--240
-[]|\T1/cmr/m/n/10 (-20) InterestingAdvicePage| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--245
-[]|\T1/cmr/m/n/10 (+20) selection pro-cess
+[]|\T1/cmr/m/n/10 (+20) StudentProfilePage, Com-pa-nyPro-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
-[]|\T1/cmr/m/n/10 (+20) ConfigProcessPage,
+[]|\T1/cmr/m/n/10 (+20) ConfigProcessPage, Pro-cess-Man-age-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
-\T1/cmr/m/n/10 (+20) Pro-cess-Man-age-
+\T1/cmr/m/n/10 (+20) ment-Page, Steps-Man-age-ment-Page,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
-\T1/cmr/m/n/10 (+20) ment-Page, Steps-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-\T1/cmr/m/n/10 (+20) Man-age-ment-Page,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-\T1/cmr/m/n/10 (+20) View-StatsPage,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-\T1/cmr/m/n/10 (+20) Pro-cess-Fi-nal-iza-
+\T1/cmr/m/n/10 (+20) View-StatsPage, Pro-cess-Fi-nal-iza-tion-
  []
 
 ) (./chapters/figsntabs.tex
@@ -3409,11 +3339,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
-\openout4 = `main.mw.mw.mw.mw'.
-
- [23] (./main.mw.mw.mw.mw)
-\openout4 = `main.mw.mw.mw.mw'.
-
 
 chapter 4.
 
@@ -3421,13 +3346,23 @@ Overfull \hbox (33.96753pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-) (./chapters/references.tex
 \openout4 = `main.mw.mw.mw.mw'.
 
- [24
+[23
 
 
 ] (./main.mw.mw.mw.mw)
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+ [24] (./main.mw.mw.mw.mw)
+\openout4 = `main.mw.mw.mw.mw'.
+
+) (./chapters/references.tex
+\openout4 = `main.mw.mw.mw.mw'.
+
+[25] (./main.mw.mw.mw.mw)
 \openout4 = `main.mw.mw.mw.mw'.
 
 
@@ -3440,7 +3375,7 @@ Overfull \hbox (34.5741pt too wide) in paragraph at lines 1--1
 ) (./chapters/mathematics.tex
 \openout4 = `main.mw.mw.mw.mw'.
 
- [25
+ [26
 
 
 ] (./main.mw.mw.mw.mw)
@@ -3496,7 +3431,7 @@ Overfull \hbox (4.35551pt too wide) in paragraph at lines 4--19
 ) (./chapters/layout.tex
 \openout4 = `main.mw.mw.mw.mw'.
 
- [26
+ [27
 
 
 ] (./main.mw.mw.mw.mw)
@@ -3532,7 +3467,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 No file main.gls.
 \openout4 = `main.mw.mw.mw.mw'.
 
-[27
+[28
 
 
 ] (./main.mw.mw.mw.mw)
@@ -3543,6 +3478,54 @@ No file main.gls.
 runsystem(makeindex main.idx)...executed safely (allowed).
 
  (./main.ind) (./main.aux
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
+\openout4 = `main.mw.mw.mw.mw'.
+
 \openout4 = `main.mw.mw.mw.mw'.
 
 \openout4 = `main.mw.mw.mw.mw'.
@@ -4098,11 +4081,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55936 strings out of 474934
- 1111757 string characters out of 5763815
- 2419498 words of memory out of 5000000
- 76176 multiletter control sequences out of 15000+600000
- 576153 words of font info for 137 fonts, out of 8000000 for 9000
+ 55961 strings out of 474934
+ 1112024 string characters out of 5763815
+ 2421044 words of memory out of 5000000
+ 76188 multiletter control sequences out of 15000+600000
+ 576211 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,20n,159p,10924b,2446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
@@ -4117,10 +4100,10 @@ ive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2023/t
 exmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb><c:/texlive/2023/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (31 pages, 4299563 bytes).
+Output written on main.pdf (32 pages, 4305787 bytes).
 PDF statistics:
- 755 PDF objects out of 1000 (max. 8388607)
- 632 compressed objects within 7 object streams
- 150 named destinations out of 1000 (max. 500000)
- 35947 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 685 compressed objects within 7 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 36011 words of extra memory for PDF output out of 42996 (max. 10000000)
 
