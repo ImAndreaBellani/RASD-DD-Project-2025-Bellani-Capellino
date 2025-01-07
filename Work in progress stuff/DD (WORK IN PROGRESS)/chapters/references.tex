@@ -1,38 +1,85 @@
 \chapter{Implemention, Integration and Test Plan}
 
-		\section{Overview}
-	in this chapter is explained how S\&C platform will be implemented and tested; regarding the implementation, the most important strategies used to carry out the project are described. As for the testing phase, it is essential because it allows for identifying the maximum number of bugs in the code written by the platform's developers.
-	
-	\section{Implementation Plan}
-	This section explains the implementation strategy that is most advisable to follow in the development of the system. Specifically, the strategy follows a top-down approach, which involves developing the various sub-components of the architecture step by step, starting with those that need to be integrated first and progressing to the last ones. 
-	Before being added to the architecture, these sub-components must be thoroughly tested to ensure their implementation is free of bugs and integrates well with the other components already present in the architecture. Once validated, the sub-component is incorporated into the architecture.
-	
-	This strategy allows multiple development teams to work in parallel: one team can focus on creating a single component, testing it, and then integrating it into the software architecture.
-	
-	\subsection{Feature Identification}
-	The features to be implemented are described, starting from the requirements defined in the RASD document and, in particular, from the identified product functions. Below, we summarize the most relevant ones:
-	
-	[\textbf{F1}]\textbf{sign-up and login}\\
-	These two features are essential to test in order to ensure that users can register or log in correctly. It is important to separately test the registration processes for companies and students, as they provide different data during registration (for instance, students upload their resumes, interfacing with MongoDB, whereas companies do not).
-	
-	The subsequent login functionality can be implemented and tested for a generic user since the functionality is similar for both students and companies.
-	
-	[\textbf{F2}]\textbf{recommendation mechanism}\\
-	This is the core feature of the system: it provides recommendations of interesting students for companies and relevant internship advice for students. It is crucial to properly test this functionality to prevent the wrong students from being recommended to companies and irrelevant internship advice from being provided to students.
-	
-	[\textbf{F3}]\textbf{Internship proposal management}\\
-	This is the functionality to be developed to allow students to apply for internships and companies to send application proposals to students. Implementing this feature also enables students to proactively search for interesting internship advice through the various methods already presented (searching for all internship advice, searching for all companies, or searching for advice by selecting different options).
-	
-	[\textbf{F4}]\textbf{selection process management and internship monitoring}\\
-	This is another key functionality of the system: it allows companies to configure a selection process, save students' responses during interviews, and choose the appropriate students for their internships. Subsequently, both students and companies can monitor the progress of the internship they are involved in. It is necessary to properly test this functionality because it forms the basis for selecting students for an internship.
-	
-	[\textbf{F5}]\textbf{notification management} \\
-	It is mandatory to implement a notification mechanism involving the email service: each notification triggers the sending of an email to the respective user. The platform also includes a notifications section where users can view more detailed content of the notifications.
-	
-	\section{Component Integration and Testing}
-	
-	This section details the steps to follow for the development of the platform. It lists the order in which each component must be developed and validated before being integrated into the overall architecture.
-	
-	
-	
-	
+\section{Overview}
+in this chapter is explained how S\&C platform will be implemented and tested; regarding the implementation, the most important strategies used to carry out the project are described. As for the testing phase, it is essential because it allows for identifying the maximum number of bugs in the code written by the platform's developers.
+
+\section{Implementation Plan}
+This section explains the implementation strategy that is most advisable to follow in the development of the system. Specifically, the strategy follows a top-down approach, which involves developing the various sub-components of the architecture step by step, starting with those that need to be integrated first and progressing to the last ones. 
+Before being added to the architecture, these sub-components must be thoroughly tested to ensure their implementation is free of bugs and integrates well with the other components already present in the architecture. Once validated, the sub-component is incorporated into the architecture.
+
+This strategy allows multiple development teams to work in parallel: one team can focus on creating a single component, testing it, and then integrating it into the software architecture.
+
+\subsection{Feature Identification}
+The features to be implemented are described, starting from the requirements defined in the RASD document and, in particular, from the identified product functions. Below, we summarize the most relevant ones:
+
+[\textbf{F1}]\textbf{sign-up and login}\\
+These two features are essential to test in order to ensure that users can register or log in correctly. It is important to separately test the registration processes for companies and students, as they provide different data during registration (for instance, students upload their resumes, interfacing with MongoDB, whereas companies do not).
+
+The subsequent login functionality can be implemented and tested for a generic user since the functionality is similar for both students and companies.
+
+[\textbf{F2}]\textbf{recommendation mechanism}\\
+This is the core feature of the system: it provides recommendations of interesting students for companies and relevant internship advice for students. It is crucial to properly test this functionality to prevent the wrong students from being recommended to companies and irrelevant internship advice from being provided to students.
+
+[\textbf{F3}]\textbf{Internship proposal management}\\
+This is the functionality to be developed to allow students to apply for internships and companies to send application proposals to students. Implementing this feature also enables students to proactively search for interesting internship advice through the various methods already presented (searching for all internship advice, searching for all companies, or searching for advice by selecting different options).
+
+[\textbf{F4}]\textbf{selection process management and internship monitoring}\\
+This is another key functionality of the system: it allows companies to configure a selection process, save students' responses during interviews, and choose the appropriate students for their internships. Subsequently, both students and companies can monitor the progress of the internship they are involved in. It is necessary to properly test this functionality because it forms the basis for selecting students for an internship.
+
+[\textbf{F5}]\textbf{notification management} \\
+It is mandatory to implement a notification mechanism involving the email service: each notification triggers the sending of an email to the respective user. The platform also includes a notifications section where users can view more detailed content of the notifications.
+
+\section{Component Integration and Testing}
+
+This section details the steps to follow for the development of the platform. It lists the order in which each component must be developed and validated before being integrated into the overall architecture.
+
+\textbf{UI and Data Layer} 
+
+The first part to be implemented is, of course, the relational database and the MongoDB database for managing unstructured data. These databases will store the data from our platform. In parallel, the UI can be developed, which is necessary to enable user interaction with the system.
+
+Once the presentation layer and data layer have been implemented, the application layer can be developed. The components should be developed and tested in the following order:
+
+\textbf{Sign-up and Login} 
+
+The first two components to implement and test are the \textit{Authentication Manager} and the \textit{Profile Manager}, as the initial functionality to be provided is user registration and authentication.
+
+\textbf{Internship Proposal Management, Recommendation and Notification Management}
+
+Subsequently, the components \textit{Advice Publisher, Advice Presenter, and Profile Presenter} are added. These components manage the publication of advice and subsequent application requests. In parallel, the components related to the recommendation system (\textit{Recommendation Interface, Analyzer, and Presenter}) and notification management (\textit{Notification Presenter and Notification Generator}) must also be developed.
+
+This integration is crucial because the application process and the sending of proposals must be supported by recommendations received by the user, delivered through the notification system. Therefore, it is necessary to conduct integrated testing of these components before adding them to the architecture.
+
+Once validated, the system allows users to publish advice and apply for them. Additionally, users can receive recommendations related to internships or students, if they choose to opt in for these notifications.
+
+
+\textbf{Selection Process Management}
+
+The components related to the management of the selection process— \textit{SP Initializer, SP Manager, and SP Presenter}—are then implemented and thoroughly tested. These components must be integrated and tested in conjunction with the notification system, as the selection process sends results to users via notifications.
+
+
+\textit{feedback and complaint management}
+
+Subsequently, components related to feedback management are added, as feedback must be collected at the end of the selection process. The Feedback Manager component is introduced for this purpose. Additionally, the Internship Manager component is added to handle ongoing internships.
+
+These components must be thoroughly tested and validated, as they also enable the system to manage user complaints effectively.
+
+
+\section{System Testing}
+As mentioned earlier, S\&C must be tested to ensure that the implemented features align with the platform's requirements. During the development phase, each component must be tested individually as it is created before being integrated into the architecture. However, as previously stated, it is not sufficient to test and validate individual components alone. It is essential to test a set of these sub-components together and, ultimately, the entire developed system.
+
+The primary goal is to verify that the system meets all the requirements defined in the RASD document (both functional and non-functional). The following steps can be followed:
+
+\begin{itemize}
+	\item \textbf{Functional Testing}: the idea is to run the software as described in the use-cases in RASD document and verified if they are satisfied
+	\item \textbf{Performance Testing}: the objective is find the bottlenecks that affect in negative way the time response of the system; to perform this tests is necessary load the system with the expected workload and identify optimizations if possible
+	\item \textbf{Usability Testing}: it is a method of testing the features of a website, app, or other digital product by observing real users as they attempt to complete tasks on it.
+\end{itemize}
+
+
+When testing the system, the involvement of system stakeholders becomes crucial. They can first participate in an alpha test, followed by a beta test, before the official release of the platform. The feedback obtained from these tests is essential to identify areas that need improvement or adjustment prior to the official launch.
+\begin{itemize}
+	\item \textbf{Alpha Testing}: This initial phase of testing is typically conducted by a select group of internal stakeholders or developers. It focuses on identifying major bugs or functional issues early on. The goal is to ensure the system works as intended before being presented to a larger audience.
+	\item \textbf{Beta Testing}: This phase is conducted with a larger group of users, often including external stakeholders, who test the system under real-world conditions. Feedback from beta testers helps identify any remaining issues and provides valuable insights into user experience, usability, and system performance.
+\end{itemize}	
+
+The feedback gathered from both the alpha and beta tests plays a crucial role in refining the platform, making necessary improvements, and ensuring that it is robust and ready for the official release.

@@ -129,7 +129,7 @@
 			\includegraphics[scale=0.3]{StudentRegistrationDD.jpg}
 			\caption{[UC1] - Student Registration}
 		\end{figure}
-			
+		
 		The figure shows the student registration process; the request is sent to Authentication Manager, which is also responsible for receiving the registration form completed by the student. Once received, Authentication Manager queries the DBMS to check if the student's email is already present in the database. If it is not present, the student will be saved in the database, while the CV will be stored in MongoDB as an unstructured data. If the email is already in the database, an error message will be displayed to the student.
 		
 		\begin{figure}[H]
@@ -244,7 +244,7 @@
 			
 		\end{figure}
 		
-			\begin{figure}[H]
+		\begin{figure}[H]
 			\centering
 			{\bfseries [UC11-b] - Company Send of Proposal-accept proposal}
 			\caption{[UC11-b] - Company Send of Proposal - accept proposal}
@@ -278,6 +278,16 @@
 		
 		\begin{figure}[H]
 			\centering
+			{\bfseries [UC13] - Selection Process Running}
+			\caption{[UC13] - Selection Process Running}
+			\includegraphics[scale=0.3]{ProcessRunningDD.jpg}
+			
+		\end{figure}
+		
+		the figure shows the running of the selection process; the main component is SP Manager which retrieve from MongoDB the questionnaires and finally triggers the Notification Generator which create a new notification representing the sending of the results to an user; the questionnaires are saved in MongoDB after the entering of the answers
+		
+		\begin{figure}[H]
+			\centering
 			{\bfseries [UC14] - Collection of Student Selection Process Feedback}
 			\caption{[UC14] - Collection of Student Selection Process Feedback}
 			\includegraphics[scale=0.3]{StudentFeedbackDD.jpg}
@@ -306,7 +316,7 @@
 			
 		\end{figure}
 		
-		the figure shows the collection of Internships feedback; the client requests an internship they want to view (in this case, an ongoing internship), which is displayed by the Internship Manager. Subsequently, the client requests the form to provide feedback, shown by the Feedback Manager. The client then fills out the form, and the Feedback Manager saves the results in the relational database, provided the form is fully completed. Otherwise, the Feedback Manager shows an error message to the client.
+		the figure shows the collection of Internships feedback; the client request the notification regarding the closing of the internship(offered by Notification Presenter). Subsequently, the client requests the form to provide feedback, shown by the Feedback Manager. The client then fills out the form, and the Feedback Manager saves the results in the relational database, provided the form is fully completed. Otherwise, the Feedback Manager shows an error message to the client.
 		
 		
 		
@@ -334,150 +344,174 @@
 		The figure shows the process of closing an internship when it is completed. The Client, when requesting to close an internship, invokes the Internship Manager component, which is responsible for removing the internship from the relational database.
 		
 		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC19] - Recommendation Process}
+			\caption{[UC19] - Recommendation Process}
+			\includegraphics[scale=0.3]{Recommendation.jpg}
+			
+		\end{figure}
+		
+		The figure provides a detailed view of the recommendation process. The Recommendation Interface is the component responsible for retrieving data from the two databases and passing it to the Recommendation Analyzer, which performs the actual analysis. The Recommendation Presenter saves the results in the relational database and triggers the sending of an email to those users who wish to be notified. It is noted that the recommendation process, along with the subsequent delivery of results to users, occurs once a week.
+		
+		\section{Component Interfaces}
+		
+		\textbf{Authentication Manager}
+		\begin{itemize}
+			\item Register(email,password,description)
+			\item Register(name, description,email,password)
+			\item Login(email,password)
+		\end{itemize}
+		
+		\textbf{Application Manager}
+		\begin{itemize}
+			\item Apply\_Advice(mail,name)
+			\item Send\_Proposal(mail)
+			\item Accept\_Application(mail,title)
+			\item Accept\_Proposal(mail,title)
+		\end{itemize}
+		
+		\textbf{Advice Presenter}
+		\begin{itemize}
+			\item Request(advices)
+			\item Request(search\_advices)
+			\item Search(subject, options)
+			\item Request(advice)
+			\item Request(notification)
+		\end{itemize}
+		
+		\textbf{Advice Publisher}
+		\begin{itemize}
+			\item Request(new\_internship\_advice)
+			\item Create\_Advice(form)
+			\item insert\_Advice(form)
+			
+		\end{itemize}
+		
+		\textbf{Feedback Manager}
+		\begin{itemize}
+			\item Request(form)
+			\item Insert(ans1,ans2,..., ansN)
+			\item Submit(form)
+			\item Insert\_Feedback(form)
+		\end{itemize}
+		
+		\textbf{Internship Manager}
+		\begin{itemize}
+			\item Request(internship)
+			\item Write\_Complaint()
+			\item Submit(complain)
+			\item Insert(complain)
+			\item Request(close\_internship)
+			\item Close(name)
+		\end{itemize}
+		
+		\textbf{Profile Manager}
+		\begin{itemize}
+			\item Create(student)
+			\item Create\_CV(CV)
+			\item Create(company)
+		\end{itemize}
+		
+		\textbf{Profile Presenter}
+		\begin{itemize}
+			\item Request(companies)
+			\item Request(company)
+			\item Request(students)
+			\item Request(student)
+		\end{itemize}
+		
+		\textbf{Recommendation Analyzer}
+		\begin{itemize}
+			\item Analyze(feedback,questionnaires,CV)
+		\end{itemize}
+		\textbf{Recommendation Presenter}
+		\begin{itemize}
+			\item Insert(recommendation)
+		\end{itemize}
+		
+		\textbf{Notification Presenter}
+		\begin{itemize}
+			\item Request(notification)
+		\end{itemize}
+		
+		\textbf{Notification Generator}
+		\begin{itemize}
+			\item Create\_Notification(mail, content)
+			
+		\end{itemize}
+		
+		\textbf{SP Initiallizer}
+		\begin{itemize}
+			\item Request(configuration)
+			\item Confgiure(nSteps, metrics, questionnaire)
+			\item Save(configuration)
+			\item Insert(nSteps, metrics)
+			\item Insert(questionnaire)
+			\item Request(student\_applied)
+			\item Configure\_Date(email,date)
+			\item Save(mail, date)
+		\end{itemize}
+		
+		\textbf{SPManager}
+		\begin{itemize}
+			\item Request(questionnaire)
+			\item Compile(questionnaire)
+			\item Evaluate(questionnaire)
+			\item Send\_Results()
+			
+		\end{itemize}
+		\textbf{SP Presenter}
+		\begin{itemize}
+			\item Request(date)
+			\item Request(results)
+		\end{itemize}
+		
+		\textbf{SES API}
+		\begin{itemize}
+			\item Trigger\_Notification(mail,content)
+		\end{itemize}
+		
+		\textbf{Mail\_Client}
+		\begin{itemize}
+			\item Redirect(notification)
+		\end{itemize}
+		
+		\textbf{DBMS}
+		\begin{itemize}
+			\item Select(email)
+			\item Create(student)
+			\item Create(company)
+			\item Select\_Student(email,password)
+			\item Insert\_Advice(form)
+			\item Select\_All(advices)
+			\item Select\_Advice(title)
+			\item Select\_Advice(subject,options)
+			\item Select(notification)
+			\item Select\_Recommendation(mail)
+			\item Select\_Internship\_Date(mail)
+			\item Save\_Application(mail,name)
+			\item Create\_Notification(mail,content)
+			\item Modify\_Application(mail,title)
+			\item Insert(nStesp,metrics)
+			\item Insert(mail,date)
+			\item Insert(recommendation)
+			\item Insert\_Feedback(form)
+			\item Insert(complain)
+			\item Select\_Internship(name)
+			\item Remove\_Internship(name)
+		\end{itemize}
+		
+		\textbf{MongoDB}
+		\begin{itemize}
+			\item CreateCV(CV)
+			\item Select\_CV(email)
+			\item Insert(questionnaire)
+			\item Select(questionnaire)
+			\item Save(questionnaire)
+		\end{itemize}
 		
 		
-	\section{Component Interfaces}
-	
-	\textbf{Authentication Manager}
-	\begin{itemize}
-		\item Register(email,password,description)
-		\item Register(name, description,email,password)
-		\item Login(email,password)
-	\end{itemize}
-	
-	\textbf{Application Manager}
-	\begin{itemize}
-		\item Apply\_Advice(mail,name)
-		\item Send\_Proposal(mail)
-		\item Accept\_Application(mail,title)
-		\item Accept\_Proposal(mail,title)
-	\end{itemize}
-	
-	\textbf{Advice Presenter}
-	\begin{itemize}
-		\item Request(advices)
-		\item Request(search\_advices)
-		\item Search(subject, options)
-		\item Request(advice)
-		\item Request(notification)
-	\end{itemize}
-	
-	\textbf{Advice Publisher}
-	\begin{itemize}
-		\item Request(new\_internship\_advice)
-		\item Create\_Advice(form)
-		\item insert\_Advice(form)
-		
-	\end{itemize}
-	
-	\textbf{Feedback Manager}
-	\begin{itemize}
-		\item Request(form)
-		\item Insert(ans1,ans2,..., ansN)
-		\item Submit(form)
-		\item Insert\_Feedback(form)
-	\end{itemize}
-	
-	\textbf{Internship Manager}
-	\begin{itemize}
-		\item Request(internship)
-		\item Write\_Complaint()
-		\item Submit(complain)
-		\item Insert(complain)
-		\item Request(close\_internship)
-		\item Close(name)
-	\end{itemize}
-	
-	\textbf{Profile Manager}
-	\begin{itemize}
-		\item Create(student)
-		\item Create\_CV(CV)
-		\item Create(company)
-	\end{itemize}
-	
-	\textbf{Profile Presenter}
-	\begin{itemize}
-		\item Request(companies)
-		\item Request(company)
-		\item Request(students)
-		\item Request(student)
-	\end{itemize}
-	
-	\textbf{Recommendation Interface}
-	\textbf{Recommendation Analyzer}
-	\textbf{Recommendation Presenter}
-	
-	\textbf{Notification Presenter}
-	\begin{itemize}
-		\item Request(notification)
-	\end{itemize}
-	
-	\textbf{Notification Generator}
-	\begin{itemize}
-		\item Create\_Notification(mail, content)
-		
-	\end{itemize}
-	
-	\textbf{SP Initiallizer}
-	\begin{itemize}
-		\item Request(configuration)
-		\item Confgiure(nSteps, metrics, questionnaire)
-		\item Save(configuration)
-		\item Insert(nSteps, metrics)
-		\item Insert(questionnaire)
-		\item Request(student\_applied)
-		\item Configure\_Date(email,date)
-		\item Save(mail, date)
-	\end{itemize}
-	
-	\textbf{SP Presenter}
-	\begin{itemize}
-		\item Request(date)
-		\item Request(results)
-	\end{itemize}
-	
-	\textbf{SES API}
-	\begin{itemize}
-		\item Trigger\_Notification(mail,content)
-	\end{itemize}
-	
-	\textbf{Mail\_Client}
-	\begin{itemize}
-		\item Redirect(notification)
-	\end{itemize}
-	
-	\textbf{DBMS}
-	\begin{itemize}
-		\item Select(email)
-		\item Create(student)
-		\item Create(company)
-		\item Select\_Student(email,password)
-		\item Insert\_Advice(form)
-		\item Select\_All(advices)
-		\item Select\_Advice(title)
-		\item Select\_Advice(subject,options)
-		\item Select(notification)
-		\item Select\_Recommendation(mail)
-		\item Select\_Internship\_Date(mail)
-		\item Save\_Application(mail,name)
-		\item Create\_Notification(mail,content)
-		\item Modify\_Application(mail,title)
-		\item Insert(nStesp,metrics)
-		\item Insert(mail,date)
-		\item Insert\_Feedback(form)
-		\item Insert(complain)
-		\item Select\_Internship(name)
-		\item Remove\_Internship(name)
-	\end{itemize}
-	
-	\textbf{MongoDB}
-	\begin{itemize}
-		\item CreateCV(CV)
-		\item Select\_CV(email)
-		\item Insert(questionnaire)
-	\end{itemize}
-
-
 
 
 
@@ -519,9 +553,8 @@
 				
 			\end{itemize}
 			
-			he use of this pattern once again provides significant advantages in terms of modularity and separation of concerns. Additionally, it enhances the reliability of the developed system and promotes reusability. Finally, having a clear separation between the Model, View, and Controller makes it much easier to perform functional testing of the system.
+			the use of this pattern once again provides significant advantages in terms of modularity and separation of concerns. Additionally, it enhances the reliability of the developed system and promotes reusability. Finally, having a clear separation between the Model, View, and Controller makes it much easier to perform functional testing of the system.
 		
-		\subsection{Other Design Decisions}
 			
 			
 			
