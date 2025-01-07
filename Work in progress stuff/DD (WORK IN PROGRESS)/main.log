@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.16)  7 JAN 2025 16:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.12.16)  7 JAN 2025 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3436,9 +3436,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 18
 \tf@lof=\write135
 \openout4 = `main.lof'.
 
-Package tocbasic Info: character protrusion at lot deactivated on input line 18
-9.
- (main.lot
+
 
 \openout4 = `main1.mw'.
 
@@ -3448,7 +3446,9 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 18
 ] (main1.mw)
 \openout4 = `main1.mw'.
 
-)
+Package tocbasic Info: character protrusion at lot deactivated on input line 18
+9.
+ (main.lot)
 \tf@lot=\write136
 \openout4 = `main.lot'.
 
@@ -3678,13 +3678,35 @@ File: images/InternshipRecommendationDD.jpg Graphic file (type bmp)
 
 File: images/StudentsRecommendationDD.jpg Graphic file (type bmp)
 <images/StudentsRecommendationDD.jpg>
+File: images/StudentApplicationProcess1DD.jpg Graphic file (type bmp)
+<images/StudentApplicationProcess1DD.jpg>
+
+
+\openout4 = `main1.mw'.
+
+[12] (main1.mw)
+\openout4 = `main1.mw'.
+
+File: images/StudentApplicationProcess2DD.jpg Graphic file (type bmp)
+<images/StudentApplicationProcess2DD.jpg>
+File: images/SendProposal1DD.jpg Graphic file (type bmp)
+<images/SendProposal1DD.jpg>
+
+
+\openout4 = `main1.mw'.
+
+[13] (main1.mw)
+\openout4 = `main1.mw'.
+
+File: images/SendProposal2DD.jpg Graphic file (type bmp)
+<images/SendProposal2DD.jpg>
 File: images/ProcessConfigurationDD.jpg Graphic file (type bmp)
 <images/ProcessConfigurationDD.jpg>
 
 
 \openout4 = `main1.mw'.
 
-[12] (main1.mw)
+[14] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/StudentFeedbackDD.jpg Graphic file (type bmp)
@@ -3693,7 +3715,7 @@ File: images/StudentFeedbackDD.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[13] (main1.mw)
+[15] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CompanyFeedbackDD.jpg Graphic file (type bmp)
@@ -3702,7 +3724,7 @@ File: images/CompanyFeedbackDD.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[14] (main1.mw)
+[16] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/InternshipFeedbackDD.jpg Graphic file (type bmp)
@@ -3711,7 +3733,7 @@ File: images/InternshipFeedbackDD.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[15] (main1.mw)
+[17] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/CollectionComplaintsDD.jpg Graphic file (type bmp)
@@ -3720,7 +3742,7 @@ File: images/CollectionComplaintsDD.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[16] (main1.mw)
+[18] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/DeleteDD.jpg Graphic file (type bmp)
@@ -3729,7 +3751,21 @@ File: images/DeleteDD.jpg Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[17] (main1.mw)
+[19] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+
+\openout4 = `main1.mw'.
+
+[20] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+
+\openout4 = `main1.mw'.
+
+[21] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/datalogic.png Graphic file (type bmp)
@@ -3738,14 +3774,21 @@ File: images/datalogic.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[18] (main1.mw)
+[22] (main1.mw)
+\openout4 = `main1.mw'.
+
+
+
+\openout4 = `main1.mw'.
+
+[23] (main1.mw)
 \openout4 = `main1.mw'.
 
 ) (chapters/textnotes.tex
 
 \openout4 = `main1.mw'.
 
-[19] (main1.mw)
+[24] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -3761,7 +3804,7 @@ File: images/UI/publicMap.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[20
+[25
 
 
 ] (main1.mw)
@@ -3775,7 +3818,7 @@ File: images/UI/regStudentForm.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[21] (main1.mw)
+[26] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/regCompanyForm.png Graphic file (type bmp)
@@ -3786,7 +3829,7 @@ File: images/UI/loginPage.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[22] (main1.mw)
+[27] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -3801,7 +3844,7 @@ File: images/UI/profilesPages.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[23] (main1.mw)
+[28] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/profilesPagesPublic.png Graphic file (type bmp)
@@ -3812,7 +3855,7 @@ File: images/UI/notifications.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[24] (main1.mw)
+[29] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/questionnaire.png Graphic file (type bmp)
@@ -3823,7 +3866,7 @@ File: images/UI/companiesPage.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[25] (main1.mw)
+[30] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/adviceSearchPage.png Graphic file (type bmp)
@@ -3834,7 +3877,7 @@ File: images/UI/adviceCompanyList.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[26] (main1.mw)
+[31] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/publishAdvice.png Graphic file (type bmp)
@@ -3847,7 +3890,7 @@ File: images/UI/advicePageCompany.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[27] (main1.mw)
+[32] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/interestingInternships.png Graphic file (type bmp)
@@ -3858,7 +3901,7 @@ File: images/UI/invitesApplications.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[28] (main1.mw)
+[33] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/configProcess.png Graphic file (type bmp)
@@ -3869,7 +3912,7 @@ File: images/UI/viewProcess.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[29] (main1.mw)
+[34] (main1.mw)
 \openout4 = `main1.mw'.
 
 File: images/UI/myInterviews.png Graphic file (type bmp)
@@ -3880,7 +3923,7 @@ File: images/UI/ongoingPage.png Graphic file (type bmp)
 
 \openout4 = `main1.mw'.
 
-[30] (main1.mw)
+[35] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -3907,7 +3950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
 \openout4 = `main1.mw'.
 
-[31] (main1.mw)
+[36] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -3921,7 +3964,7 @@ Overfull \hbox (30.38211pt too wide) in paragraph at lines 1--1
 
 \openout4 = `main1.mw'.
 
-[32
+[37
 
 
 ] (main1.mw)
@@ -3931,7 +3974,7 @@ Overfull \hbox (30.38211pt too wide) in paragraph at lines 1--1
 
 \openout4 = `main1.mw'.
 
-[33] (main1.mw)
+[38] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -3945,7 +3988,7 @@ Overfull \hbox (30.38211pt too wide) in paragraph at lines 1--1
 
 \openout4 = `main1.mw'.
 
-[34
+[39
 
 
 ] (main1.mw)
@@ -3955,7 +3998,7 @@ Overfull \hbox (30.38211pt too wide) in paragraph at lines 1--1
 
 \openout4 = `main1.mw'.
 
-[35] (main1.mw)
+[40] (main1.mw)
 \openout4 = `main1.mw'.
 
 
@@ -4019,7 +4062,7 @@ Overfull \hbox (4.35551pt too wide) in paragraph at lines 4--19
 
 \openout4 = `main1.mw'.
 
-[36
+[41
 
 
 ] (main1.mw)
@@ -4057,7 +4100,7 @@ No file main.gls.
 
 \openout4 = `main1.mw'.
 
-[37
+[42
 
 
 ] (main1.mw)
@@ -4068,6 +4111,46 @@ No file main.gls.
 runsystem(makeindex main.idx)...executed safely (allowed).
 
  (main.ind) (main.aux
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
+\openout4 = `main1.mw'.
+
 \openout4 = `main1.mw'.
 
 \openout4 = `main1.mw'.
@@ -4746,12 +4829,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62180 strings out of 408758
- 1257635 string characters out of 5747653
- 2761184 words of memory out of 5000000
- 83116 multiletter control sequences out of 15000+600000
+ 62286 strings out of 408758
+ 1259730 string characters out of 5747653
+ 2763640 words of memory out of 5000000
+ 83163 multiletter control sequences out of 15000+600000
  574099 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,159p,10926b,4273s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (42 pages).
+Output written on main.pdf (47 pages).

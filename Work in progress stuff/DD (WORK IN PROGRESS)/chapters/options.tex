@@ -168,6 +168,51 @@
 		
 		the figure shows how the companies can look for students recommended; first of all, the client displays a notification: the web server sends the notification to the notification presenter, which retrieves it from the database. Subsequently, to view the recommended students, the web server forwards the request to the profile presenter, which retrieves the recommended students related to the company from the database and then presents it to the client. Finally, the client selects a students(note that it has to retrieve also the CV from MongoDB, instead the other data are retrieved from the relational DB)
 		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC10-a] - Student Application Process-send application}
+			\caption{[UC10-a] - Student Application Process-send application}
+			\includegraphics[scale=0.3]{StudentApplicationProcess1DD.jpg}
+			
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC10-b] - Student Application Process-accept application}
+			\caption{[UC10-b] - Student Application Process-accept application}
+			\includegraphics[scale=0.3]{StudentApplicationProcess2DD.jpg}
+			
+		\end{figure}
+		
+		In these two sequence diagrams, the entire student application process is depicted. Both the application submission phase and the acceptance of an application utilize the Application Manager component, which is responsible for inserting the newly created application into the relational database. The Notification Generator component then triggers the email sending process and sends a notification to the recipient company, which accepts the application by sending a response notification (Figure 2). It should be noted that the company can also reject the application, but the modeling is identical to the acceptance process.
+		
+		
+		
+		\begin{figure}[H]
+			\centering
+			{\bfseries [UC11-a] - Company Send of Proposal-send proposal}
+			\caption{[UC11-a] - Company Send of Proposal - send proposal}
+			\includegraphics[scale=0.3]{SendProposal1DD.jpg}
+			
+		\end{figure}
+		
+			\begin{figure}[H]
+			\centering
+			{\bfseries [UC11-b] - Company Send of Proposal-accept proposal}
+			\caption{[UC11-b] - Company Send of Proposal - accept proposal}
+			\includegraphics[scale=0.3]{SendProposal2DD.jpg}
+			
+		\end{figure}
+		
+		
+		
+		The two sequence diagrams show the entire process of submitting a proposal by a company. In both figures, it is the Application Manager component that handles the creation of a new application, sending the notification (with email trigger), and managing the acceptance. The acceptance can only occur if the deadline has not yet passed; otherwise, an error message is displayed.
+		
+		
+		
+		
+		
+		
 		
 		\begin{figure}[H]
 			\centering
@@ -244,6 +289,158 @@
 		
 		
 	\section{Component Interfaces}
+	
+	\textbf{Authentication Manager}
+	\begin{itemize}
+		\item Register(email,password,description)
+		\item Register(name, description,email,password)
+		\item Login(email,password)
+	\end{itemize}
+	
+	\textbf{Application Manager}
+	\begin{itemize}
+		\item Apply\_Advice(mail,name)
+		\item Send\_Proposal(mail)
+		\item Accept\_Application(mail,title)
+		\item Accept\_Proposal(mail,title)
+	\end{itemize}
+	
+	\textbf{Advice Presenter}
+	\begin{itemize}
+		\item Request(advices)
+		\item Request(search\_advices)
+		\item Search(subject, options)
+		\item Request(advice)
+		\item Request(notification)
+	\end{itemize}
+	
+	\textbf{Advice Publisher}
+	\begin{itemize}
+		\item Request(new\_internship\_advice)
+		\item Create\_Advice(form)
+		\item insert\_Advice(form)
+		
+	\end{itemize}
+	
+	\textbf{Feedback Manager}
+	\begin{itemize}
+		\item Request(form)
+		\item Insert(ans1,ans2,..., ansN)
+		\item Submit(form)
+		\item Insert\_Feedback(form)
+	\end{itemize}
+	
+	\textbf{Internship Manager}
+	\begin{itemize}
+		\item Request(internship)
+		\item Write\_Complaint()
+		\item Submit(complain)
+		\item Insert(complain)
+		\item Request(close\_internship)
+		\item Close(name)
+	\end{itemize}
+	
+	\textbf{Profile Manager}
+	\begin{itemize}
+		\item Create(student)
+		\item Create\_CV(CV)
+		\item Create(company)
+	\end{itemize}
+	
+	\textbf{Profile Presenter}
+	\begin{itemize}
+		\item Request(companies)
+		\item Request(company)
+		\item Request(students)
+		\item Request(student)
+	\end{itemize}
+	
+	\textbf{Recommendation Interface}
+	\textbf{Recommendation Analyzer}
+	\textbf{Recommendation Presenter}
+	
+	\textbf{Notification Presenter}
+	\begin{itemize}
+		\item Request(notification)
+	\end{itemize}
+	
+	\textbf{Notification Generator}
+	\begin{itemize}
+		\item Create\_Notification(mail, content)
+		
+	\end{itemize}
+	
+	\textbf{SP Initiallizer}
+	\begin{itemize}
+		\item Request(configuration)
+		\item Confgiure(nSteps, metrics, questionnaire)
+		\item Save(configuration)
+		\item Insert(nSteps, metrics)
+		\item Insert(questionnaire)
+		\item Request(student\_applied)
+		\item Configure\_Date(email,date)
+		\item Save(mail, date)
+	\end{itemize}
+	
+	\textbf{SP Presenter}
+	\begin{itemize}
+		\item Request(date)
+		\item Request(results)
+	\end{itemize}
+	
+	\textbf{SES API}
+	\begin{itemize}
+		\item Trigger\_Notification(mail,content)
+	\end{itemize}
+	
+	\textbf{Mail\_Client}
+	\begin{itemize}
+		\item Redirect(notification)
+	\end{itemize}
+	
+	\textbf{DBMS}
+	\begin{itemize}
+		\item Select(email)
+		\item Create(student)
+		\item Create(company)
+		\item Select\_Student(email,password)
+		\item Insert\_Advice(form)
+		\item Select\_All(advices)
+		\item Select\_Advice(title)
+		\item Select\_Advice(subject,options)
+		\item Select(notification)
+		\item Select\_Recommendation(mail)
+		\item Select\_Internship\_Date(mail)
+		\item Save\_Application(mail,name)
+		\item Create\_Notification(mail,content)
+		\item Modify\_Application(mail,title)
+		\item Insert(nStesp,metrics)
+		\item Insert(mail,date)
+		\item Insert\_Feedback(form)
+		\item Insert(complain)
+		\item Select\_Internship(name)
+		\item Remove\_Internship(name)
+	\end{itemize}
+	
+	\textbf{MongoDB}
+	\begin{itemize}
+		\item CreateCV(CV)
+		\item Select\_CV(email)
+		\item Insert(questionnaire)
+	\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	\section{Data Logic Model}
 		Starting from the high-level class diagram presented in the RASD, the logic scheme of the database is designed:
 		\begin{figure}[H]
@@ -258,3 +455,33 @@
 			\item selection process questionnaires and CVs are missing since they are stored in Mongo DB (they are far more suitable for an unstructured data representation).
 		\end{itemize}
 	\section{Selected Architectural Styles and Patterns}
+	
+		\subsection{3-tier architecture}
+			As mentioned in section 2.1, the architecture used for the system implementation is a 3-tier architecture, which offers significant advantages in terms of modularity and scalability. Regarding the data layer, a relational database was chosen to manage structured data, while a non-relational database was adopted to handle unstructured data more flexibly, such as CVs and questionnaires with the responses from the selection process.
+			
+			
+		\subsection{Model-View-Controller(MVC) pattern}
+			As previously mentioned, S\&C was designed to be developed as a web application. Consequently, one of the most commonly used patterns for building this type of application is the MVC pattern. This pattern divides the application into three main components:
+			
+			\begin{itemize}
+				\item \textbf{Model}: Manages the data, business logic, and rules of the application. It acts as the interface between the database and the rest of the application.
+				\item \textbf{View}: Handles the presentation layer, defining how the data is displayed to the user.
+				\item \textbf{Controller}: Serves as an intermediary between the Model and the View, processing user inputs, updating the Model, and determining which View to display.
+				
+				
+			\end{itemize}
+			
+			he use of this pattern once again provides significant advantages in terms of modularity and separation of concerns. Additionally, it enhances the reliability of the developed system and promotes reusability. Finally, having a clear separation between the Model, View, and Controller makes it much easier to perform functional testing of the system.
+		
+		\subsection{Other Design Decisions}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
