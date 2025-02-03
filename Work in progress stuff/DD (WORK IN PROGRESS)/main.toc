@@ -1,5 +1,5 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\selectlanguage *[]{english}
+\babel@toc {english}{}\relax
 \contentsline {chapter}{\nonumberline Contents}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Purpose}{1}{section.1.1}%
@@ -20,85 +20,85 @@
 \contentsline {mtocsection}{\numberline {1.5}Reference documents}{2}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Document structure}{2}{section.1.6}%
 \contentsline {mtocsection}{\numberline {1.6}Document structure}{2}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Architectural Design}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.1}Overview}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Component View}{3}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.2}Component View}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Deployment View}{6}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.3}Deployment View}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Runtime View}{8}{section.2.4}%
-\contentsline {mtocsection}{\numberline {2.4}Runtime View}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Component Interfaces}{23}{section.2.5}%
-\contentsline {mtocsection}{\numberline {2.5}Component Interfaces}{23}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Data Logic Model}{25}{section.2.6}%
-\contentsline {mtocsection}{\numberline {2.6}Data Logic Model}{25}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Selected Architectural Styles and Patterns}{25}{section.2.7}%
-\contentsline {mtocsection}{\numberline {2.7}Selected Architectural Styles and Patterns}{25}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}3-tier architecture}{25}{subsection.2.7.1}%
-\contentsline {mtocsubsection}{\numberline {2.7.1}3-tier architecture}{25}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Model-View-Controller(MVC) pattern}{26}{subsection.2.7.2}%
-\contentsline {mtocsubsection}{\numberline {2.7.2}Model-View-Controller(MVC) pattern}{26}{subsection.2.7.2}%
-\contentsline {chapter}{\numberline {3}User Interface Design}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Public pages}{28}{section.3.1}%
-\contentsline {mtocsection}{\numberline {3.1}Public pages}{28}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Public pages navigation map}{28}{subsection.3.1.1}%
-\contentsline {mtocsubsection}{\numberline {3.1.1}Public pages navigation map}{28}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Registration pages mock-up}{28}{subsection.3.1.2}%
-\contentsline {mtocsubsection}{\numberline {3.1.2}Registration pages mock-up}{28}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Login pages mock-up}{29}{subsection.3.1.3}%
-\contentsline {mtocsubsection}{\numberline {3.1.3}Login pages mock-up}{29}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Private pages}{29}{section.3.2}%
-\contentsline {mtocsection}{\numberline {3.2}Private pages}{29}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Private pages students navigation map}{30}{subsection.3.2.1}%
-\contentsline {mtocsubsection}{\numberline {3.2.1}Private pages students navigation map}{30}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Private pages companies navigation map}{30}{subsection.3.2.2}%
-\contentsline {mtocsubsection}{\numberline {3.2.2}Private pages companies navigation map}{30}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Profile pages}{31}{subsection.3.2.3}%
-\contentsline {mtocsubsection}{\numberline {3.2.3}Profile pages}{31}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Profile pages mock-up}{31}{subsubsection.3.2.3.1}%
-\contentsline {subsection}{\numberline {3.2.4}Notifications pages}{32}{subsection.3.2.4}%
-\contentsline {mtocsubsection}{\numberline {3.2.4}Notifications pages}{32}{subsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}Notifications pages mock-up}{32}{subsubsection.3.2.4.1}%
-\contentsline {subsection}{\numberline {3.2.5}Companies pages}{33}{subsection.3.2.5}%
-\contentsline {mtocsubsection}{\numberline {3.2.5}Companies pages}{33}{subsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.5.1}Companies pages mock-up}{33}{subsubsection.3.2.5.1}%
-\contentsline {subsection}{\numberline {3.2.6}Advice-related pages}{33}{subsection.3.2.6}%
-\contentsline {mtocsubsection}{\numberline {3.2.6}Advice-related pages}{33}{subsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.6.1}Advice-related pages mock-up}{33}{subsubsection.3.2.6.1}%
-\contentsline {subsection}{\numberline {3.2.7}Invites and Applications pages}{36}{subsection.3.2.7}%
-\contentsline {mtocsubsection}{\numberline {3.2.7}Invites and Applications pages}{36}{subsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.7.1}Invites and Applications pages mock-up}{36}{subsubsection.3.2.7.1}%
-\contentsline {subsection}{\numberline {3.2.8}Process-related pages}{36}{subsection.3.2.8}%
-\contentsline {mtocsubsection}{\numberline {3.2.8}Process-related pages}{36}{subsection.3.2.8}%
-\contentsline {subsubsection}{\numberline {3.2.8.1}Process-related pages mock-up}{36}{subsubsection.3.2.8.1}%
-\contentsline {subsection}{\numberline {3.2.9}Interviews pages}{37}{subsection.3.2.9}%
-\contentsline {mtocsubsection}{\numberline {3.2.9}Interviews pages}{37}{subsection.3.2.9}%
-\contentsline {subsubsection}{\numberline {3.2.9.1}Interviews pages mock-up}{37}{subsubsection.3.2.9.1}%
-\contentsline {subsection}{\numberline {3.2.10}Internships pages}{38}{subsection.3.2.10}%
-\contentsline {mtocsubsection}{\numberline {3.2.10}Internships pages}{38}{subsection.3.2.10}%
-\contentsline {subsubsection}{\numberline {3.2.10.1}Internships pages mock-up}{38}{subsubsection.3.2.10.1}%
-\contentsline {section}{\numberline {3.3}Requirements UI sections mapping}{38}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Requirements UI sections mapping}{38}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Requirements traceability}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}General requirements}{39}{section.4.1}%
-\contentsline {mtocsection}{\numberline {4.1}General requirements}{39}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Requirements related to goal G1}{39}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.2}Requirements related to goal G1}{39}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Requirements related to goal G2}{40}{section.4.3}%
-\contentsline {mtocsection}{\numberline {4.3}Requirements related to goal G2}{40}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Requirements related to goal G3}{40}{section.4.4}%
-\contentsline {mtocsection}{\numberline {4.4}Requirements related to goal G3}{40}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Implemention, Integration and Test Plan}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview}{41}{section.5.1}%
-\contentsline {mtocsection}{\numberline {5.1}Overview}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Implementation Plan}{41}{section.5.2}%
-\contentsline {mtocsection}{\numberline {5.2}Implementation Plan}{41}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Feature Identification}{41}{subsection.5.2.1}%
-\contentsline {mtocsubsection}{\numberline {5.2.1}Feature Identification}{41}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Component Integration and Testing}{42}{section.5.3}%
-\contentsline {mtocsection}{\numberline {5.3}Component Integration and Testing}{42}{section.5.3}%
-\contentsline {section}{\numberline {5.4}System Testing}{43}{section.5.4}%
-\contentsline {mtocsection}{\numberline {5.4}System Testing}{43}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Effort Spent}{44}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Software Used}{45}{chapter.7}%
+\contentsline {chapter}{\numberline {2}Architectural Design}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {mtocsection}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Component View}{5}{section.2.2}%
+\contentsline {mtocsection}{\numberline {2.2}Component View}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Deployment View}{8}{section.2.3}%
+\contentsline {mtocsection}{\numberline {2.3}Deployment View}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Runtime View}{9}{section.2.4}%
+\contentsline {mtocsection}{\numberline {2.4}Runtime View}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Component Interfaces}{25}{section.2.5}%
+\contentsline {mtocsection}{\numberline {2.5}Component Interfaces}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Data Logic Model}{27}{section.2.6}%
+\contentsline {mtocsection}{\numberline {2.6}Data Logic Model}{27}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Selected Architectural Styles and Patterns}{28}{section.2.7}%
+\contentsline {mtocsection}{\numberline {2.7}Selected Architectural Styles and Patterns}{28}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}3-tier architecture}{28}{subsection.2.7.1}%
+\contentsline {mtocsubsection}{\numberline {2.7.1}3-tier architecture}{28}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Model-View-Controller(MVC) pattern}{28}{subsection.2.7.2}%
+\contentsline {mtocsubsection}{\numberline {2.7.2}Model-View-Controller(MVC) pattern}{28}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {3}User Interface Design}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Public pages}{30}{section.3.1}%
+\contentsline {mtocsection}{\numberline {3.1}Public pages}{30}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Public pages navigation map}{30}{subsection.3.1.1}%
+\contentsline {mtocsubsection}{\numberline {3.1.1}Public pages navigation map}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Registration pages mock-up}{30}{subsection.3.1.2}%
+\contentsline {mtocsubsection}{\numberline {3.1.2}Registration pages mock-up}{30}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Login pages mock-up}{31}{subsection.3.1.3}%
+\contentsline {mtocsubsection}{\numberline {3.1.3}Login pages mock-up}{31}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Private pages}{31}{section.3.2}%
+\contentsline {mtocsection}{\numberline {3.2}Private pages}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Private pages students navigation map}{32}{subsection.3.2.1}%
+\contentsline {mtocsubsection}{\numberline {3.2.1}Private pages students navigation map}{32}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Private pages companies navigation map}{32}{subsection.3.2.2}%
+\contentsline {mtocsubsection}{\numberline {3.2.2}Private pages companies navigation map}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Profile pages}{33}{subsection.3.2.3}%
+\contentsline {mtocsubsection}{\numberline {3.2.3}Profile pages}{33}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Profile pages mock-up}{33}{subsubsection.3.2.3.1}%
+\contentsline {subsection}{\numberline {3.2.4}Notifications pages}{34}{subsection.3.2.4}%
+\contentsline {mtocsubsection}{\numberline {3.2.4}Notifications pages}{34}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Notifications pages mock-up}{34}{subsubsection.3.2.4.1}%
+\contentsline {subsection}{\numberline {3.2.5}Companies pages}{35}{subsection.3.2.5}%
+\contentsline {mtocsubsection}{\numberline {3.2.5}Companies pages}{35}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}Companies pages mock-up}{35}{subsubsection.3.2.5.1}%
+\contentsline {subsection}{\numberline {3.2.6}Advice-related pages}{35}{subsection.3.2.6}%
+\contentsline {mtocsubsection}{\numberline {3.2.6}Advice-related pages}{35}{subsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Advice-related pages mock-up}{35}{subsubsection.3.2.6.1}%
+\contentsline {subsection}{\numberline {3.2.7}Invites and Applications pages}{38}{subsection.3.2.7}%
+\contentsline {mtocsubsection}{\numberline {3.2.7}Invites and Applications pages}{38}{subsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.7.1}Invites and Applications pages mock-up}{38}{subsubsection.3.2.7.1}%
+\contentsline {subsection}{\numberline {3.2.8}Process-related pages}{38}{subsection.3.2.8}%
+\contentsline {mtocsubsection}{\numberline {3.2.8}Process-related pages}{38}{subsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.8.1}Process-related pages mock-up}{38}{subsubsection.3.2.8.1}%
+\contentsline {subsection}{\numberline {3.2.9}Interviews pages}{39}{subsection.3.2.9}%
+\contentsline {mtocsubsection}{\numberline {3.2.9}Interviews pages}{39}{subsection.3.2.9}%
+\contentsline {subsubsection}{\numberline {3.2.9.1}Interviews pages mock-up}{39}{subsubsection.3.2.9.1}%
+\contentsline {subsection}{\numberline {3.2.10}Internships pages}{40}{subsection.3.2.10}%
+\contentsline {mtocsubsection}{\numberline {3.2.10}Internships pages}{40}{subsection.3.2.10}%
+\contentsline {subsubsection}{\numberline {3.2.10.1}Internships pages mock-up}{40}{subsubsection.3.2.10.1}%
+\contentsline {section}{\numberline {3.3}Requirements UI sections mapping}{40}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Requirements UI sections mapping}{40}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Requirements traceability}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}General requirements}{41}{section.4.1}%
+\contentsline {mtocsection}{\numberline {4.1}General requirements}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requirements related to goal G1}{42}{section.4.2}%
+\contentsline {mtocsection}{\numberline {4.2}Requirements related to goal G1}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Requirements related to goal G2}{43}{section.4.3}%
+\contentsline {mtocsection}{\numberline {4.3}Requirements related to goal G2}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Requirements related to goal G3}{43}{section.4.4}%
+\contentsline {mtocsection}{\numberline {4.4}Requirements related to goal G3}{43}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Implemention, Integration and Test Plan}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{44}{section.5.1}%
+\contentsline {mtocsection}{\numberline {5.1}Overview}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Implementation Plan}{44}{section.5.2}%
+\contentsline {mtocsection}{\numberline {5.2}Implementation Plan}{44}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Feature Identification}{44}{subsection.5.2.1}%
+\contentsline {mtocsubsection}{\numberline {5.2.1}Feature Identification}{44}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Component Integration and Testing}{45}{section.5.3}%
+\contentsline {mtocsection}{\numberline {5.3}Component Integration and Testing}{45}{section.5.3}%
+\contentsline {section}{\numberline {5.4}System Testing}{46}{section.5.4}%
+\contentsline {mtocsection}{\numberline {5.4}System Testing}{46}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Effort Spent}{47}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Software Used}{48}{chapter.7}%

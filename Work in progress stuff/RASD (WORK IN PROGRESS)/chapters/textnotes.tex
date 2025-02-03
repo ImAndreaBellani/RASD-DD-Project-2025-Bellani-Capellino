@@ -1,40 +1,39 @@
 \chapter{Specific requirements}
 	\section{External Interface Requirements}
 		\subsection{User Interfaces}
-			We don't highlight particular requirements for the user interface layout, however to clarify the platform navigation map we grouped in this section what we believed was the appropriate platform structure (in scenarios, use-cases and requirements):
+		We don't highlight particular requirements for the user interface layout, however in the other parts of the RASD we had to outline (at a conceptual level) the sections users go through in the platform in order to perform the various actions. So, we believed that the best thing we could have done in this document was to state the necessary sections the platform needs to display:
+		\begin{itemize}
+			\item public section:
 			\begin{itemize}
-				\item public section:
-					\begin{itemize}
-						\item registration section:
-							\begin{itemize}
-								\item student registration page;
-								\item company registration page;
-							\end{itemize}
-						\item login section;
-					\end{itemize}
-				\item private section:
-					\begin{itemize}
-						\item common sections:
-							\begin{itemize}
-								\item ongoing internships section: where users can consult statuses of internships that interest them;
-							\end{itemize}
-						\item only-students sections:
-							\begin{itemize}
-								\item published advice section: where students can search advice;
-								\item registered companies section: where students can search companies;
-								\item notifications section: where students can consult notifications sent to them;
-								\item interviews calendars section: where students can consult interviews calendars of selection processes they are involved into;
-							\end{itemize}
-						\item only-companies sections:
-							\begin{itemize}
-								\item advice publication section: where companies can consult their published advice;
-								\item selection processes management section: where companies can manage and consult their selection processes.
-							\end{itemize}
-					\end{itemize}
+				\item \emph{registration section} : where users can sign up to the platform;
+				\item \emph{login section} : where users can log into the platform;
 			\end{itemize}
-			Note that scenarios and use-cases (as well as sequence diagrams and requirements) may refer to those sections with different names; in particular, \emph{Personal Internship section} and \emph{Internship Section} are synonyms of \emph{Advice publication section}.
-			
-			At the end, we often had to detail system sections contents in order to clarify uses cases but without the pretense to state them as user interface definitions. For what concerns user interface requirements, we only ask to follow the structure above as a guideline.
+			\item private section:
+			\begin{itemize}
+				\item common sections:
+				\begin{itemize}
+					\item \emph{Profile section} : where the user profile is shown;
+					\item \emph{notifications section} : where users can consult notifications sent to them;
+					\item \emph{internship section} (of a company) : where users can see all advice published from one company;
+					\item \emph{ongoing internship section} : where users can consult status of ongoing internships they participate in;
+					\item \emph{Interviews section} : where users can consult their interviews calendar (and posting complaints);
+				\end{itemize}
+				\item only-students sections:
+				\begin{itemize}
+					\item \emph{view internships section} : where students can search up available advice;
+					\item \emph{view companies section} : where companies can search up registered companies;
+					\item \emph{interesting internships section} : where students can consult the list of advice the may interest the student;
+					\item \emph{invites section} : where students can see advice proposals sent to them from companies;
+					\item \emph{Application section} : where students can manage their applications;
+				\end{itemize}
+				\item only-companies sections:
+				\begin{itemize}
+					\item \emph{publish new internship section}: where companies can publish advice;
+					\item \emph{selection process management section} : where companies can manage selection processes related to their advice.
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+		Note that we also preferred to not state specific navigation paths through the platform, therefore these sections can be rearranged in the effective application design in almost any way.
 		\subsection{Hardware Interfaces}
 			There are no specific hardware interfaces required, except for the devices used to access the platform. Both students and companies need a hardware device (such as a computer) with a network card to connect to S\&C.
 		\subsection{Software Interfaces}
@@ -215,7 +214,6 @@
 						\item The student press the button 
 						\textit{Register} to complete the 
 						registration
-						\item the system checks the digital signature on the CV
 						\end{enumerate}} \\
 					\hline 
 					Exit condition & The student has successfully registered 
@@ -254,8 +252,8 @@
 							providing its name, a brief description 
 							of its area of expertise and business 
 							area, its e-mail and password
-							\item The Company flags the “receive 
-							notification” box (part of the form) if it 
+							\item The Company flags the "receive 
+							notification" box (part of the form) if it 
 							wants to take part into the recommendation process
 							\item The company press the button 
 							\textit{Register} to complete the 
@@ -334,7 +332,7 @@
 					\hline
 					Event Flow & \parbox{5cm}{\begin{enumerate}
 							\item The company goes to the \textit{Publish 
-							New Advice} section
+							New Internship} section
 							\item The company press the button \textit{Add 
 							New Advice} 
 							\item The system shows a form to compile
@@ -354,7 +352,7 @@
 					new internship advice and the system 
 					return to the homepage  \\
 					\hline
-					Exception & The company doesn’t fill all the 
+					Exception & The company doesn't fill all the 
 					fields of the form; the system will 
 					warn the company \\
 					\hline
@@ -380,7 +378,7 @@
 						Entry condition & The student is logged to S\&C platform and he wants to apply for an internship  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
-								\item The student goes to the \textit{AdviceSearch} section
+								\item The student goes to the \textit{View Internship} section
 								\item The system shows the page with a 
 								list of all the published internships advice, 
 								listed from the most recent to the 
@@ -556,7 +554,7 @@
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The comapny logs to the platform  
-								\item the company goes to the \textit{Personal Advice} 
+								\item the company goes to the \textit{Internship} 
 								section
 								\item  the company clicks on the internship related to the notification
 								\item the company goes on the \textit{Notifications} section 
@@ -602,8 +600,8 @@
 								company providing the internship
 								\item The company logs to the system with 
 								its credentials
-								\item The company goes to \textit{Personal 
-								Internships} section
+								\item The company goes to \textit{ 
+								Internship} section
 								\item The company select the 
 								corresponding internship
 								\item The company goes to \textit{Notification} 
@@ -693,14 +691,13 @@
 						company is logged to S\&C platform  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
-								\item The company goes to \textit{Personal 
-								Advice} section
+								\item The company goes to \textit{Internship} section
 								\item The company select the 
 								appropriate Internship advice  
 								\item The system shows the internship 
 								advice page
 								\item  The company goes on 
-								\textit{Configuration} section
+								\textit{Selection process management} section
 								\item  the company configures the 
 								number of steps (up to 2), the 
 								metrics to evaluate students and 
@@ -761,7 +758,7 @@
 								\item The company asks some oral questions (if they are configured in this step)
 								\item The student answers to oral questions
 								\item The company logs to the platform 
-								\item the company goes into \textit{Personal Internship} section
+								\item the company goes into \textit{Internship} section
 								\item the system shows the page with all the personal internships of the company
 								\item the company select the appropriate internship 
 								\item the company select, from the list of students, the appropriate student
@@ -869,7 +866,7 @@
 						Entry condition & The User is logged to S\&C platform and it completed an internship \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
-								\item The user goes to \textit{Internships} section
+								\item The user goes to \textit{ongoing internship} section
 								\item The system shows a page with 
 								all the ongoing internships of the user 
 								\item The User select the interested 
@@ -911,7 +908,7 @@
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
 								\item The user goes on \textit{ 
-								Internships} section 
+								Ongoing internships} section 
 								\item The system shows a page with 
 								all the ongoing internships 
 								related to the user  
@@ -957,7 +954,7 @@
 						Entry condition & the company is logged to the platform, one of its internship is concluded from the company point of view (for any reason)  \\
 						\hline
 						Event Flow & \parbox{5cm}{\begin{enumerate}
-								\item The company goes on \textit{Internships} section 
+								\item The company goes on \textit{Ongoing internship} section 
 								\item The system shows a page with 
 								all the ongoing internships hosted by the company  
 								\item The company selects the one to close

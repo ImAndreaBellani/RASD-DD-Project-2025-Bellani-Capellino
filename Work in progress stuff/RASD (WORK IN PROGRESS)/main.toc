@@ -1,5 +1,5 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\selectlanguage *[]{english}
+\babel@toc {english}{}\relax
 \contentsline {chapter}{\nonumberline Contents}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Purpose}{1}{section.1.1}%
@@ -82,36 +82,36 @@
 \contentsline {mtocsubsection}{\numberline {3.2.5}Use-case diagram}{16}{subsection.3.2.5}%
 \contentsline {subsection}{\numberline {3.2.6}Use-cases}{17}{subsection.3.2.6}%
 \contentsline {mtocsubsection}{\numberline {3.2.6}Use-cases}{17}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Sequence diagrams}{30}{subsection.3.2.7}%
-\contentsline {mtocsubsection}{\numberline {3.2.7}Sequence diagrams}{30}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Activity diagrams}{46}{subsection.3.2.8}%
-\contentsline {mtocsubsection}{\numberline {3.2.8}Activity diagrams}{46}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Performance Requirements}{46}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Performance Requirements}{46}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Design Constraints}{47}{section.3.4}%
-\contentsline {mtocsection}{\numberline {3.4}Design Constraints}{47}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{47}{subsection.3.4.1}%
-\contentsline {mtocsubsection}{\numberline {3.4.1}Standards compliance}{47}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{47}{subsection.3.4.2}%
-\contentsline {mtocsubsection}{\numberline {3.4.2}Hardware limitations}{47}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Other constraints}{47}{subsection.3.4.3}%
-\contentsline {mtocsubsection}{\numberline {3.4.3}Other constraints}{47}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Software System Attributes}{47}{section.3.5}%
-\contentsline {mtocsection}{\numberline {3.5}Software System Attributes}{47}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{47}{subsection.3.5.1}%
-\contentsline {mtocsubsection}{\numberline {3.5.1}Reliability}{47}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Availability}{47}{subsection.3.5.2}%
-\contentsline {mtocsubsection}{\numberline {3.5.2}Availability}{47}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Security}{48}{subsection.3.5.3}%
-\contentsline {mtocsubsection}{\numberline {3.5.3}Security}{48}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{48}{subsection.3.5.4}%
-\contentsline {mtocsubsection}{\numberline {3.5.4}Maintainability}{48}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Portability}{48}{subsection.3.5.5}%
-\contentsline {mtocsubsection}{\numberline {3.5.5}Portability}{48}{subsection.3.5.5}%
-\contentsline {chapter}{\numberline {4}Formal Analysis}{49}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Applications and withdrawals simulation (Alloy 6 temporal simulation)}{50}{section.4.1}%
-\contentsline {mtocsection}{\numberline {4.1}Applications and withdrawals simulation (Alloy 6 temporal simulation)}{50}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Selection process structure (static simulation)}{53}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.2}Selection process structure (static simulation)}{53}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Effort Spent}{57}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Software Used}{58}{chapter.6}%
+\contentsline {subsection}{\numberline {3.2.7}Sequence diagrams}{31}{subsection.3.2.7}%
+\contentsline {mtocsubsection}{\numberline {3.2.7}Sequence diagrams}{31}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Activity diagrams}{47}{subsection.3.2.8}%
+\contentsline {mtocsubsection}{\numberline {3.2.8}Activity diagrams}{47}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Performance Requirements}{47}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Performance Requirements}{47}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Design Constraints}{48}{section.3.4}%
+\contentsline {mtocsection}{\numberline {3.4}Design Constraints}{48}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{48}{subsection.3.4.1}%
+\contentsline {mtocsubsection}{\numberline {3.4.1}Standards compliance}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{48}{subsection.3.4.2}%
+\contentsline {mtocsubsection}{\numberline {3.4.2}Hardware limitations}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Other constraints}{48}{subsection.3.4.3}%
+\contentsline {mtocsubsection}{\numberline {3.4.3}Other constraints}{48}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Software System Attributes}{48}{section.3.5}%
+\contentsline {mtocsection}{\numberline {3.5}Software System Attributes}{48}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{48}{subsection.3.5.1}%
+\contentsline {mtocsubsection}{\numberline {3.5.1}Reliability}{48}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Availability}{48}{subsection.3.5.2}%
+\contentsline {mtocsubsection}{\numberline {3.5.2}Availability}{48}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Security}{49}{subsection.3.5.3}%
+\contentsline {mtocsubsection}{\numberline {3.5.3}Security}{49}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{49}{subsection.3.5.4}%
+\contentsline {mtocsubsection}{\numberline {3.5.4}Maintainability}{49}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Portability}{49}{subsection.3.5.5}%
+\contentsline {mtocsubsection}{\numberline {3.5.5}Portability}{49}{subsection.3.5.5}%
+\contentsline {chapter}{\numberline {4}Formal Analysis}{50}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Applications and withdrawals simulation (Alloy 6 temporal simulation)}{51}{section.4.1}%
+\contentsline {mtocsection}{\numberline {4.1}Applications and withdrawals simulation (Alloy 6 temporal simulation)}{51}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Selection process structure (static simulation)}{54}{section.4.2}%
+\contentsline {mtocsection}{\numberline {4.2}Selection process structure (static simulation)}{54}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Effort Spent}{58}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Software Used}{59}{chapter.6}%
