@@ -1,0 +1,28 @@
+Identify exactly three aspects in Sections 2.1, 2.2, and 2.3 that
+represent either strengths or weaknesses (e.g., 1 strength and 2
+weaknesses, or 3 weakness, etc.). Support each identified aspect
+with proper arguments (one or two sentences) motivating your selection:
+
+-> strength 1: we appreciated the adoption of a 3-tier architecture, we consider it suitable for the kind of application CKB is and its adoption was well-justified in the documentation;
+-> weakness 1: the distributed view reported in the document (figure 2.2) raises two concerns for us that also where not mentioned in the documentation: the Github API can communicate with one of the application servers without passing through the firewall. We imagine that this was an implicit way of describing that the communication with the Github API is somehow allowed by the firewall configuration, but this was not stated and we consider it a formal error to connect the API directly to the application server; the view does not mention the presence of the Static Analysis tool. Overall we consider this a huge weakness; 
+-> weakness 2: the deployment view reported in the document (figure 2.4) highlights the presence of an HTTPS connection between firewall and client. We agree with the fact that this solution is foremost in web applications that exchange confidential data between entities but this solution also raises the problems of adding an HTTPS certificate to the server ecc. (the PKI was not mentioned at all in the document). Moreover, we consider as an error to model the "CKB client" because, took for grant the fact that the application is a web client, the browser should be itself the client (unless differently specified). The actual model makes us understand that there is a software component installed in the browser that is the "CKB client" but it is strictly not in our vision (the browser should only interpret the client-side scripts).
+
+Identify exactly three aspects in Sections 2.4, 2.5, 2.6, and 2.7
+that represent either strengths or weaknesses (e.g., 1 strength
+and 2 weaknesses, or 3 weakness, etc.). Support each identified
+aspect with proper arguments (one or two sentences) motivating
+your selection:
+
+-> weakness 1: the use case "User Registration" should refer to the registration of both students and educators, but it only considers educators registration. The result is that, even if we understand the possible similarities between the two kinds of registration processes, the student registration process is not explained in detail, so we would rather have preferred to see the analogies and the differences modeled in a more accurate way than simply stating one of the two kinds;
+-> weakness 2: we believe that the problem of availability is addressed in a too superficial way. In particular, replication is mention but not described more in detail (e.g. Hot spare, Warm spare... );
+-> weakness 3: sequence diagrams where modeled in the assumption that Github is reliable and the database is always connected. While the first assumption was stated also in the RASD, the second one is not. We would rather have preferred to see this problem addressed somehow somewhere in the document.
+
+Identify exactly three aspects in Sections 3, 4, and 5 that
+represent either strengths or weaknesses (e.g., 1 strength and
+2 weaknesses, or 3 weakness, etc.). Support each identified
+aspect with proper arguments (one or two sentences) motivating
+your selection:
+
+-> strength 1: the requirements specified in the RASD are mapped into the interfaces clearly. It can be well understood from the documentation how the system and through which interface satisfies the requirements;
+-> weakness 1: the presentation layer is not analyzed properly in the user interface section. We had appreciated the way the user interface was presented in the RASD because we had believed that the abstraction chosen was adequate for a RASD, but we really did not expect to find almost the same description in the design document. We expected to see an high-level design of the presentation layer (e.g. page navigations, page structures... ). At the end, we have to say that the effort spent for the application layer design was not spent for to the presentation layer, therefore the implementation of this layer can't be guided much by the design document;
+-> weakness 2: we appreciated the effort spent on the implementation and test plan definition however, the section 5 lacks of a real definition of the implementation workflow. Can each sub-component be implemented in parallel to another? Cannot? We would have expected to understand it from this section.
