@@ -17,6 +17,6 @@ Authors:
 
 During the final presentation, Professor Di Nitto pointed out some mistakes she had found in our documents, here we report them:
 * although the recommendation system structure is defined in the DD, the sequence diagram concerning the recommendation generation process is missing. Even if there is no external interaction that triggers it, it should have been specified;
-* in UML component diagrams, the ball-and-socket notations was used inverted;
+* in UML component diagrams, the ball-and-socket notation was used inverted;
 * in the DD, it would have been useful to report also the ER model derived from the high-level class diagram instead of reporting just the logic scheme;
 * the logic scheme should have been reported together with the SQL "CREATE TABLE" statements.
